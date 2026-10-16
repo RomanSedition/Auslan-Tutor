@@ -523,7 +523,7 @@
           h("span", { class: "grow" }),
           practise,
           compact ? null : credit),
-        variantRow,
+        variantRow || "", // native append() would print a null as the text "null"
         h("div", { class: "sign-tips" }, tips));
       this.replaceChildren(card);
     }
@@ -802,7 +802,7 @@
               h("option", { value: v, selected: v === this.level }, label)));
             sel.addEventListener("change", () => { this.level = sel.value; store.set("auslan.spell.level", sel.value); next(); });
             return sel;
-          })() : null,
+          })() : "",
           input,
           h("div", { class: "fs-row" },
             btn("btn primary", "Check", "↵", check),
