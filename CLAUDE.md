@@ -32,6 +32,7 @@ not file://, because the camera and `fetch()` need it.
 - `assets/app.js`: custom elements `<auslan-sign>`, `<auslan-quiz>`, `<sign-phrase>`, `<fingerspell-drill>`,
   plus the mirror panel, record & compare, header and footer, lesson nav, region handling and progress (localStorage)
 - `curriculum.md`: the roadmap. Tick items off as lessons are written.
+- `PLANNED_FEATURES.md`: app features that were discussed but not built yet. When one gets built, move it to "Done".
 - `tools/signbank.py`: look up signs on Signbank (JSON out, cached in `tools/.cache/`)
 - `tools/framesheet.swift`: renders a sign video as a frame contact sheet so you can see how it's made
 - `tools/check.py`: validates lessons and data (`--online` also checks every video URL, including variants)
@@ -59,9 +60,21 @@ not file://, because the camera and `fetch()` need it.
    `data-lesson`, the hero, goals, vocab cards, notes, phrases, mirror steps, quiz and recap.
    Use `<sign-phrase>` glosses in Auslan word order, with a `face` hint. Put Deaf-culture notes in `.note.culture`.
 6. **Register it.** Append to `data/lessons.json` and tick it off in `curriculum.md`.
-7. **Verify.** Run `python3 tools/check.py --online`; it must print OK.
+7. **Verify.** Run `python3 tools/stamp.py` (cache-busts `assets/app.js` and `app.css` in every page, including new
+   ones), then `python3 tools/check.py --online`; it must print OK. Any edit to `assets/` also needs `stamp.py`,
+   or browsers keep serving the old cached copy.
 8. **Publish.** Commit and push. Then reply with the lesson title, the live URL
    (https://romansedition.github.io/Auslan-Tutor/lessons/NNN-slug.html) and a one-line summary.
+
+## Cloud sessions (Claude Code on the web / phone)
+Cloud sessions run on Linux with a fresh clone of GitHub, so:
+- `CLAUDE.local.md` isn't there. Don't assume the author's region or progress.
+- `tools/framesheet.swift` needs macOS and won't run. Describe new signs from the Signbank definition and keywords
+  only, keep the Hand / Where / Move notes short and cautious, and add "Watch at 0.5×". Say in the PR that frames
+  weren't checked, so the author can re-check them on the Mac.
+- Signbank lookups and `check.py --online` need network access to `auslan.org.au` and `object-store.rc.nectar.org.au`.
+  If they're blocked, say so in the PR rather than guessing URLs.
+- Work on a branch and open a pull request. Don't push to `main`; the author reviews and merges.
 
 ## Teaching conventions
 - Glosses go in CAPITALS with hyphens for multi-word signs (THANK-YOU). Fingerspelling is written S-A-M.
