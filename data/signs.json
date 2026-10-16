@@ -1,0 +1,587 @@
+{
+  "letter-a": {
+    "label": "A",
+    "english": "letter A",
+    "hint": "Point to the thumb tip of your passive hand (vowels run thumb → little finger).",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11450.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11450.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/a-1.html",
+    "region": null,
+    "lessons": [
+      1
+    ]
+  },
+  "letter-b": {
+    "label": "B",
+    "english": "letter B",
+    "hint": "Both hands make a ring with thumb and index; the rings touch side by side.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/3750.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/3750.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/b-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-c": {
+    "label": "C",
+    "english": "letter C",
+    "hint": "One hand only: curve thumb and index into a C.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/53/53300.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/53/53300.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/c-2.html",
+    "region": null,
+    "lessons": [
+      1
+    ]
+  },
+  "letter-d": {
+    "label": "D",
+    "english": "letter D",
+    "hint": "Curved thumb and index of the dominant hand against the upright index of the other hand, making a D.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/53/53890.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/53/53890.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/d-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-e": {
+    "label": "E",
+    "english": "letter E",
+    "hint": "Point to the tip of the index finger.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/18/1807_oFf7ioR.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/18/1807_oFf7ioR.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/e-2.html",
+    "region": null,
+    "lessons": [
+      1
+    ]
+  },
+  "letter-f": {
+    "label": "F",
+    "english": "letter F",
+    "hint": "Two fingers laid across two fingers.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/20/20550.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/20/20550.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/f-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-g": {
+    "label": "G",
+    "english": "letter G",
+    "hint": "Fist on top of fist.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/57/57950.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/57/57950.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/g-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-h": {
+    "label": "H",
+    "english": "letter H",
+    "hint": "Flat palm brushes across the other palm.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/43/43290.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/43/43290.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/h-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-i": {
+    "label": "I",
+    "english": "letter I",
+    "hint": "Point to the tip of the middle finger.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11660.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11660.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/i-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-j": {
+    "label": "J",
+    "english": "letter J",
+    "hint": "Start like I (middle fingertip), then draw a little hook down. Watch it at 0.5×.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11690.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11690.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/J-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-k": {
+    "label": "K",
+    "english": "letter K",
+    "hint": "Dominant index curls over the top of the other hand's upright index finger.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/14/14880_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/14/14880_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/k-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-l": {
+    "label": "L",
+    "english": "letter L",
+    "hint": "Index finger laid flat across the palm.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/31/3173.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/31/3173.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/l-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-m": {
+    "label": "M",
+    "english": "letter M",
+    "hint": "Three fingers laid on the palm.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/23/23470.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/23/23470.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/m-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-n": {
+    "label": "N",
+    "english": "letter N",
+    "hint": "Two fingers laid on the palm.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/37/3731.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/37/3731.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/n-2.html",
+    "region": null,
+    "lessons": [
+      1
+    ]
+  },
+  "letter-o": {
+    "label": "O",
+    "english": "letter O",
+    "hint": "Point to the tip of the ring finger.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11710.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11710.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/o-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-p": {
+    "label": "P",
+    "english": "letter P",
+    "hint": "A thumb-and-index ring held at the tip of the other index finger.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/40/4046_1tq1BTt.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/40/4046_1tq1BTt.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/p-2.html",
+    "region": null,
+    "lessons": [
+      1
+    ]
+  },
+  "letter-q": {
+    "label": "Q",
+    "english": "letter Q",
+    "hint": "The dominant hand hooks onto the other hand, like the tail of a Q. Watch it at 0.5×.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/14/14770.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/14/14770.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/q-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-r": {
+    "label": "R",
+    "english": "letter R",
+    "hint": "Bent (crooked) index finger resting on the palm.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/15/15160.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/15/15160.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/r-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-s": {
+    "label": "S",
+    "english": "letter S",
+    "hint": "Little fingers hooked together.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/50330.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/50330.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/s-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-t": {
+    "label": "T",
+    "english": "letter T",
+    "hint": "Index fingertip touches the little-finger edge of the upright passive hand.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11750.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11750.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/t-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-u": {
+    "label": "U",
+    "english": "letter U",
+    "hint": "Point to the tip of the little finger.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11730.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11730.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/u-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-v": {
+    "label": "V",
+    "english": "letter V",
+    "hint": "V-shape (index + middle) pressed onto the palm.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/17/17010.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/17/17010.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/v-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      1
+    ]
+  },
+  "letter-w": {
+    "label": "W",
+    "english": "letter W",
+    "hint": "Fingers of both hands interlocked.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26280_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26280_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/w-2.html",
+    "region": null,
+    "lessons": [
+      1
+    ]
+  },
+  "letter-x": {
+    "label": "X",
+    "english": "letter X",
+    "hint": "Index fingers crossed.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/89/8960.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/89/8960.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/x-2.html",
+    "region": null,
+    "lessons": [
+      1
+    ]
+  },
+  "letter-y": {
+    "label": "Y",
+    "english": "letter Y",
+    "hint": "Index finger laid into the web between thumb and index of the other hand.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11560_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11560_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/y-2.html",
+    "region": null,
+    "lessons": [
+      1
+    ]
+  },
+  "letter-z": {
+    "label": "Z",
+    "english": "letter Z",
+    "hint": "Flat hand, palm down, against the heel of the other upright palm.",
+    "category": "fingerspelling",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/42/42070.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/42/42070.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/z-2.html",
+    "region": null,
+    "lessons": [
+      1
+    ]
+  },
+  "auslan": {
+    "label": "AUSLAN",
+    "english": "Auslan, sign, chat",
+    "hint": "Both open hands, one at chest height and one up near the shoulder; the fingers flick and flutter.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/13/1330_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/13/1330_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/Auslan-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "bye": {
+    "label": "BYE",
+    "english": "bye, goodbye, wave",
+    "hint": "Hand up beside the shoulder, fingers bend down and up together: a wave.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33150_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33150_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/bye-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "deaf": {
+    "label": "DEAF",
+    "english": "deaf",
+    "hint": "Index finger touches the ear, then the mouth.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/19/19120_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/19/19120_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/deaf-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "good-morning-n": {
+    "label": "GOOD MORNING",
+    "english": "good morning",
+    "hint": "Thumbs-up hand brought in to the upper chest. Northern variant.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34770.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34770.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/Good%20morning-1.html",
+    "region": "NorthernDialect-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "good-morning-s": {
+    "label": "GOOD MORNING",
+    "english": "good morning",
+    "hint": "Thumbs-up hand held against the upper chest, then moves forward. Southern variant.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34910.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34910.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/Good%20morning-2.html",
+    "region": "SouthernDialect-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "hearing": {
+    "label": "HEARING",
+    "english": "hearing (person)",
+    "hint": "Upright index finger beside the ear, small repeated movement.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/57/5710.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/57/5710.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/hearing-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "hello": {
+    "label": "HELLO",
+    "english": "hello, hi",
+    "hint": "Flat hand starts beside the forehead and moves out and away, like a relaxed salute.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33460_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33460_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/hello-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "how-are-you": {
+    "label": "GOOD / HOW ARE YOU?",
+    "english": "good; how are you?",
+    "hint": "Thumbs-up in front of the chest. With raised eyebrows it asks 'How are you?'; with a nod it answers 'Good!'",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/47/47760_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/47/47760_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/How%20are%20you-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "learn": {
+    "label": "LEARN",
+    "english": "learn, learning",
+    "hint": "Hand on the forehead, fingers draw together as it pulls away, as if taking knowledge in.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/31/31360_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/31/31360_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/learn-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "me": {
+    "label": "ME",
+    "english": "me, I",
+    "hint": "Index finger points to the middle of your own chest.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/67/6710_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/67/6710_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/me-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "meet": {
+    "label": "MEET",
+    "english": "meet",
+    "hint": "Both hands come in from the sides and meet in front of the chest.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/16/16310_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/16/16310_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/meet-2.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "my": {
+    "label": "MY",
+    "english": "my, mine",
+    "hint": "Closed fist placed against your chest.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/56/56410.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/56/56410.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/my-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "name": {
+    "label": "NAME",
+    "english": "name, called",
+    "hint": "Index and middle fingers together touch the forehead, then move out to the side.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/37/3740.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/37/3740.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/name-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "nice": {
+    "label": "NICE",
+    "english": "nice",
+    "hint": "Hand slides off the chin and finishes as a thumbs-up.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/19/19460.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/19/19460.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/nice-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "see-you-again": {
+    "label": "SEE YOU AGAIN",
+    "english": "see you later, see you again",
+    "hint": "V-hand moves out from beside the eye, then the index points at the other person.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/15/15530_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/15/15530_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/see%20you%20again-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "thank-you": {
+    "label": "THANK YOU",
+    "english": "thank you, thanks",
+    "hint": "Flat hand from the chin moves forward and down towards the other person.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/32880_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/32880_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/thank%20you-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "what": {
+    "label": "WHAT",
+    "english": "what",
+    "hint": "Index finger up, small side-to-side shake, eyebrows down.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/73/7300_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/73/7300_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/what-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "you": {
+    "label": "YOU",
+    "english": "you",
+    "hint": "Index finger points at the person you're talking to.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/75/7590_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/75/7590_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/you-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  },
+  "your": {
+    "label": "YOUR",
+    "english": "your, yours",
+    "hint": "Closed fist pushed towards the other person.",
+    "category": "vocab",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/56/56530_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/56/56530_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/your-1.html",
+    "region": "AustraliaWide-traditional",
+    "lessons": [
+      2
+    ]
+  }
+}

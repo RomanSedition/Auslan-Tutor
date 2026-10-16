@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auslan Tutor</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤟</text></svg>">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <h1>G'day, Roman 🤟</h1>
+    <p>Your Auslan lessons, all in one place. The sign videos come straight from <a href="https://auslan.org.au" target="_blank" rel="noopener">Auslan Signbank</a>, and the mirror (<kbd>M</kbd>) lets you check your own signing as you go.</p>
+  </section>
+
+  <div class="stats" id="stats"></div>
+
+  <h2>Lessons</h2>
+  <ul class="lesson-list" id="lessons"><li class="muted">Loading…</li></ul>
+
+  <div class="ask-box">
+    <h3 style="margin-top:0">Want another lesson?</h3>
+    <p>Ask Claude in this project, for example:</p>
+    <ul>
+      <li><code>next lesson</code>: continues the curriculum</li>
+      <li><code>give me a lesson on family members</code></li>
+      <li><code>a review lesson mixing everything so far</code></li>
+      <li><code>I struggled with K and Q, make a fingerspelling practice page</code></li>
+    </ul>
+    <p class="muted" style="margin-bottom:0">Each new lesson is saved in <code>lessons/</code> and appears here automatically, and its signs are added to the Glossary and Review deck.</p>
+  </div>
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(async () => {
+  const { h, loadLessons, loadSigns, progress, ROOT } = AuslanTutor;
+  const [lessons, signs] = await Promise.all([loadLessons(), loadSigns()]);
+  const list = document.getElementById("lessons");
+  list.replaceChildren(...lessons.map((l) => {
+    const done = !!progress.lessons[l.id];
+    return h("li", {}, h("a", { class: "lesson-item", href: `${ROOT}lessons/${l.slug}.html` },
+      h("div", { class: "lesson-num" }, String(l.id).padStart(2, "0")),
+      h("div", {}, h("h3", {}, l.title), h("p", {}, l.summary)),
+      h("div", { class: "status" + (done ? " done" : "") }, done ? "✓ Done" : `${l.signs.length} signs`)));
+  }));
+
+  const keys = Object.keys(signs);
+  const seen = keys.filter((k) => progress.signs[k]);
+  const solid = keys.filter((k) => (progress.signs[k]?.box || 0) >= 3);
+  const due = keys.filter((k) => progress.signs[k] && progress.signs[k].due <= Date.now());
+  const doneCount = lessons.filter((l) => progress.lessons[l.id]).length;
+  const stat = (n, label) => h("div", { class: "stat" }, h("b", {}, n), h("span", {}, label));
+  document.getElementById("stats").replaceChildren(
+    stat(`${doneCount}/${lessons.length}`, "lessons completed"),
+    stat(keys.length, "signs in your glossary"),
+    stat(`${seen.length}`, "signs reviewed"),
+    stat(`${solid.length}`, "signs you know well"),
+    h("a", { class: "stat", href: "review.html", style: "text-decoration:none;color:inherit" },
+      h("b", {}, due.length || "—"), h("span", {}, due.length ? "reviews due now →" : "no reviews due")));
+})().catch((e) => {
+  document.getElementById("lessons").replaceChildren(AuslanTutor.h("li", { class: "muted" },
+    "Couldn't load data/lessons.json. Open this site through ./serve.sh (http://localhost:8000), not by double-clicking the file."));
+  console.error(e);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glossary — Auslan Tutor</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤟</text></svg>">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="hero" style="padding-bottom:0">
+    <h1>Glossary</h1>
+    <p>Every sign from your lessons, A–Z. The dot shows how well you know it from Review: <span class="conf good"></span> good · <span class="conf hard"></span> hard · <span class="conf again"></span> again · <span class="conf"></span> not reviewed yet.</p>
+  </section>
+
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="Search signs or English…" autofocus>
+    <select id="lesson"><option value="">All lessons</option></select>
+    <select id="cat">
+      <option value="vocab">Vocabulary</option>
+      <option value="fingerspelling">Fingerspelling</option>
+      <option value="">Everything</option>
+    </select>
+  </div>
+  <div id="out"></div>
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(async () => {
+  const { h, loadLessons, loadSigns, progress, store } = AuslanTutor;
+  const [lessons, signs] = await Promise.all([loadLessons(), loadSigns()]);
+  const q = document.getElementById("q"), lessonSel = document.getElementById("lesson"), cat = document.getElementById("cat");
+  lessons.forEach((l) => lessonSel.append(h("option", { value: l.id }, `${l.id}. ${l.title}`)));
+  cat.value = store.get("auslan.glossary.cat", "vocab");
+
+  function render() {
+    store.set("auslan.glossary.cat", cat.value);
+    const term = q.value.trim().toLowerCase();
+    const items = Object.entries(signs)
+      .filter(([k, s]) => !cat.value || s.category === cat.value)
+      .filter(([k, s]) => !lessonSel.value || s.lessons.includes(+lessonSel.value))
+      .filter(([k, s]) => !term || [s.label, s.english, s.hint, k].join(" ").toLowerCase().includes(term))
+      .sort((a, b) => a[1].label.localeCompare(b[1].label));
+
+    const out = document.getElementById("out");
+    if (!items.length) { out.replaceChildren(h("p", { class: "empty" }, "No signs match.")); return; }
+    const groups = {};
+    for (const it of items) (groups[it[1].label[0].toUpperCase()] ||= []).push(it);
+    out.replaceChildren(...Object.entries(groups).flatMap(([letter, list]) => [
+      h("div", { class: "gloss-letter" }, letter),
+      h("div", { class: "sign-grid" + (cat.value === "fingerspelling" ? " compact" : "") }, list.map(([k, s]) => {
+        const grade = progress.signs[k]?.grade || "";
+        const lessonLinks = s.lessons.map((id) => {
+          const l = lessons.find((x) => x.id === id);
+          return l ? h("a", { href: `lessons/${l.slug}.html` }, `Lesson ${id}`) : null;
+        });
+        return h("auslan-sign", { sign: k, compact: s.category === "fingerspelling" },
+          h("p", {}, s.hint),
+          h("p", { class: "muted", style: "font-size:.8rem;display:flex;gap:8px;align-items:center" },
+            h("span", { class: "conf " + grade, title: grade || "not reviewed" }), ...lessonLinks));
+      })),
+    ]));
+  }
+  q.addEventListener("input", render);
+  lessonSel.addEventListener("change", render);
+  cat.addEventListener("change", render);
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review — Auslan Tutor</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤟</text></svg>">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="hero" style="padding-bottom:0">
+    <h1>Review</h1>
+    <p>Spaced repetition: signs you find hard come back sooner, and signs you know drift further apart.</p>
+  </section>
+
+  <div class="toolbar">
+    <select id="mode" title="Direction">
+      <option value="see">👀 Sign → meaning</option>
+      <option value="do">✋ Meaning → sign it (with mirror)</option>
+      <option value="spell">🔤 Fingerspelling game</option>
+    </select>
+    <select id="deck" title="Deck">
+      <option value="vocab">Vocabulary</option>
+      <option value="fingerspelling">Fingerspelling letters</option>
+      <option value="">Everything</option>
+    </select>
+    <select id="lesson"><option value="">All lessons</option></select>
+    <span class="muted" id="counts"></span>
+  </div>
+
+  <div id="card"></div>
+  <p class="muted" id="keys" style="text-align:center;margin-top:16px">Keys: <kbd>Space</kbd> show answer · <kbd>1</kbd> again · <kbd>2</kbd> hard · <kbd>3</kbd> good · <kbd>M</kbd> mirror</p>
+</main>
+
+<script src="assets/app.js"></script>
+<script>
+(async () => {
+  const { h, loadLessons, loadSigns, progress, saveProgress, store, Mirror } = AuslanTutor;
+  const [lessons, signs] = await Promise.all([loadLessons(), loadSigns()]);
+  const modeSel = document.getElementById("mode"), deckSel = document.getElementById("deck"), lessonSel = document.getElementById("lesson");
+  lessons.forEach((l) => lessonSel.append(h("option", { value: l.id }, `${l.id}. ${l.title}`)));
+  modeSel.value = store.get("auslan.review.mode", "see");
+  deckSel.value = store.get("auslan.review.deck", "vocab");
+
+  // Leitner-style boxes → interval until next review.
+  const MIN = 60e3, DAY = 864e5;
+  const INTERVALS = [1 * MIN, 10 * MIN, 1 * DAY, 3 * DAY, 7 * DAY, 16 * DAY, 35 * DAY];
+
+  let current = null, revealed = false, practiceAnyway = false;
+
+  const deck = () => Object.keys(signs).filter((k) =>
+    (!deckSel.value || signs[k].category === deckSel.value) &&
+    (!lessonSel.value || signs[k].lessons.includes(+lessonSel.value)));
+
+  function pick() {
+    const now = Date.now();
+    const keys = deck();
+    const due = keys.filter((k) => progress.signs[k] && progress.signs[k].due <= now);
+    const fresh = keys.filter((k) => !progress.signs[k]);
+    document.getElementById("counts").textContent = `${due.length} due · ${fresh.length} new · ${keys.length} total`;
+    const pool = due.length ? due : fresh.length ? fresh : practiceAnyway ? keys : [];
+    const choices = pool.filter((k) => k !== current);
+    return (choices.length ? choices : pool)[Math.floor(Math.random() * (choices.length || pool.length))] || null;
+  }
+
+  function grade(g) {
+    if (!current || !revealed) return;
+    const p = progress.signs[current] || { box: 0 };
+    p.box = g === "again" ? 0 : g === "hard" ? Math.max(1, p.box) : Math.min(p.box + 1, INTERVALS.length - 1);
+    p.due = Date.now() + (g === "hard" ? INTERVALS[p.box] / 2 : INTERVALS[p.box]);
+    p.grade = g;
+    p.seen = Date.now();
+    progress.signs[current] = p;
+    saveProgress();
+    next();
+  }
+
+  function videoEl(s, autoplay) {
+    const v = h("video", { muted: true, loop: true, playsInline: true, autoplay, poster: s.poster, src: s.video });
+    return h("div", { class: "sign-video-wrap playing", onclick: () => (v.paused ? v.play() : v.pause()) }, v);
+  }
+
+  // Words for the fingerspelling game: everyday short words, Aussie places and names,
+  // plus the English for every single-word sign you've learned so far.
+  const SPELL_WORDS = [
+    "cat", "dog", "sun", "bus", "cup", "hat", "red", "bed", "map", "box", "fox", "zoo", "van", "jam", "key",
+    "egg", "owl", "yes", "tea", "pie", "kiwi", "emu", "roo", "surf", "beach", "mate", "pub", "car", "wet", "joy",
+    "milk", "cake", "fish", "frog", "rain", "wind", "home", "work", "book", "door", "park", "shop", "taxi", "quiz",
+    "perth", "hobart", "darwin", "sydney", "cairns", "uluru", "bondi",
+    "anna", "ben", "kate", "sam", "tom", "lucy", "jack", "mia", "zoe", "max", "roman",
+  ];
+  const spellWords = () => [...new Set([...SPELL_WORDS,
+    ...Object.values(signs).filter((s) => s.category === "vocab")
+      .flatMap((s) => s.english.split(/[,;]/)).map((w) => w.trim().toLowerCase())
+      .filter((w) => /^[a-z]{2,8}$/.test(w))])];
+
+  function next() {
+    const spell = modeSel.value === "spell";
+    deckSel.hidden = lessonSel.hidden = document.getElementById("counts").hidden = document.getElementById("keys").hidden = spell;
+    if (spell) {
+      current = null;
+      document.getElementById("card").replaceChildren(
+        h("fingerspell-drill", { words: spellWords().join(","), bank: "data/spelling-words.json", autofocus: true }),
+        h("p", { class: "muted", style: "text-align:center" }, "Tip: start at 0.75× and work up to 1.25×. Fluent signers spell fast!"));
+      return;
+    }
+    current = pick();
+    revealed = false;
+    const box = document.getElementById("card");
+    if (!current) {
+      const upcoming = deck().map((k) => progress.signs[k]?.due).filter(Boolean).sort((a, b) => a - b)[0];
+      const when = upcoming ? new Date(upcoming).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" }) : null;
+      box.replaceChildren(h("div", { class: "review-card" }, h("div", { class: "empty" },
+        h("p", { style: "font-size:2rem;margin:0" }, "🎉"),
+        h("p", {}, "All caught up on this deck.", when ? ` Next review due ${when}.` : ""),
+        h("button", { class: "btn", onclick: () => { practiceAnyway = true; next(); } }, "Practise anyway"))));
+      return;
+    }
+    const s = signs[current];
+    const mode = modeSel.value;
+    const answer = h("div", { class: "answer", hidden: true });
+    const grades = h("div", { class: "grades", hidden: true },
+      h("button", { class: "btn grade-again", onclick: () => grade("again") }, "Again"),
+      h("button", { class: "btn grade-hard", onclick: () => grade("hard") }, "Hard"),
+      h("button", { class: "btn grade-good", onclick: () => grade("good") }, "Good"));
+    const showBtn = h("button", { class: "btn primary", style: "margin:0 auto 18px;display:flex", onclick: reveal }, "Show answer");
+
+    let top;
+    if (mode === "see") {
+      top = [videoEl(s, true), h("div", { class: "prompt muted" }, "What does this sign mean?")];
+      answer.append(h("div", { class: "big", style: "font: 800 1.6rem var(--font-display)" }, s.label),
+        h("p", { class: "muted", style: "margin:.2em 0" }, s.english), h("p", { style: "margin:0" }, s.hint));
+    } else {
+      top = [h("div", { class: "prompt" },
+        h("div", { class: "muted" }, s.category === "fingerspelling" ? "Fingerspell the letter" : "Sign this:"),
+        h("div", { class: "big" }, s.category === "fingerspelling" ? s.label : s.english),
+        h("button", { class: "btn small", style: "margin-top:10px", onclick: () => Mirror.open() }, "🪞 Open mirror"))];
+      answer.append(videoEl(s, true), h("p", {}, h("b", {}, s.label), " — ", s.hint));
+    }
+    box.replaceChildren(h("div", { class: "review-card" }, ...top, showBtn, answer, grades));
+
+    function reveal() {
+      revealed = true;
+      showBtn.hidden = true;
+      answer.hidden = false;
+      grades.hidden = false;
+      if (mode === "do") Mirror.setReference({ label: s.label, video: s.video });
+    }
+    box.reveal = reveal;
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.target.closest?.("input, select, textarea") || e.metaKey || e.ctrlKey) return;
+    if (e.key === " " && !revealed) { e.preventDefault(); document.getElementById("card").reveal?.(); }
+    else if (e.key === "1") grade("again");
+    else if (e.key === "2") grade("hard");
+    else if (e.key === "3") grade("good");
+  });
+  for (const el of [modeSel, deckSel, lessonSel]) el.addEventListener("change", () => {
+    store.set("auslan.review.mode", modeSel.value);
+    store.set("auslan.review.deck", deckSel.value);
+    practiceAnyway = false;
+    next();
+  });
+  next();
+})();
+</script>
+</body>
+</html>

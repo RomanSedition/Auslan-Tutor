@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TITLE: "NNN · Lesson title — Auslan Tutor" -->
+  <title>000 · Lesson title — Auslan Tutor</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤟</text></svg>">
+  <link rel="stylesheet" href="../assets/app.css">
+</head>
+<!-- data-lesson = the lesson id in data/lessons.json (drives prev/next + "mark complete") -->
+<body data-lesson="0">
+<main class="wrap">
+
+  <!-- 1. HERO ------------------------------------------------------------ -->
+  <section class="lesson-hero">
+    <div class="eyebrow"><span class="tag accent">Lesson 0</span><span class="tag">Topic</span><span class="muted">~20 min</span></div>
+    <h1>Lesson title</h1>
+    <p class="lede">One or two sentences: what this lesson covers and why it matters.</p>
+    <div class="lesson-actions">
+      <button class="btn teal mirror-toggle" onclick="AuslanTutor.Mirror.toggle()">🪞 Open mirror</button>
+      <!-- "Mark complete" is appended here automatically -->
+    </div>
+  </section>
+
+  <!-- 2. GOALS ----------------------------------------------------------- -->
+  <h2>By the end you can…</h2>
+  <div class="panel">
+    <ul class="goals">
+      <li>Goal one</li>
+      <li>Goal two</li>
+    </ul>
+  </div>
+
+  <!-- 3. VOCABULARY ------------------------------------------------------
+       <auslan-sign sign="KEY"> pulls video/poster/label/english from data/signs.json.
+       Children become the tips panel. Use the dl for Hand / Where / Move / Face,
+       plus an optional <p class="hook"> memory hook.
+       Add `compact` for small grids (e.g. the alphabet).
+  ----------------------------------------------------------------------- -->
+  <h2>Vocabulary</h2>
+  <p class="muted">Click a video to play. Use 0.25×/0.5× to slow it down. 🪞 Practise puts the sign beside your mirror.</p>
+  <div class="sign-grid">
+    <auslan-sign sign="hello">
+      <dl>
+        <dt>Hand</dt><dd>…</dd>
+        <dt>Where</dt><dd>…</dd>
+        <dt>Move</dt><dd>…</dd>
+        <dt>Face</dt><dd>…</dd>
+      </dl>
+      <p class="hook">Memory hook.</p>
+    </auslan-sign>
+  </div>
+
+  <!-- 4. GRAMMAR / CULTURE NOTES ----------------------------------------- -->
+  <h2>How it works</h2>
+  <div class="note"><strong>Grammar note title</strong><p>…</p></div>
+  <div class="note culture"><strong>Deaf culture note title</strong><p>…</p></div>
+
+  <!-- 5. PHRASES ---------------------------------------------------------
+       <sign-phrase signs="key key fs:word" english="…" face="…">
+       Plays the clips in sequence. fs:word fingerspells "word".
+  ----------------------------------------------------------------------- -->
+  <h2>Put it together</h2>
+  <sign-phrase signs="hello how-are-you" english="Hi, how are you?" face="eyebrows up on HOW ARE YOU"></sign-phrase>
+
+  <!-- 6. PRACTICE DRILL (mirror) ----------------------------------------- -->
+  <h2>Mirror practice</h2>
+  <p>Press <kbd>M</kbd> for the mirror and <kbd>R</kbd> to record a take, then compare it side by side with the reference.</p>
+  <ol class="steps">
+    <li>Step one</li>
+  </ol>
+
+  <!-- 7. QUIZ -------------------------------------------------------------
+       <auslan-quiz sign="answer-key" options="key|key|key"> (answer is added and shuffled)
+  ----------------------------------------------------------------------- -->
+  <h2>Check yourself</h2>
+  <div class="quiz-grid">
+    <auslan-quiz sign="hello" options="thank-you|bye|name"></auslan-quiz>
+  </div>
+
+  <!-- 8. RECAP + NEXT ---------------------------------------------------- -->
+  <h2>Recap</h2>
+  <div class="panel">
+    <p>Summary…</p>
+    <p class="muted">Next up: … Ask Claude: <em>“next lesson”</em>.</p>
+  </div>
+
+  <nav class="lesson-nav"></nav>
+</main>
+<script src="../assets/app.js"></script>
+</body>
+</html>

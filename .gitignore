@@ -1,0 +1,4 @@
+.DS_Store
+# Signbank page cache and compiled helper binaries (rebuilt locally)
+tools/.cache/
+tools/.bin/
