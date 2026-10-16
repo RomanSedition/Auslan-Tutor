@@ -65,6 +65,12 @@ for key, s in signs.items():
             if not v.get(field):
                 err(f"signs.json '{key}': variant {i} missing {field}")
 
+sys.path.insert(0, str(ROOT / "tools"))
+import stamp  # noqa: E402
+
+for page in stamp.stamp(check=True):
+    err(f"{page}: stale assets/app.js or app.css ?v= stamp. Run python3 tools/stamp.py")
+
 if "--online" in sys.argv:
     records = [r for s in signs.values() for r in [s, *s.get("variants", [])]]
     urls = sorted({r[f] for r in records for f in ("video", "poster") if r.get(f)})
