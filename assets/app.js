@@ -30,6 +30,59 @@
   const progress = Object.assign({ lessons: {}, signs: {} }, store.get(PROGRESS_KEY, {}));
   const saveProgress = () => store.set(PROGRESS_KEY, progress);
 
+  /* ---------- the visitor's name (personalises fingerspelling examples) ---------- */
+  const NAME_KEY = "auslan.user.name";
+  const FALLBACK_NAME = "Alex";
+  const userName = () => store.get(NAME_KEY, "");
+  const nameLetters = () => (userName() || FALLBACK_NAME).toLowerCase().replace(/[^a-z]/g, "") || FALLBACK_NAME.toLowerCase();
+  const spelled = (word) => word.toUpperCase().split("").join("-");
+  // <span class="user-name"> → "Sam" · <span class="user-name" data-format="spelled"> → "S-A-M"
+  function applyUserName(root = document) {
+    const name = userName();
+    root.querySelectorAll(".user-name").forEach((el) => {
+      if (el.dataset.format === "spelled") el.textContent = spelled(nameLetters());
+      else el.textContent = name || "your name";
+    });
+  }
+  function setUserName(name) {
+    store.set(NAME_KEY, name.trim().slice(0, 30));
+    applyUserName();
+  }
+
+  /* ---------- progress file: save / load / merge ---------- */
+  const EXTRA_KEYS = [NAME_KEY, "auslan.spell.best", "auslan.spell.level", "auslan.spell.speed", "auslan.speed"];
+
+  function exportProgress() {
+    const data = { app: "auslan-tutor", version: 1, exported: new Date().toISOString(), progress, settings: {} };
+    for (const k of EXTRA_KEYS) data.settings[k] = store.get(k, null);
+    const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: "application/json" }));
+    h("a", { href: url, download: `auslan-progress-${new Date().toISOString().slice(0, 10)}.json` }).click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  // Merges a progress file into this browser. Nothing is lost: completed lessons are combined,
+  // and for each sign the most recently reviewed record wins.
+  async function importProgress(file) {
+    const data = JSON.parse(await file.text());
+    if (data.app !== "auslan-tutor" || !data.progress) throw new Error("That isn't an Auslan Tutor progress file.");
+    let lessons = 0, signs = 0;
+    for (const [id, when] of Object.entries(data.progress.lessons || {})) {
+      if (!progress.lessons[id]) { progress.lessons[id] = when; lessons++; }
+    }
+    for (const [key, rec] of Object.entries(data.progress.signs || {})) {
+      const mine = progress.signs[key];
+      if (!mine || (rec.seen || 0) > (mine.seen || 0)) { progress.signs[key] = rec; signs++; }
+    }
+    saveProgress();
+    const s = data.settings || {};
+    if (s[NAME_KEY] && !userName()) store.set(NAME_KEY, s[NAME_KEY]);
+    if ((s["auslan.spell.best"] || 0) > store.get("auslan.spell.best", 0)) store.set("auslan.spell.best", s["auslan.spell.best"]);
+    for (const k of ["auslan.spell.level", "auslan.spell.speed", "auslan.speed"]) if (s[k] != null) store.set(k, s[k]);
+    return { lessons, signs };
+  }
+
+  const isAuthor = ["localhost", "127.0.0.1", "::1"].includes(location.hostname);
+
   /* ---------- data ---------- */
   let signsPromise, lessonsPromise;
   const loadJSON = (path) =>
@@ -472,8 +525,9 @@
   }
 
   /* =====================================================================
-   * <sign-phrase signs="my name fs:roman" english="My name is Roman." face="…">MY NAME R-O-M-A-N</sign-phrase>
-   * "fs:word" fingerspells a word using the letter clips.
+   * <sign-phrase signs="my name fs:@name" english="My name is {name}." face="…"></sign-phrase>
+   * "fs:word" fingerspells a word using the letter clips. "fs:@name" spells the visitor's name,
+   * and {name} in english/face is replaced with it.
    * ===================================================================== */
   class SignPhrase extends HTMLElement {
     async connectedCallback() {
@@ -484,7 +538,7 @@
       const clips = []; // { url, token index }
       const labels = tokens.map((t, ti) => {
         if (t.startsWith("fs:")) {
-          const word = t.slice(3).toLowerCase();
+          const word = t === "fs:@name" ? nameLetters() : t.slice(3).toLowerCase();
           [...word].forEach((c) => all[`letter-${c}`] && clips.push({ url: all[`letter-${c}`].video, ti }));
           return word.toUpperCase().split("").join("-");
         }
@@ -507,8 +561,9 @@
         cancel = playSequence(stage, clips.map((c) => c.url), +rate.value, highlight);
       });
 
-      const english = this.getAttribute("english");
-      const face = this.getAttribute("face");
+      const displayName = userName() || FALLBACK_NAME;
+      const english = this.getAttribute("english")?.replaceAll("{name}", displayName);
+      const face = this.getAttribute("face")?.replaceAll("{name}", displayName);
       this.replaceChildren(h("div", { class: "phrase" },
         glossEl,
         english ? h("div", { class: "english" }, english) : null,
@@ -746,6 +801,22 @@
         mirrorBtn)));
   }
 
+  function renderFooter() {
+    if (document.body.hasAttribute("data-no-header")) return;
+    document.body.append(h("footer", { class: "site-footer" }, h("div", { class: "wrap" },
+      h("p", {},
+        "Sign videos and dictionary entries from ",
+        h("a", { href: "https://auslan.org.au", target: "_blank", rel: "noopener" }, "Auslan Signbank"),
+        ", licensed ",
+        h("a", { href: "https://creativecommons.org/licenses/by-nc-nd/4.0/", target: "_blank", rel: "noopener" }, "CC BY-NC-ND 4.0"),
+        ". Each sign links to its Signbank entry. Auslan Tutor is a free, non-commercial learning aid and isn't affiliated with Auslan Signbank."),
+      h("p", {},
+        "This site supplements, and doesn't replace, learning from Deaf people. Look for classes taught by Deaf teachers and get involved in your local Deaf community."),
+      h("p", { class: "muted" },
+        "Your progress and camera stay in this browser. Nothing is uploaded. ",
+        h("a", { href: ROOT + "index.html#progress" }, "Save or load your progress"), "."))));
+  }
+
   async function enhanceLesson() {
     const id = Number(document.body.dataset.lesson);
     if (!id) return;
@@ -792,9 +863,16 @@
   customElements.define("fingerspell-drill", FingerspellDrill);
   customElements.define("sign-phrase", SignPhrase);
 
-  window.AuslanTutor = { ROOT, h, store, shuffle, loadSigns, loadLessons, progress, saveProgress, Mirror };
+  window.AuslanTutor = {
+    ROOT, h, store, shuffle, loadSigns, loadLessons, progress, saveProgress, Mirror,
+    userName, setUserName, applyUserName, exportProgress, importProgress, isAuthor,
+  };
 
   renderHeader();
+  renderFooter();
+  applyUserName();
+  // Things only the site's author needs (e.g. "ask Claude for a lesson") show only on localhost.
+  if (isAuthor) document.querySelectorAll(".author-only").forEach((el) => (el.hidden = false));
   enhanceLesson();
   if (store.get("auslan.mirror.open", false)) Mirror.open();
 })();

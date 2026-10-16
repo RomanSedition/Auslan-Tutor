@@ -1,7 +1,17 @@
 # Auslan Tutor
 
-A local, static lesson wiki for learning Auslan. Roman asks for lessons; Claude writes them
+A static lesson wiki for learning Auslan. Roman asks for lessons; Claude writes them
 as HTML pages that embed Auslan Signbank videos. No build step and no dependencies.
+
+**The site is public** (GitHub Pages: https://romansedition.github.io/Auslan-Tutor/), and other people use it.
+Each visitor's progress and name live in their own browser's localStorage.
+- Never put Roman's (or anyone's) personal details in pages. For the learner's name use
+  `<span class="user-name"></span>` (or `data-format="spelled"` for R-O-M-A-N style), and use `fs:@name`
+  and `{name}` in `<sign-phrase>`.
+- Anything that only makes sense for Roman (like the "ask Claude for a lesson" box) gets `class="author-only" hidden`.
+  These elements are shown only on localhost.
+- Once a lesson passes `tools/check.py`, commit and push to `main` so it goes live (Pages redeploys in about a minute).
+  If `git push` has no credentials, use `git -c credential.helper='!gh auth git-credential' push`.
 
 Run it: `./serve.sh` → http://localhost:8000. It has to be localhost, not file://, because the camera
 and `fetch()` need it.
@@ -26,9 +36,9 @@ and `fetch()` need it.
 2. **Look up every sign.** `python3 tools/signbank.py <word>` lists every numbered entry with
    definitions, keywords and region. `--search` lists related keywords.
    Choose the entry whose definition matches the meaning you're teaching. Prefer `AustraliaWide`.
-   **Roman lives in WA, so use the Southern dialect.** When only regional variants exist, teach the
-   `SouthernDialect` entry as the main card. The Northern one may go in a small "you may also see" aside
-   (separate keys, e.g. `good-morning-s` and `-n`). Keys are case-sensitive on Signbank (`J`, `Japan`); the tool tries other casings.
+   When only regional variants exist, include both (separate keys, e.g. `good-morning-s` and `-n`).
+   Label them with their states, Southern (VIC, SA, WA, TAS) and Northern (NSW, QLD), and put Southern first,
+   since Roman is in a Southern state. Don't write "you're in WA" on pages. Keys are case-sensitive on Signbank (`J`, `Japan`); the tool tries other casings.
    **Never guess or construct video URLs.** Use only what the tool returns.
 3. **Look at the signs before describing them.** Compile once:
    `swiftc -O tools/framesheet.swift -o tools/.bin/framesheet`, then
@@ -42,7 +52,8 @@ and `fetch()` need it.
    Use `<sign-phrase>` glosses in Auslan word order, with a `face` hint. Put Deaf-culture notes in `.note.culture`.
 6. **Register it.** Append to `data/lessons.json` and tick it off in `curriculum.md`.
 7. **Verify.** Run `python3 tools/check.py --online`; it must print OK.
-8. **Tell Roman** the lesson title, the URL (http://localhost:8000/lessons/NNN-slug.html) and a one-line summary.
+8. **Publish.** Commit and push. Then tell Roman the lesson title, the live URL
+   (https://romansedition.github.io/Auslan-Tutor/lessons/NNN-slug.html) and a one-line summary.
 
 ## Teaching conventions
 - Glosses go in CAPITALS with hyphens for multi-word signs (THANK-YOU). Fingerspelling is written R-O-M-A-N.

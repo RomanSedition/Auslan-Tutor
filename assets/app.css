@@ -346,6 +346,19 @@ auslan-sign[compact] .sign-tips { padding: 8px 10px 10px; font-size: .82rem; }
 .grade-good { border-color: var(--good) !important; color: var(--good); }
 .empty { text-align: center; color: var(--muted); padding: 40px 20px; }
 
+/* ---------- Footer / progress panel ---------- */
+main.wrap:has(+ .site-footer) { padding-bottom: 40px; }
+.site-footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 24px 0 110px; font-size: .85rem; color: var(--muted); }
+.site-footer p { max-width: 52em; margin: 0 0 8px; }
+.site-footer a { color: var(--muted); }
+.name-form { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 12px; }
+.name-form input {
+  font: 600 1rem var(--font); padding: 9px 12px; border-radius: 10px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text); min-width: 0; flex: 0 1 220px;
+}
+.progress-panel { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.progress-panel .msg { flex-basis: 100%; min-height: 1.4em; font-size: .9rem; }
+
 @media (max-width: 640px) {
   .site-nav a { padding: 6px 8px; }
   .brand-text, .hide-narrow { display: none; }

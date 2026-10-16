@@ -10,8 +10,13 @@
 <body>
 <main class="wrap">
   <section class="hero">
-    <h1>G'day, Roman 🤟</h1>
-    <p>Your Auslan lessons, all in one place. The sign videos come straight from <a href="https://auslan.org.au" target="_blank" rel="noopener">Auslan Signbank</a>, and the mirror (<kbd>M</kbd>) lets you check your own signing as you go.</p>
+    <h1 id="greeting">G'day 🤟</h1>
+    <p>Free beginner Auslan lessons. The sign videos come straight from <a href="https://auslan.org.au" target="_blank" rel="noopener">Auslan Signbank</a>, and the camera mirror (<kbd>M</kbd>) lets you check your own signing as you go. Your progress is saved in this browser.</p>
+    <form class="name-form" id="name-form">
+      <label for="name-input" class="muted" id="name-label">What's your name? It's used for your fingerspelling practice and stays in this browser.</label>
+      <input id="name-input" autocomplete="given-name" maxlength="30" placeholder="First name">
+      <button class="btn primary" type="submit">Save</button>
+    </form>
   </section>
 
   <div class="stats" id="stats"></div>
@@ -19,8 +24,19 @@
   <h2>Lessons</h2>
   <ul class="lesson-list" id="lessons"><li class="muted">Loading…</li></ul>
 
-  <div class="ask-box">
-    <h3 style="margin-top:0">Want another lesson?</h3>
+  <h2 id="progress">Your progress</h2>
+  <div class="panel">
+    <p style="margin-top:0">Progress lives in this browser only. To back it up or move it to another device (or another browser), save a progress file and load it on the other device. Loading <em>merges</em>: nothing already here is lost.</p>
+    <div class="progress-panel">
+      <button class="btn" id="export">⬇ Save progress file</button>
+      <label class="btn" for="import-file">⬆ Load progress file</label>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+      <div class="msg muted" id="progress-msg"></div>
+    </div>
+  </div>
+
+  <div class="ask-box author-only" hidden>
+    <h3 style="margin-top:0">Want another lesson? <span class="tag">only visible on localhost</span></h3>
     <p>Ask Claude in this project, for example:</p>
     <ul>
       <li><code>next lesson</code>: continues the curriculum</li>
@@ -34,6 +50,45 @@
 
 <script src="assets/app.js"></script>
 <script>
+// Name: greeting + form
+(() => {
+  const { userName, setUserName } = AuslanTutor;
+  const form = document.getElementById("name-form"), input = document.getElementById("name-input");
+  const greeting = document.getElementById("greeting"), label = document.getElementById("name-label");
+  const render = () => {
+    const name = userName();
+    greeting.textContent = name ? `G'day, ${name} 🤟` : "G'day 🤟";
+    input.value = name;
+    label.textContent = name
+      ? "Change your name (used in fingerspelling practice):"
+      : "What's your name? It's used for your fingerspelling practice and stays in this browser.";
+  };
+  form.addEventListener("submit", (e) => { e.preventDefault(); setUserName(input.value); render(); });
+  render();
+})();
+
+// Progress file
+(() => {
+  const { exportProgress, importProgress } = AuslanTutor;
+  const msg = document.getElementById("progress-msg");
+  document.getElementById("export").addEventListener("click", () => {
+    exportProgress();
+    msg.textContent = "Saved. Keep the file somewhere you can reach from your other devices, like iCloud Drive.";
+  });
+  document.getElementById("import-file").addEventListener("change", async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      const r = await importProgress(file);
+      msg.textContent = `Loaded: ${r.lessons} lesson(s) and ${r.signs} sign record(s) updated. Reloading…`;
+      setTimeout(() => location.reload(), 1200);
+    } catch (err) {
+      msg.textContent = `Couldn't load that file: ${err.message}`;
+    }
+    e.target.value = "";
+  });
+})();
+
 (async () => {
   const { h, loadLessons, loadSigns, progress, ROOT } = AuslanTutor;
   const [lessons, signs] = await Promise.all([loadLessons(), loadSigns()]);
@@ -61,7 +116,7 @@
       h("b", {}, due.length || "—"), h("span", {}, due.length ? "reviews due now →" : "no reviews due")));
 })().catch((e) => {
   document.getElementById("lessons").replaceChildren(AuslanTutor.h("li", { class: "muted" },
-    "Couldn't load data/lessons.json. Open this site through ./serve.sh (http://localhost:8000), not by double-clicking the file."));
+    "Couldn't load the lesson list. If you're running it yourself, use ./serve.sh (http://localhost:8000) rather than opening the file directly."));
   console.error(e);
 });
 </script>

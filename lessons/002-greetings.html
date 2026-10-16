@@ -23,7 +23,7 @@
   <div class="panel">
     <ul class="goals">
       <li>Greet someone and ask “How are you?”, and answer it</li>
-      <li>Say “My name is Roman” and ask “What's your name?”</li>
+      <li>Say “My name is <span class="user-name"></span>” and ask “What's your name?”</li>
       <li>Say “Nice to meet you”, “Thank you” and “See you later”</li>
       <li>Tell someone “I'm hearing, I'm learning Auslan”</li>
       <li>Use raised and lowered eyebrows to mark the two kinds of question</li>
@@ -74,15 +74,15 @@
   </div>
 
   <h3>Good morning: a regional pair</h3>
-  <p>Auslan has two main dialects: <b>Northern</b> (roughly NSW and Queensland) and <b>Southern</b> (roughly Victoria, SA, WA and Tasmania). Most signs are the same, but some differ. You're in WA, so <b>learn the Southern one</b>. The Northern version is here so you'll recognise it when you see it. Both build on the thumbs-up GOOD hand at the chest, so compare them at 0.25×.</p>
+  <p>Auslan has two main dialects: <b>Northern</b> (roughly NSW and Queensland) and <b>Southern</b> (roughly Victoria, SA, WA and Tasmania). Most signs are the same, but some differ. Learn the version used where you live, and get to know the other one by sight. Both build on the thumbs-up GOOD hand at the chest, so compare them at 0.25×.</p>
   <div class="sign-grid">
-    <auslan-sign sign="good-morning-s" english="good morning · Southern (yours, WA)">
+    <auslan-sign sign="good-morning-s" english="good morning · Southern (VIC, SA, WA, TAS)">
       <dl>
         <dt>Hand</dt><dd>Thumbs up</dd>
         <dt>Move</dt><dd>Held against the upper chest, then moves forward</dd>
       </dl>
     </auslan-sign>
-    <auslan-sign sign="good-morning-n" english="good morning · Northern (recognise only)">
+    <auslan-sign sign="good-morning-n" english="good morning · Northern (NSW, QLD)">
       <dl>
         <dt>Hand</dt><dd>Thumbs up</dd>
         <dt>Move</dt><dd>Brought in to the upper chest</dd>
@@ -211,7 +211,7 @@
   <p>Press <b>▶ Watch</b> to see each phrase played as a sequence of the dictionary videos. Real signers blend signs together much more smoothly than this, but it shows you the order.</p>
   <sign-phrase signs="hello how-are-you" english="Hi! How are you?" face="eyebrows UP on HOW ARE YOU"></sign-phrase>
   <sign-phrase signs="how-are-you thank-you you" english="Good, thanks. You?" face="nod on GOOD · eyebrows UP on YOU"></sign-phrase>
-  <sign-phrase signs="my name fs:roman" english="My name is Roman." face="neutral, mouth “Roman” as you spell"></sign-phrase>
+  <sign-phrase signs="my name fs:@name" english="My name is {name}." face="neutral, mouth “{name}” as you spell"></sign-phrase>
   <sign-phrase signs="your name what" english="What's your name?" face="eyebrows DOWN through the whole question"></sign-phrase>
   <sign-phrase signs="nice meet you" english="Nice to meet you." face="smile"></sign-phrase>
   <sign-phrase signs="me hearing me learn auslan" english="I'm hearing. I'm learning Auslan." face="neutral; a nod helps"></sign-phrase>
@@ -223,7 +223,7 @@
   <ol class="steps">
     <li><b>Face warm-up.</b> In the mirror, raise your eyebrows (yes/no question), then lower them (wh- question). Five each, and make them big. It'll feel exaggerated, but it isn't.</li>
     <li><b>GOOD vs HOW ARE YOU?</b> Sign GOOD with a nod. Then the same hand with eyebrows up. Record both and check that they look like a statement and a question.</li>
-    <li><b>Introduce yourself.</b> HELLO → MY NAME R-O-M-A-N → ME HEARING → ME LEARN AUSLAN. Record it as one take (8 s) and compare against the phrase videos.</li>
+    <li><b>Introduce yourself.</b> HELLO → MY NAME <span class="user-name" data-format="spelled"></span> → ME HEARING → ME LEARN AUSLAN. Record it as one take (8 s) and compare against the phrase videos.</li>
     <li><b>Ask questions back.</b> YOUR NAME WHAT? (eyebrows down) · YOU DEAF? (eyebrows up). Watch the eyebrows on playback.</li>
     <li><b>Close the conversation.</b> NICE MEET YOU → THANK-YOU → SEE-YOU-AGAIN → BYE.</li>
   </ol>
@@ -233,7 +233,7 @@
     <p><b>A:</b> HELLO! HOW-ARE-YOU? &nbsp;<span class="muted">(eyebrows up)</span><br>
        <b>B:</b> GOOD, THANK-YOU. YOU? &nbsp;<span class="muted">(nod, then eyebrows up)</span><br>
        <b>A:</b> GOOD. YOUR NAME WHAT? &nbsp;<span class="muted">(eyebrows down)</span><br>
-       <b>B:</b> MY NAME R-O-M-A-N. YOUR NAME WHAT?<br>
+       <b>B:</b> MY NAME <span class="user-name" data-format="spelled"></span>. YOUR NAME WHAT?<br>
        <b>A:</b> (fingerspells a name)<br>
        <b>B:</b> NICE MEET YOU. ME HEARING. ME LEARN AUSLAN.<br>
        <b>A:</b> GOOD! &nbsp;<span class="muted">(big nod)</span><br>
