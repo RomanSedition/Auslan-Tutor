@@ -6,6 +6,24 @@
   <title>Review — Auslan Tutor</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤟</text></svg>">
   <link rel="stylesheet" href="assets/app.css?v=76e9c4d1e4">
+  <style>
+  /* 🧩 Match pairs: a 2×2 board of small looping videos, then the shuffled labels. */
+  .match-videos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 10px 0; }
+  .match-videos .sign-video-wrap { border-radius: 10px; overflow: hidden; outline: 3px solid transparent; outline-offset: -3px; }
+  .match-videos .sign-video-wrap.sel { outline-color: var(--accent); }
+  .match-videos .sign-video-wrap.right { outline-color: var(--good); cursor: default; }
+  .match-videos .sign-video-wrap.wrong { animation: match-wrong .6s; }
+  .match-videos .match-tag {
+    position: absolute; left: 6px; bottom: 6px; padding: 2px 8px; border-radius: 8px;
+    background: var(--good); color: #fff; font: 700 .8rem var(--font);
+  }
+  .quiz-options button.sel { border-color: var(--accent); background: var(--accent-soft); }
+  .quiz-options button:disabled { cursor: default; text-decoration: none; }
+  .quiz-options button.wrong-flash { animation: match-wrong .6s; }
+  @keyframes match-wrong {
+    0%, 60% { outline-color: var(--bad); border-color: var(--bad); background: color-mix(in srgb, var(--bad) 14%, var(--surface)); }
+  }
+  </style>
 </head>
 <body>
 <main class="wrap">
@@ -19,6 +37,7 @@
       <option value="see">👀 Sign → meaning</option>
       <option value="do">✋ Meaning → sign it (with mirror)</option>
       <option value="quiz">🎯 Multiple choice (completed lessons)</option>
+      <option value="match">🧩 Match pairs</option>
       <option value="spell">🔤 Fingerspelling game</option>
     </select>
     <select id="deck" title="Deck">
@@ -119,8 +138,11 @@
     }
     document.getElementById("keys").innerHTML = modeSel.value === "quiz"
       ? "Keys: <kbd>1</kbd>–<kbd>4</kbd> answer · <kbd>R</kbd> replay · <kbd>S</kbd> slow · <kbd>Enter</kbd> next"
+      : modeSel.value === "match"
+      ? "Tap a video, then the label that matches it · <kbd>Enter</kbd> next round"
       : "Keys: <kbd>Space</kbd> show answer · <kbd>1</kbd> again · <kbd>2</kbd> hard · <kbd>3</kbd> good · <kbd>M</kbd> mirror";
     if (modeSel.value === "quiz") return nextQuiz();
+    if (modeSel.value === "match") return nextMatch();
     current = pick();
     revealed = false;
     const box = document.getElementById("card");
@@ -204,24 +226,30 @@
     return AuslanTutor.shuffle(cands).slice(0, 3);
   }
 
+  // Shown by the game modes when the selection can't make a question.
+  function gameEmpty(box, pool) {
+    if (lessonSel.value === "done" && !completedIds().length) {
+      box.replaceChildren(h("div", { class: "review-card" }, h("div", { class: "empty" },
+        h("p", { style: "font-size:2rem;margin:0" }, "📚"),
+        h("p", {}, "No lessons marked complete yet. Press “Mark lesson complete” at the top of a lesson when you've finished it, and its signs will show up here."),
+        h("button", { class: "btn", onclick: () => { lessonSel.value = ""; lessonSel.dispatchEvent(new Event("change")); } }, "Use all lessons for now"))));
+      return true;
+    }
+    if (pool.length < 2) {
+      box.replaceChildren(h("div", { class: "review-card" }, h("div", { class: "empty" },
+        h("p", {}, "Not enough signs in this selection. Try “Everything” or another lesson."))));
+      return true;
+    }
+    return false;
+  }
+
   function nextQuiz() {
     current = null;
     const box = document.getElementById("card");
     const pool = deck();
     const counts = document.getElementById("counts");
     counts.textContent = `${pool.length} signs in play`;
-    if (lessonSel.value === "done" && !completedIds().length) {
-      box.replaceChildren(h("div", { class: "review-card" }, h("div", { class: "empty" },
-        h("p", { style: "font-size:2rem;margin:0" }, "📚"),
-        h("p", {}, "No lessons marked complete yet. Press “Mark lesson complete” at the top of a lesson when you've finished it, and its signs will show up here."),
-        h("button", { class: "btn", onclick: () => { lessonSel.value = ""; lessonSel.dispatchEvent(new Event("change")); } }, "Use all lessons for now"))));
-      return;
-    }
-    if (pool.length < 2) {
-      box.replaceChildren(h("div", { class: "review-card" }, h("div", { class: "empty" },
-        h("p", {}, "Not enough signs in this selection. Try “Everything” or another lesson."))));
-      return;
-    }
+    if (gameEmpty(box, pool)) return;
 
     const key = pickQuiz(pool);
     recent.push(key); if (recent.length > Math.min(8, pool.length - 1)) recent.shift();
@@ -278,6 +306,109 @@
       wrap, h("div", { class: "quiz-options" }, buttons), feedback, nextBtn, scoreEl));
   }
 
+
+  /* ---------- 🧩 Match pairs ---------- */
+  const MATCH_PAIRS = 4;
+  let match = null; // { done(), next() }
+
+  // Up to 4 signs where no two share a label or any video (GREY and Southern PURPLE do).
+  function pickBoard(pool) {
+    const board = [];
+    const clash = (k) => board.some((b) => k === b || signs[k].label === signs[b].label ||
+      [...videosOf(k)].some((v) => videosOf(b).has(v)));
+    const fill = (src) => {
+      while (board.length < MATCH_PAIRS) {
+        const cands = src.filter((k) => !clash(k));
+        if (!cands.length) break;
+        const k = pickQuiz(cands);
+        board.push(k);
+        recent.push(k); if (recent.length > 8) recent.shift();
+      }
+    };
+    fill(pool);
+    // A small lesson can't fill the board alone: top up from the same deck in every lesson.
+    if (board.length < MATCH_PAIRS) fill(Object.keys(signs).filter((k) => !deckSel.value || signs[k].category === deckSel.value));
+    return board;
+  }
+
+  function nextMatch() {
+    current = null;
+    const box = document.getElementById("card");
+    const pool = deck();
+    document.getElementById("counts").textContent = `${pool.length} signs in play`;
+    if (gameEmpty(box, pool)) return;
+
+    const board = AuslanTutor.shuffle(pickBoard(pool));
+    if (board.length < 2) return gameEmpty(box, []);
+    const labels = AuslanTutor.shuffle(board);
+    const missed = new Set(); // signs whose video was paired wrongly this round
+    const matched = new Set();
+    let selVideo = null, selLabel = null, started = performance.now();
+    let best = store.get("auslan.match.best", 0);
+
+    const flash = (el, cls) => { el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); };
+    const status = h("div", { class: "quiz-feedback", style: "text-align:center;min-height:3.2em;padding:0 14px" },
+      h("span", { class: "muted" }, best ? `Best time: ${(best / 1000).toFixed(1)}s` : "Match each sign to its meaning."));
+    const nextBtn = h("button", { class: "btn primary", hidden: true, style: "margin:0 auto 18px;display:flex", onclick: () => nextMatch() }, "Next round ", h("kbd", {}, "↵"));
+
+    const tiles = board.map((k) => {
+      const v = h("video", { muted: true, loop: true, playsInline: true, autoplay: true, preload: "auto", poster: signs[k].poster || null, src: signs[k].video });
+      return h("div", { class: "sign-video-wrap playing", role: "button", tabindex: 0, "aria-label": "Sign video", onclick: () => pickVideo(k),
+        onkeydown: (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); e.stopPropagation(); pickVideo(k); } } }, v);
+    });
+    const buttons = labels.map((k) => h("button", { onclick: () => pickLabel(k) }, signs[k].label));
+    const tileOf = (k) => tiles[board.indexOf(k)], buttonOf = (k) => buttons[labels.indexOf(k)];
+
+    function pickVideo(k) {
+      if (matched.has(k)) return;
+      if (selVideo) tileOf(selVideo).classList.remove("sel");
+      selVideo = selVideo === k ? null : k;
+      if (selVideo) tileOf(k).classList.add("sel");
+      tryPair();
+    }
+    function pickLabel(k) {
+      if (matched.has(k)) return;
+      if (selLabel) buttonOf(selLabel).classList.remove("sel");
+      selLabel = selLabel === k ? null : k;
+      if (selLabel) buttonOf(k).classList.add("sel");
+      tryPair();
+    }
+    function tryPair() {
+      if (!selVideo || !selLabel) return;
+      const v = selVideo, l = selLabel, tile = tileOf(v), btn = buttonOf(l);
+      selVideo = selLabel = null;
+      tile.classList.remove("sel"); btn.classList.remove("sel");
+      if (v === l) {
+        matched.add(v);
+        tile.classList.add("right"); btn.classList.add("right"); btn.disabled = true;
+        tile.append(h("span", { class: "match-tag" }, signs[v].label));
+        if (!missed.has(v)) record(v, "good");
+        status.replaceChildren(h("b", {}, `✓ ${signs[v].label}`), ` — ${signs[v].english}`);
+        if (matched.size === board.length) finish();
+      } else {
+        flash(tile, "wrong"); flash(btn, "wrong-flash");
+        if (!missed.has(v)) { missed.add(v); record(v, "again"); }
+        status.textContent = `Not ${signs[l].label}. Watch that one again.`;
+      }
+    }
+    function finish() {
+      const ms = performance.now() - started;
+      const full = board.length === MATCH_PAIRS; // only full boards count towards the best time
+      const isBest = full && (!best || ms < best);
+      if (isBest) { best = ms; store.set("auslan.match.best", Math.round(ms)); }
+      status.replaceChildren(h("b", {}, `🧩 All matched in ${(ms / 1000).toFixed(1)}s`),
+        missed.size ? ` with ${missed.size} mistake${missed.size > 1 ? "s" : ""}` : " — no mistakes!", h("br"),
+        h("span", { class: "muted" }, isBest ? "🏆 New best time!" : best ? `Best time: ${(best / 1000).toFixed(1)}s` : ""));
+      nextBtn.hidden = false;
+      nextBtn.focus({ preventScroll: true });
+    }
+
+    match = { done: () => matched.size === board.length, next: () => nextMatch() };
+    box.replaceChildren(h("div", { class: "review-card" },
+      h("div", { class: "q", style: "padding:10px 14px 0;font-weight:600;color:var(--muted)" }, "Tap a video, then its meaning."),
+      h("div", { class: "match-videos" }, tiles), h("div", { class: "quiz-options" }, buttons), status, nextBtn));
+  }
+
   document.addEventListener("keydown", (e) => {
     if (e.target.closest?.("input, select, textarea") || e.metaKey || e.ctrlKey) return;
     if (modeSel.value === "quiz") {
@@ -287,6 +418,10 @@
       else if (e.key === "Enter" || e.key === " ") { e.preventDefault(); quiz.next(); }
       else if (e.key === "r" || e.key === "R") quiz.replay();
       else if (e.key === "s" || e.key === "S") quiz.toggleSlow();
+      return;
+    }
+    if (modeSel.value === "match") {
+      if (e.key === "Enter" && match?.done()) { e.preventDefault(); match.next(); }
       return;
     }
     if (modeSel.value === "spell") return;
