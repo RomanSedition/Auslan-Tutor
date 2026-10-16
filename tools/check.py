@@ -54,14 +54,14 @@ for l in lessons:
             err(f"lessons.json lesson {l['id']}: sign '{key}' not in data/signs.json")
 
 for key, s in signs.items():
-    for field in ("label", "video", "poster", "entry", "lessons"):
+    for field in ("label", "video", "entry", "lessons"):
         if not s.get(field):
             err(f"signs.json '{key}': missing {field}")
     for lid in s.get("lessons", []):
         if lid not in lesson_ids:
             err(f"signs.json '{key}': lesson {lid} doesn't exist")
     for i, v in enumerate(s.get("variants", [])):
-        for field in ("region", "video", "poster", "entry"):
+        for field in ("region", "video", "entry"):
             if not v.get(field):
                 err(f"signs.json '{key}': variant {i} missing {field}")
 

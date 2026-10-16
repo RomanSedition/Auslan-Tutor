@@ -60,5 +60,213 @@
       "you",
       "your"
     ]
+  },
+  {
+    "id": 3,
+    "slug": "003-numbers",
+    "title": "Numbers 0–19",
+    "date": "2026-10-17",
+    "summary": "Count from 0 to 19, the thumb trick for 6–9, ages and phone numbers.",
+    "signs": [
+      "zero",
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten",
+      "eleven",
+      "twelve",
+      "thirteen",
+      "fourteen",
+      "fifteen",
+      "sixteen",
+      "seventeen",
+      "eighteen",
+      "nineteen",
+      "age",
+      "number",
+      "phone"
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "004-questions",
+    "title": "Questions & facial expression",
+    "date": "2026-10-17",
+    "summary": "WHO, WHERE, WHEN, WHY, HOW, WHICH, HOW-MANY, YES and NO, plus the two question faces.",
+    "signs": [
+      "who",
+      "where",
+      "when",
+      "why",
+      "how",
+      "which",
+      "how-many",
+      "yes",
+      "no",
+      "question"
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "005-communication-strategies",
+    "title": "Communication strategies",
+    "date": "2026-10-17",
+    "summary": "AGAIN, SLOW, UNDERSTAND, SORRY, PLEASE, WAIT, FINGERSPELL: how to keep a conversation going when you're lost.",
+    "signs": [
+      "again",
+      "slow",
+      "fingerspell",
+      "sign",
+      "understand",
+      "sorry",
+      "please",
+      "excuse-me",
+      "wait",
+      "know",
+      "dont-know"
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "006-review-meeting-someone",
+    "title": "★ Review: meeting someone new",
+    "date": "2026-10-17",
+    "summary": "Put Unit 1 together: a full first-meeting conversation, plus FRIEND, FROM, SAME, ALSO and MAYBE.",
+    "signs": [
+      "friend",
+      "from",
+      "same",
+      "also",
+      "maybe"
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "007-family",
+    "title": "Family",
+    "date": "2026-10-17",
+    "summary": "MOTHER, FATHER, SISTER, BROTHER, HUSBAND/WIFE, CHILD, GRANDPARENTS, and HAVE.",
+    "signs": [
+      "family",
+      "mother",
+      "father",
+      "parents",
+      "sister",
+      "brother",
+      "spouse",
+      "child",
+      "son",
+      "daughter",
+      "baby",
+      "grandmother",
+      "grandfather",
+      "have"
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "008-feelings",
+    "title": "Feelings & emotions",
+    "date": "2026-10-17",
+    "summary": "HAPPY, SAD, TIRED, ANGRY, EXCITED, WORRIED, SICK, BORED, SCARED, LOVE, plus VERY and how the face shows intensity.",
+    "signs": [
+      "happy",
+      "sad",
+      "tired",
+      "sick",
+      "bored",
+      "okay",
+      "angry",
+      "excited",
+      "worried",
+      "scared",
+      "love",
+      "feel",
+      "very"
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "009-describing-people-colours",
+    "title": "Describing people & colours",
+    "date": "2026-10-17",
+    "summary": "TALL, SHORT, HAIR, GLASSES, BEARD, OLD, YOUNG and 12 colours, with lots of regional versions.",
+    "signs": [
+      "tall",
+      "short",
+      "old",
+      "young",
+      "hair",
+      "glasses",
+      "beard",
+      "colour",
+      "red",
+      "blue",
+      "green",
+      "yellow",
+      "black",
+      "white",
+      "brown",
+      "purple",
+      "pink",
+      "grey",
+      "orange"
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "010-money-birthdays",
+    "title": "Big numbers, money & birthdays",
+    "date": "2026-10-17",
+    "summary": "HUNDRED, THOUSAND, DOLLAR, MONEY, HOW-MUCH, BUY, YEAR and BIRTHDAY (five regional versions!).",
+    "signs": [
+      "hundred",
+      "thousand",
+      "money",
+      "dollar",
+      "how-much",
+      "buy",
+      "year",
+      "birthday"
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "011-pronouns-space",
+    "title": "Pronouns & signing space",
+    "date": "2026-10-17",
+    "summary": "HE/SHE, WE, THEY, OUR, THEIR, BOTH, ALL, EVERYONE, and using the space around you to keep track of people.",
+    "signs": [
+      "he-she",
+      "we",
+      "they",
+      "our",
+      "their",
+      "both",
+      "all",
+      "everyone"
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "012-review-family-friends",
+    "title": "★ Review: my family & friends",
+    "date": "2026-10-17",
+    "summary": "Put Unit 2 together: introduce your family using signing space, plus LIVE, MARRIED, AUNT, UNCLE, COUSIN, DOG and CAT.",
+    "signs": [
+      "live",
+      "married",
+      "aunt",
+      "uncle",
+      "cousin",
+      "dog",
+      "cat"
+    ]
   }
 ]
