@@ -57,32 +57,32 @@ teacher (TAFE and Deaf societies run Certificate II/III in Auslan courses).
 ## Unit 3: Time & daily life (Lessons 13–18)
 *Can-do: describe your day and week, talk about food, and say what you do and don't do.*
 
-- [ ] **13. Time words & time-first word order.** TODAY, TOMORROW, YESTERDAY, NOW, LATER, BEFORE, FINISH (past). Time goes at the start of the sentence. The time line in space.
-- [ ] **14. Days, weeks, months & clock time.** Days of the week, WEEK, MONTH, YEAR, NEXT-WEEK, LAST-WEEK, telling the time, WHAT-TIME?
-- [ ] **15. Daily routine.** WAKE-UP, SHOWER, EAT, DRINK, WORK, GO, COME, HOME, SLEEP, EVERY-DAY, MORNING, AFTERNOON, NIGHT.
-- [ ] **16. Food & drink.** COFFEE, TEA, WATER, BREAD, MEAT, FRUIT, HUNGRY, THIRSTY, LIKE, WANT; ordering at a café.
-- [ ] **17. Negation.** Headshake, NOT, NOTHING, NEVER, CAN'T, DON'T-WANT, DON'T-LIKE, NOT-YET, DON'T-KNOW.
-- [ ] **18. ★ Review: my day and my week.** Describe a typical day and your plans for the week. Recorded can-do check.
+- [x] **13. Time words & time-first word order.** TODAY, TOMORROW, YESTERDAY, NOW, LATER, BEFORE, FINISH (past). Time goes at the start of the sentence. The time line in space.
+- [x] **14. Days, weeks, months & clock time.** Days of the week, WEEK, MONTH, YEAR, NEXT-WEEK, LAST-WEEK, telling the time, WHAT-TIME?
+- [x] **15. Daily routine.** WAKE-UP, SHOWER, EAT, DRINK, WORK, GO, COME, HOME, SLEEP, EVERY-DAY, MORNING, AFTERNOON, NIGHT.
+- [x] **16. Food & drink.** COFFEE, TEA, WATER, BREAD, MEAT, FRUIT, HUNGRY, THIRSTY, LIKE, WANT; ordering at a café.
+- [x] **17. Negation.** Headshake, NOT, NOTHING, NEVER, CAN'T, DON'T-WANT, DON'T-LIKE, NOT-YET, DON'T-KNOW.
+- [x] **18. ★ Review: my day and my week.** Describe a typical day and your plans for the week. Recorded can-do check.
 
 ## Unit 4: Out and about (Lessons 19–24)
 *Can-do: talk about places, getting around, the weather, your interests and your work, and make plans.*
 
-- [ ] **19. Places around town.** HOME, SHOP, SCHOOL, HOSPITAL, BEACH, PARK, CITY, LIVE, WHERE-LIVE?; Australian places, fingerspelled or signed.
-- [ ] **20. Transport & directions.** CAR, BUS, TRAIN, BIKE, WALK, DRIVE, LEFT, RIGHT, STRAIGHT, NEAR, FAR. Using space and pointing to give directions.
-- [ ] **21. Weather & seasons.** HOT, COLD, RAIN, SUN, WIND, STORM, SUMMER, WINTER; talking about the weekend weather.
-- [ ] **22. Hobbies & sport.** SWIM, FOOTBALL, CRICKET, READ, MOVIE, MUSIC, COOK, TRAVEL; LIKE, FAVOURITE, PREFER.
-- [ ] **23. Work & study.** WORK, JOB, STUDY, TEACHER, DOCTOR, STUDENT, OFFICE, BOSS; WHAT YOUR JOB?; access and interpreters at work.
-- [ ] **24. ★ Review: making plans with a friend.** Arrange a weekend outing: when, where, how to get there. Recorded can-do check.
+- [x] **19. Places around town.** HOME, SHOP, SCHOOL, HOSPITAL, BEACH, PARK, CITY, LIVE, WHERE-LIVE?; Australian places, fingerspelled or signed.
+- [x] **20. Transport & directions.** CAR, BUS, TRAIN, BIKE, WALK, DRIVE, LEFT, RIGHT, STRAIGHT, NEAR, FAR. Using space and pointing to give directions.
+- [x] **21. Weather & seasons.** HOT, COLD, RAIN, SUN, WIND, STORM, SUMMER, WINTER; talking about the weekend weather.
+- [x] **22. Hobbies & sport.** SWIM, FOOTBALL, CRICKET, READ, MOVIE, MUSIC, COOK, TRAVEL; LIKE, FAVOURITE, PREFER.
+- [x] **23. Work & study.** WORK, JOB, STUDY, TEACHER, DOCTOR, STUDENT, OFFICE, BOSS; WHAT YOUR JOB?; access and interpreters at work.
+- [x] **24. ★ Review: making plans with a friend.** Arrange a weekend outing: when, where, how to get there. Recorded can-do check.
 
 ## Unit 5: Grammar in space & storytelling (Lessons 25–30)
 *Can-do: use space, directional verbs and depicting signs to tell a short story about something that happened.*
 
-- [ ] **25. Directional verbs.** GIVE, ASK, TELL, HELP, SHOW, PAY, SEND: the movement shows who does what to whom (I-GIVE-YOU vs YOU-GIVE-ME).
-- [ ] **26. Depicting signs 1: people & vehicles moving.** Classifier handshapes for a person, a car or a bike; showing paths, speed and position (the car drove past, two people met).
-- [ ] **27. Depicting signs 2: size & shape.** Tracing and size-and-shape signs: describing objects, rooms and layouts (a round table, a long thin road).
-- [ ] **28. Role shift: becoming the character.** Shifting your body and eye gaze to quote people and show their reactions. Constructed action.
-- [ ] **29. Deaf culture & community.** Deaf community history and identity, Auslan's status, Deaf schools and clubs, interpreters, technology (captions, relay services, video calls), etiquette as a hearing learner. Signs for these topics.
-- [ ] **30. ★ Final review: tell a story.** Sign a short story about your weekend or a memorable event, using time, space, directional verbs, depicting signs and role shift. Record it, then compare with your Lesson 2 recordings. Where to go next.
+- [x] **25. Directional verbs.** GIVE, ASK, TELL, HELP, SHOW, PAY, SEND: the movement shows who does what to whom (I-GIVE-YOU vs YOU-GIVE-ME).
+- [x] **26. Depicting signs 1: people & vehicles moving.** Classifier handshapes for a person, a car or a bike; showing paths, speed and position (the car drove past, two people met).
+- [x] **27. Depicting signs 2: size & shape.** Tracing and size-and-shape signs: describing objects, rooms and layouts (a round table, a long thin road).
+- [x] **28. Role shift: becoming the character.** Shifting your body and eye gaze to quote people and show their reactions. Constructed action.
+- [x] **29. Deaf culture & community.** Deaf community history and identity, Auslan's status, Deaf schools and clubs, interpreters, technology (captions, relay services, video calls), etiquette as a hearing learner. Signs for these topics.
+- [x] **30. ★ Final review: tell a story.** Sign a short story about your weekend or a memorable event, using time, space, directional verbs, depicting signs and role shift. Record it, then compare with your Lesson 2 recordings. Where to go next.
 
 ---
 

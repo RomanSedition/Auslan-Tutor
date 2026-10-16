@@ -337,6 +337,78 @@
       1
     ]
   },
+  "after": {
+    "label": "AFTER",
+    "english": "after",
+    "hint": "Southern: thumb-up hand moves forward from the other hand. Northern: index flicks forward. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "SouthernDialect-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/61/61090_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/61/61090_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/after-2.html",
+    "lessons": [
+      13
+    ],
+    "variants": [
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/61/61090_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/61/61090_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/after-2.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/51/51410_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/51/51410_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/after-1.html"
+      }
+    ]
+  },
+  "afternoon": {
+    "label": "AFTERNOON",
+    "english": "afternoon",
+    "hint": "Five regional versions! SA: hand under the chin. Victoria: index near the chin. Tasmania: flat hand under the chin.",
+    "category": "vocab",
+    "region": "SouthAustralia-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/15/15620.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/15/15620.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/afternoon-4.html",
+    "lessons": [
+      15
+    ],
+    "variants": [
+      {
+        "region": "SouthAustralia-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/15/15620.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/15/15620.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/afternoon-4.html"
+      },
+      {
+        "region": "Victoria-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/60/60820_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/60/60820_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/afternoon-3.html"
+      },
+      {
+        "region": "Tasmania-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/24/24720_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/24/24720_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/afternoon-1.html"
+      },
+      {
+        "region": "Queensland-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/62/620_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/62/620_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/afternoon-2.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/24/24480_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/24/24480_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/afternoon-5.html"
+      }
+    ]
+  },
   "again": {
     "label": "AGAIN",
     "english": "again, repeat, pardon?",
@@ -416,6 +488,19 @@
       }
     ]
   },
+  "ask": {
+    "label": "ASK",
+    "english": "ask",
+    "hint": "Hand from the chin moves towards the person you're asking. Directional.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/27/2710_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/27/2710_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/ask-1.html",
+    "lessons": [
+      25
+    ]
+  },
   "aunt": {
     "label": "AUNT",
     "english": "aunt, aunty",
@@ -442,6 +527,19 @@
       2
     ]
   },
+  "autumn": {
+    "label": "AUTUMN / COOL",
+    "english": "autumn, cool",
+    "hint": "Both hands, fingers spread, flutter down: leaves falling. Also means COOL.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/35/35710.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/35/35710.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/autumn-1.html",
+    "lessons": [
+      21
+    ]
+  },
   "baby": {
     "label": "BABY",
     "english": "baby",
@@ -455,6 +553,66 @@
       7
     ]
   },
+  "ball": {
+    "label": "BALL / ROUND",
+    "english": "ball, round",
+    "hint": "Southern: index fingers cross in front of the body. Northern: both curved hands shape a ball. SA: hands cupped.",
+    "category": "vocab",
+    "region": "SouthernDialect-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11440.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11440.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/ball-1.html",
+    "lessons": [
+      27
+    ],
+    "variants": [
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11440.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11440.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/ball-1.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/30/30140_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/30/30140_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/ball-2.html"
+      },
+      {
+        "region": "SouthAustralia-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/30/30120.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/30/30120.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/ball-3.html"
+      }
+    ]
+  },
+  "beach": {
+    "label": "BEACH",
+    "english": "beach, surf",
+    "hint": "Australia-wide: both hands make waves rolling in. Southern: the same sign as Northern YESTERDAY, so rely on context.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26130_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26130_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/beach-2.html",
+    "lessons": [
+      19
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26130_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26130_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/beach-2.html"
+      },
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/47/47280_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/47/47280_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/beach-1.html"
+      }
+    ]
+  },
   "beard": {
     "label": "BEARD",
     "english": "beard",
@@ -466,6 +624,45 @@
     "entry": "https://auslan.org.au/dictionary/words/beard-1.html",
     "lessons": [
       9
+    ]
+  },
+  "before": {
+    "label": "BEFORE",
+    "english": "before",
+    "hint": "Flat hand, palm back, moves back towards the shoulder: the past is behind you.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/32290_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/32290_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/before-1.html",
+    "lessons": [
+      13
+    ]
+  },
+  "big": {
+    "label": "BIG",
+    "english": "big, large",
+    "hint": "Both curved hands move apart: showing a big size.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26960_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26960_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/big-1.html",
+    "lessons": [
+      27
+    ]
+  },
+  "bike": {
+    "label": "BIKE",
+    "english": "bike, cycling",
+    "hint": "Both hands circle forward alternately: pedalling.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/14/14580.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/14/14580.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/bike-1.html",
+    "lessons": [
+      20
     ]
   },
   "birthday": {
@@ -580,6 +777,19 @@
       8
     ]
   },
+  "boss": {
+    "label": "BOSS",
+    "english": "boss, manager",
+    "hint": "V or bent fingers tap near the side of the forehead or shoulder.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/50650_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/50650_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/boss-1.html",
+    "lessons": [
+      23
+    ]
+  },
   "both": {
     "label": "BOTH",
     "english": "both, both of us",
@@ -591,6 +801,59 @@
     "entry": "https://auslan.org.au/dictionary/words/both-1.html",
     "lessons": [
       11
+    ]
+  },
+  "box": {
+    "label": "BOX",
+    "english": "box",
+    "hint": "Both flat hands outline the sides, then top and bottom, of a box.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/37880_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/37880_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/box-1.html",
+    "lessons": [
+      27
+    ]
+  },
+  "bread": {
+    "label": "BREAD",
+    "english": "bread",
+    "hint": "Flat hand slices across the other palm: cutting bread.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/43/43090.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/43/43090.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/bread-1.html",
+    "lessons": [
+      16
+    ]
+  },
+  "breakfast": {
+    "label": "BREAKFAST",
+    "english": "breakfast",
+    "hint": "Australia-wide: thumbs-up, then flat hand slides over the other: GOOD-MORNING + EAT. Southern: from the nose to a thumbs-up.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/40/40220_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/40/40220_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/breakfast-2.html",
+    "lessons": [
+      15
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/40/40220_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/40/40220_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/breakfast-2.html"
+      },
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/52/520.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/52/520.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/breakfast-1.html"
+      }
     ]
   },
   "brother": {
@@ -633,6 +896,32 @@
       }
     ]
   },
+  "bus": {
+    "label": "BUS",
+    "english": "bus, coach",
+    "hint": "Both hands curved, facing each other, showing a big vehicle shape. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/45/45990_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/45/45990_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/bus-3.html",
+    "lessons": [
+      20
+    ]
+  },
+  "busy": {
+    "label": "BUSY",
+    "english": "busy",
+    "hint": "Both fists, palms down, bounce in front of the body: hands busy working.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/14/14600.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/14/14600.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/busy-3.html",
+    "lessons": [
+      18
+    ]
+  },
   "buy": {
     "label": "BUY",
     "english": "buy, purchase",
@@ -659,6 +948,72 @@
       2
     ]
   },
+  "cafe": {
+    "label": "CAFÉ",
+    "english": "café, canteen",
+    "hint": "Hand at the chin with a small repeated movement. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/44/44940_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/44/44940_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/cafe-1.html",
+    "lessons": [
+      16
+    ]
+  },
+  "can": {
+    "label": "CAN",
+    "english": "can, able, may",
+    "hint": "Bent index finger at the forehead or nose moves down to a fist. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/50750_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/50750_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/can-1.html",
+    "lessons": [
+      17
+    ]
+  },
+  "cant": {
+    "label": "CAN'T",
+    "english": "can't, cannot",
+    "hint": "Index finger at the lips, then up and out with a headshake.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/53/5300.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/53/5300.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/can%27t-1.html",
+    "lessons": [
+      17
+    ]
+  },
+  "car": {
+    "label": "CAR",
+    "english": "car",
+    "hint": "Both fists move like turning a steering wheel. (Victoria: fists one above the other.)",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/58500_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/58500_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/car-2.html",
+    "lessons": [
+      20
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/58500_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/58500_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/car-2.html"
+      },
+      {
+        "region": "Victoria-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/58190_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/58190_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/car-1.html"
+      }
+    ]
+  },
   "cat": {
     "label": "CAT",
     "english": "cat",
@@ -683,6 +1038,71 @@
     "entry": "https://auslan.org.au/dictionary/words/child-1.html",
     "lessons": [
       7
+    ]
+  },
+  "church": {
+    "label": "CHURCH",
+    "english": "church",
+    "hint": "Both flat hands raised, palms facing each other, moving down. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/26/26050.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/26/26050.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/church-1.html",
+    "lessons": [
+      19
+    ]
+  },
+  "city": {
+    "label": "CITY",
+    "english": "city",
+    "hint": "Index fingers flick up alternately: tall buildings. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/92/9220_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/92/9220_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/city-1.html",
+    "lessons": [
+      19
+    ]
+  },
+  "cloud": {
+    "label": "CLOUD",
+    "english": "cloud, cloudy",
+    "hint": "Curved hands circle overhead: clouds rolling across the sky.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/29/29830_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/29/29830_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/cloud-2.html",
+    "lessons": [
+      21
+    ]
+  },
+  "coffee": {
+    "label": "COFFEE",
+    "english": "coffee, café",
+    "hint": "Thumb and fingers in a C, tapping at the cheek.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/53/53200_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/53/53200_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/coffee-1.html",
+    "lessons": [
+      16
+    ]
+  },
+  "cold": {
+    "label": "COLD / WINTER",
+    "english": "cold; winter",
+    "hint": "Both fists shiver in front of the body. Also means WINTER.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/57/57580_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/57/57580_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/cold-1.html",
+    "lessons": [
+      21
     ]
   },
   "colour": {
@@ -712,6 +1132,58 @@
       }
     ]
   },
+  "come": {
+    "label": "COME",
+    "english": "come",
+    "hint": "Index finger beckons towards you.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/14/14210.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/14/14210.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/come-2.html",
+    "lessons": [
+      15
+    ]
+  },
+  "community": {
+    "label": "COMMUNITY",
+    "english": "community",
+    "hint": "Flat hands touch, then circle around in front of you: a group of people.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/36/36440_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/36/36440_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/community-1.html",
+    "lessons": [
+      29
+    ]
+  },
+  "computer": {
+    "label": "COMPUTER",
+    "english": "computer",
+    "hint": "Both hands, fingertips together, move like a screen or keyboard. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/46/46880_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/46/46880_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/computer-2.html",
+    "lessons": [
+      23
+    ]
+  },
+  "cook": {
+    "label": "COOK",
+    "english": "cook, cooking",
+    "hint": "Fist stirs or flips over the other hand, like stirring a pot.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/62/62690_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/62/62690_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/cook-1.html",
+    "lessons": [
+      22
+    ]
+  },
   "cousin": {
     "label": "COUSIN",
     "english": "cousin",
@@ -723,6 +1195,58 @@
     "entry": "https://auslan.org.au/dictionary/words/cousin-1.html",
     "lessons": [
       12
+    ]
+  },
+  "crash": {
+    "label": "CRASH (vehicle)",
+    "english": "crash, collision",
+    "hint": "Two flat hands (vehicles) collide.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/59/59740_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/59/59740_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/crash%20%28vehicle%29-1.html",
+    "lessons": [
+      26
+    ]
+  },
+  "cricket": {
+    "label": "CRICKET",
+    "english": "cricket",
+    "hint": "Both hands hold an imaginary bat and swing.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/59/59360_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/59/59360_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/cricket-1.html",
+    "lessons": [
+      22
+    ]
+  },
+  "cry": {
+    "label": "CRY",
+    "english": "cry, tears",
+    "hint": "Index fingers trace tears down the cheeks.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/84/8470_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/84/8470_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/cry-1.html",
+    "lessons": [
+      28
+    ]
+  },
+  "culture": {
+    "label": "CULTURE",
+    "english": "culture",
+    "hint": "Fingers interlock and turn. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/53/53880_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/53/53880_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/culture-1.html",
+    "lessons": [
+      29
     ]
   },
   "daughter": {
@@ -749,6 +1273,79 @@
     "region": "AustraliaWide-traditional",
     "lessons": [
       2
+    ]
+  },
+  "deaf-club": {
+    "label": "DEAF-CLUB",
+    "english": "Deaf club, Deaf society",
+    "hint": "Both hands, fingers bent, interlocking at the chest. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/57/57990_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/57/57990_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/deaf%20club-2.html",
+    "lessons": [
+      29
+    ]
+  },
+  "dinner": {
+    "label": "DINNER",
+    "english": "dinner, main meal",
+    "hint": "Southern: hand at the chin moves down. Northern: the EAT sign. NSW: knife-and-fork movements.",
+    "category": "vocab",
+    "region": "SouthernDialect-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/14/14070_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/14/14070_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/dinner-1.html",
+    "lessons": [
+      15
+    ],
+    "variants": [
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/14/14070_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/14/14070_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/dinner-1.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/500_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/500_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/dinner-2.html"
+      },
+      {
+        "region": "NewSouthWales-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/20/20061.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/20/20061.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/dinner-3.html"
+      }
+    ]
+  },
+  "doctor": {
+    "label": "DOCTOR",
+    "english": "doctor",
+    "hint": "Australia-wide: fingers tap the wrist, like taking a pulse. Southern: bent hand moves along the forearm.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/21/21080.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/21/21080.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/doctor-1.html",
+    "lessons": [
+      23
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/21/21080.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/21/21080.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/doctor-1.html"
+      },
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/45/4500.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/45/4500.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/doctor-3.html"
+      }
     ]
   },
   "dog": {
@@ -788,6 +1385,58 @@
     "entry": "https://auslan.org.au/dictionary/words/don%27t%20know-1.html",
     "lessons": [
       5
+    ]
+  },
+  "drink": {
+    "label": "DRINK",
+    "english": "drink",
+    "hint": "Curved hand like holding a cup, tipped to the mouth.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/44/44870_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/44/44870_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/drink-1.html",
+    "lessons": [
+      15
+    ]
+  },
+  "drive": {
+    "label": "DRIVE",
+    "english": "drive",
+    "hint": "Both fists hold and turn a steering wheel.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/58480_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/58480_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/drive-1.html",
+    "lessons": [
+      20
+    ]
+  },
+  "early": {
+    "label": "EARLY",
+    "english": "early",
+    "hint": "Bent finger brushes the chin, then a thumbs-up. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/61/61040.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/61/61040.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/early-1.html",
+    "lessons": [
+      24
+    ]
+  },
+  "eat": {
+    "label": "EAT / FOOD",
+    "english": "eat, food, meal",
+    "hint": "Bunched fingertips move to the mouth: putting food in.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/500_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/500_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/eat-2.html",
+    "lessons": [
+      15
     ]
   },
   "eight": {
@@ -909,6 +1558,19 @@
       }
     ]
   },
+  "far": {
+    "label": "FAR",
+    "english": "far, distant",
+    "hint": "Hand moves away from you and out to the side; eyes narrow, maybe puff the cheeks.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/51/51640.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/51/51640.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/far-1.html",
+    "lessons": [
+      20
+    ]
+  },
   "father": {
     "label": "FATHER",
     "english": "father, dad",
@@ -920,6 +1582,19 @@
     "entry": "https://auslan.org.au/dictionary/words/father-1.html",
     "lessons": [
       7
+    ]
+  },
+  "favourite": {
+    "label": "FAVOURITE",
+    "english": "favourite",
+    "hint": "Thumb taps at the chin, while the other hand's index is up. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/39/39730.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/39/39730.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/favourite-1.html",
+    "lessons": [
+      22
     ]
   },
   "feel": {
@@ -948,6 +1623,19 @@
       3
     ]
   },
+  "finally": {
+    "label": "FINALLY / LAST",
+    "english": "finally, last",
+    "hint": "Index finger pointing up from beside the little finger of the other hand: 'last one'.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/50190_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/50190_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/finally-1.html",
+    "lessons": [
+      30
+    ]
+  },
   "fingerspell": {
     "label": "FINGERSPELL",
     "english": "fingerspell, spell",
@@ -961,6 +1649,32 @@
       5
     ]
   },
+  "finish": {
+    "label": "FINISH",
+    "english": "finish, done, already (past)",
+    "hint": "Open hands, palms facing you, flip out and down: 'done, finished'. Also marks the past.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/26/26220.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/26/26220.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/finish-1.html",
+    "lessons": [
+      13
+    ]
+  },
+  "first": {
+    "label": "FIRST",
+    "english": "first",
+    "hint": "Thumb or index pops up from a fist: 'number one, first'.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/72/7250.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/72/7250.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/first-1.html",
+    "lessons": [
+      30
+    ]
+  },
   "five": {
     "label": "FIVE",
     "english": "five, 5",
@@ -972,6 +1686,32 @@
     "entry": "https://auslan.org.au/dictionary/words/five-1.html",
     "lessons": [
       3
+    ]
+  },
+  "follow": {
+    "label": "FOLLOW",
+    "english": "follow",
+    "hint": "One index finger follows behind the other hand.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/10/10100.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/10/10100.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/follow-1.html",
+    "lessons": [
+      26
+    ]
+  },
+  "football": {
+    "label": "FOOTBALL",
+    "english": "football, footy (AFL)",
+    "hint": "Hand kicks into the other: kicking a ball.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11100_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/11/11100_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/football-1.html",
+    "lessons": [
+      22
     ]
   },
   "four": {
@@ -1000,6 +1740,32 @@
       3
     ]
   },
+  "free": {
+    "label": "FREE",
+    "english": "free, a break",
+    "hint": "Both open hands, palms down, sweep apart.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/26/26540.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/26/26540.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/free-1.html",
+    "lessons": [
+      18
+    ]
+  },
+  "friday": {
+    "label": "FRIDAY",
+    "english": "Friday",
+    "hint": "The letter F (two fingers across two fingers) tapped.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/20/20660_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/20/20660_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/Friday-1.html",
+    "lessons": [
+      14
+    ]
+  },
   "friend": {
     "label": "FRIEND",
     "english": "friend",
@@ -1026,6 +1792,78 @@
       6
     ]
   },
+  "fruit": {
+    "label": "FRUIT",
+    "english": "fruit",
+    "hint": "Hand circles at the cheek, as if holding a round fruit, then to the chin.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/44/44820.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/44/44820.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/fruit-1.html",
+    "lessons": [
+      16
+    ]
+  },
+  "fun": {
+    "label": "FUN",
+    "english": "fun",
+    "hint": "Australia-wide: bent index at the nose/cheek with a playful face. Northern: hand at the nose. Victoria: hand flicks at the forehead.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13770.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13770.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/fun-1.html",
+    "lessons": [
+      24
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13770.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13770.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/fun-1.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/320_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/320_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/fun-2.html"
+      },
+      {
+        "region": "Victoria-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/15/15350.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/15/15350.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/fun-3.html"
+      }
+    ]
+  },
+  "game": {
+    "label": "GAME",
+    "english": "game, activity",
+    "hint": "Thumbs-up fists move against each other: competing.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/48/48460.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/48/48460.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/game-2.html",
+    "lessons": [
+      22
+    ]
+  },
+  "give": {
+    "label": "GIVE",
+    "english": "give",
+    "hint": "Both hands move forward, palms up. The direction shows who gives to whom.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/38400_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/38400_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/give-1.html",
+    "lessons": [
+      25
+    ]
+  },
   "glasses": {
     "label": "GLASSES",
     "english": "glasses",
@@ -1037,6 +1875,19 @@
     "entry": "https://auslan.org.au/dictionary/words/glasses-1.html",
     "lessons": [
       9
+    ]
+  },
+  "go": {
+    "label": "GO",
+    "english": "go, leave, go out",
+    "hint": "Open hand raised, then moves away from you.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33690_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33690_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/go-2.html",
+    "lessons": [
+      15
     ]
   },
   "good-morning": {
@@ -1136,7 +1987,7 @@
   "grey": {
     "label": "GREY",
     "english": "grey",
-    "hint": "Australia-wide: flat hand on the cheek (compare with Southern PURPLE!). SA: palms brush past each other.",
+    "hint": "Australia-wide: flat hand on the cheek, the same sign as Southern PURPLE. SA: palms brush past each other.",
     "category": "vocab",
     "region": "AustraliaWide-traditional",
     "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/32320_1.mp4",
@@ -1171,6 +2022,19 @@
     "entry": "https://auslan.org.au/dictionary/words/hair-1.html",
     "lessons": [
       9
+    ]
+  },
+  "happen": {
+    "label": "HAPPEN",
+    "english": "happen, event",
+    "hint": "Both hands cross and twist in front of the body. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/12/12390_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/12/12390_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/happen-1.html",
+    "lessons": [
+      30
     ]
   },
   "happy": {
@@ -1225,6 +2089,19 @@
       2
     ]
   },
+  "hearing-aid": {
+    "label": "HEARING-AID",
+    "english": "hearing aid",
+    "hint": "Bent index finger hooks behind the ear: wearing a hearing aid.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13730.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13730.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/hearing%20aid-2.html",
+    "lessons": [
+      29
+    ]
+  },
   "hello": {
     "label": "HELLO",
     "english": "hello, hi",
@@ -1236,6 +2113,144 @@
     "region": "AustraliaWide-traditional",
     "lessons": [
       2
+    ]
+  },
+  "help": {
+    "label": "HELP",
+    "english": "help",
+    "hint": "Flat hand supports and lifts the other forearm. Direct it towards whoever's being helped.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/35/35250.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/35/35250.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/help-2.html",
+    "lessons": [
+      25
+    ]
+  },
+  "history": {
+    "label": "HISTORY",
+    "english": "history",
+    "hint": "Hand rolls back over the shoulder repeatedly: going far back into the past.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/35/35750.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/35/35750.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/history-1.html",
+    "lessons": [
+      29
+    ]
+  },
+  "holiday": {
+    "label": "HOLIDAY",
+    "english": "holiday",
+    "hint": "Australia-wide: open hands raised and shaken at the sides. SA: both hands flick out at chest height.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/36/36910_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/36/36910_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/holiday-1.html",
+    "lessons": [
+      18
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/36/36910_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/36/36910_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/holiday-1.html"
+      },
+      {
+        "region": "SouthAustralia-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26570_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26570_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/holiday-2.html"
+      }
+    ]
+  },
+  "home": {
+    "label": "HOME",
+    "english": "home, go home",
+    "hint": "Starts as a closed hand near the shoulder, then the open hand comes down. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33390_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33390_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/home-1.html",
+    "lessons": [
+      15
+    ]
+  },
+  "hospital": {
+    "label": "HOSPITAL",
+    "english": "hospital",
+    "hint": "Southern: bent hand moves along the other forearm. Northern: hands at the chest. NSW: fingers at the forehead (a nurse's cap).",
+    "category": "vocab",
+    "region": "SouthernDialect-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/45/4500.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/45/4500.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/hospital-3.html",
+    "lessons": [
+      19
+    ],
+    "variants": [
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/45/4500.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/45/4500.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/hospital-3.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/30/30310.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/30/30310.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/hospital-1.html"
+      },
+      {
+        "region": "NewSouthWales-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/47/47150.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/47/47150.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/hospital-2.html"
+      }
+    ]
+  },
+  "hot": {
+    "label": "HOT",
+    "english": "hot",
+    "hint": "Hand wipes from the mouth/chin outward, as if fanning heat away.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/32/32670.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/32/32670.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/hot-1.html",
+    "lessons": [
+      21
+    ]
+  },
+  "hour": {
+    "label": "HOUR",
+    "english": "hour",
+    "hint": "Flat hand circles in front of the face, then rests on the forehead. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/2650_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/2650_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/hour-2.html",
+    "lessons": [
+      14
+    ]
+  },
+  "house": {
+    "label": "HOUSE",
+    "english": "house",
+    "hint": "Both hands draw the roof and walls of a house.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/36/36460_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/36/36460_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/house-1.html",
+    "lessons": [
+      19
     ]
   },
   "how": {
@@ -1317,6 +2332,85 @@
       10
     ]
   },
+  "hungry": {
+    "label": "HUNGRY",
+    "english": "hungry",
+    "hint": "Four regional versions! Southern: thumbs-up hand at the stomach/chest. WA: open hand at the face closes. Northern: both hands on the stomach.",
+    "category": "vocab",
+    "region": "SouthernDialect-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/47/47480.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/47/47480.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/hungry-2.html",
+    "lessons": [
+      16
+    ],
+    "variants": [
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/47/47480.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/47/47480.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/hungry-2.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/39/39420_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/39/39420_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/hungry-1.html"
+      },
+      {
+        "region": "WesternAustralia-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/24/24770.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/24/24770.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/hungry-4.html"
+      },
+      {
+        "region": "Queensland-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/65/6570_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/65/6570_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/hungry-3.html"
+      }
+    ]
+  },
+  "interpreter": {
+    "label": "INTERPRETER",
+    "english": "interpreter, interpret",
+    "hint": "Both thumb-and-finger rings swap back and forth: translating between two languages.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/3830_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/3830_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/interpreter-1.html",
+    "lessons": [
+      23
+    ]
+  },
+  "invite": {
+    "label": "INVITE",
+    "english": "invite",
+    "hint": "Open hand sweeps in towards you, palm up: 'come in'.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/30/3014.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/30/3014.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/invite-1.html",
+    "lessons": [
+      24
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/30/3014.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/30/3014.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/invite-1.html"
+      },
+      {
+        "region": "SouthAustralia-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/39/39300_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/39/39300_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/invite-2.html"
+      }
+    ]
+  },
   "know": {
     "label": "KNOW",
     "english": "know",
@@ -1330,6 +2424,58 @@
       5
     ]
   },
+  "last-week": {
+    "label": "LAST-WEEK",
+    "english": "last week",
+    "hint": "Southern: index at the cheek, then moves back along the other hand: one week behind.",
+    "category": "vocab",
+    "region": "SouthernDialect-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/10/10320_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/10/10320_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/last%20week-1.html",
+    "lessons": [
+      13
+    ]
+  },
+  "late": {
+    "label": "LATE",
+    "english": "late",
+    "hint": "Index finger points over the other hand, moving down.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/12/12100.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/12/12100.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/late-1.html",
+    "lessons": [
+      24
+    ]
+  },
+  "later": {
+    "label": "LATER",
+    "english": "later",
+    "hint": "Index finger moves forward off the other palm: 'later on'.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/12/12660_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/12/12660_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/later-1.html",
+    "lessons": [
+      13
+    ]
+  },
+  "laugh": {
+    "label": "LAUGH",
+    "english": "laugh",
+    "hint": "Hand at the chin with a small shaking movement, plus a laughing face.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/51/51140_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/51/51140_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/laugh-2.html",
+    "lessons": [
+      28
+    ]
+  },
   "learn": {
     "label": "LEARN",
     "english": "learn, learning",
@@ -1341,6 +2487,45 @@
     "region": "AustraliaWide-traditional",
     "lessons": [
       2
+    ]
+  },
+  "left": {
+    "label": "LEFT",
+    "english": "left",
+    "hint": "Hand moves to the left. Point or move towards your left side.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33940_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33940_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/left%20%28not%20right%29-2.html",
+    "lessons": [
+      20
+    ]
+  },
+  "library": {
+    "label": "LIBRARY",
+    "english": "library",
+    "hint": "Flat hands move apart, like books on a shelf. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/43/43510_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/43/43510_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/library-1.html",
+    "lessons": [
+      19
+    ]
+  },
+  "like": {
+    "label": "LIKE",
+    "english": "like, enjoy",
+    "hint": "Flat hand brushes up the chest.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34480.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34480.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/like-1.html",
+    "lessons": [
+      16
     ]
   },
   "live": {
@@ -1370,6 +2555,32 @@
       }
     ]
   },
+  "long": {
+    "label": "LONG",
+    "english": "long, length",
+    "hint": "Both fists pull apart sideways: showing length.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/98/9820_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/98/9820_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/long-1.html",
+    "lessons": [
+      27
+    ]
+  },
+  "look": {
+    "label": "LOOK",
+    "english": "look, watch",
+    "hint": "V-hand (eyes) moves from your eyes towards what you're looking at. Directional.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/15/15460_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/15/15460_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/look-1.html",
+    "lessons": [
+      28
+    ]
+  },
   "love": {
     "label": "LOVE",
     "english": "love",
@@ -1381,6 +2592,19 @@
     "entry": "https://auslan.org.au/dictionary/words/love-3.html",
     "lessons": [
       8
+    ]
+  },
+  "lunch": {
+    "label": "LUNCH",
+    "english": "lunch, sandwich",
+    "hint": "Edge of the flat hand taps under the chin.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/44/44440_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/44/44440_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/lunch-1.html",
+    "lessons": [
+      15
     ]
   },
   "married": {
@@ -1422,6 +2646,39 @@
       2
     ]
   },
+  "meat": {
+    "label": "MEAT",
+    "english": "meat, beef, steak",
+    "hint": "Australia-wide: pinch the fleshy part of the other hand. Southern: index at the chin. Northern: from the cheek.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/46/4640_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/46/4640_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/meat-2.html",
+    "lessons": [
+      16
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/46/4640_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/46/4640_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/meat-2.html"
+      },
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/65/6510_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/65/6510_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/meat-3.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/17/17670_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/17/17670_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/meat-1.html"
+      }
+    ]
+  },
   "meet": {
     "label": "MEET",
     "english": "meet",
@@ -1433,6 +2690,59 @@
     "region": "AustraliaWide-traditional",
     "lessons": [
       2
+    ]
+  },
+  "milk": {
+    "label": "MILK",
+    "english": "milk",
+    "hint": "Australia-wide: both fists squeeze alternately, like milking. NSW: hand near the mouth.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/27/27040_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/27/27040_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/milk-1.html",
+    "lessons": [
+      16
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/27/27040_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/27/27040_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/milk-1.html"
+      },
+      {
+        "region": "NewSouthWales-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/51/51280_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/51/51280_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/milk-2.html"
+      }
+    ]
+  },
+  "minute": {
+    "label": "MINUTE",
+    "english": "minute",
+    "hint": "Index finger moves a short way along the other hand: a small step on a clock.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/23/23515.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/23/23515.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/minute%20%28time%29-1.html",
+    "lessons": [
+      14
+    ]
+  },
+  "monday": {
+    "label": "MONDAY",
+    "english": "Monday",
+    "hint": "Hand moves across the front of the other upright hand. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/23/23520.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/23/23520.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/Monday-1.html",
+    "lessons": [
+      14
     ]
   },
   "money": {
@@ -1461,6 +2771,46 @@
       7
     ]
   },
+  "movie": {
+    "label": "MOVIE",
+    "english": "movie, film, cinema",
+    "hint": "Australia-wide: open hand flickers against the other palm: a flickering screen. SA: both hands flicker.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/28/28550.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/28/28550.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/movie-2.html",
+    "lessons": [
+      22
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/28/28550.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/28/28550.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/movie-2.html"
+      },
+      {
+        "region": "SouthAustralia-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/25/25961.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/25/25961.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/movie-5.html"
+      }
+    ]
+  },
+  "music": {
+    "label": "MUSIC",
+    "english": "music",
+    "hint": "Index fingers wave in time, like conducting. (Signbank uses this same video for one Queensland BIRTHDAY.)",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/99/9980_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/99/9980_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/music-1.html",
+    "lessons": [
+      22
+    ]
+  },
   "my": {
     "label": "MY",
     "english": "my, mine",
@@ -1487,6 +2837,45 @@
       2
     ]
   },
+  "near": {
+    "label": "NEAR",
+    "english": "near, close",
+    "hint": "Two index-and-thumb hands move close together. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/92/9290_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/92/9290_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/near-1.html",
+    "lessons": [
+      20
+    ]
+  },
+  "never": {
+    "label": "NEVER",
+    "english": "never",
+    "hint": "Flat hand with a sharp downward chop beside the other hand; firm headshake.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/44/44220_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/44/44220_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/never-1.html",
+    "lessons": [
+      17
+    ]
+  },
+  "next-week": {
+    "label": "NEXT-WEEK",
+    "english": "next week",
+    "hint": "Index finger moves forward along the other hand: one week ahead.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/10/10270_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/10/10270_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/next%20week-1.html",
+    "lessons": [
+      13
+    ]
+  },
   "nice": {
     "label": "NICE",
     "english": "nice",
@@ -1498,6 +2887,33 @@
     "region": "AustraliaWide-traditional",
     "lessons": [
       2
+    ]
+  },
+  "night": {
+    "label": "NIGHT",
+    "english": "night, evening",
+    "hint": "Australia-wide: both flat hands cross in front of the body, closing in like darkness. Southern: V-hand at the eyes.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/35/35490.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/35/35490.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/night-1.html",
+    "lessons": [
+      15
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/35/35490.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/35/35490.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/night-1.html"
+      },
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/17/17550.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/17/17550.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/night-2.html"
+      }
     ]
   },
   "nine": {
@@ -1539,6 +2955,58 @@
       4
     ]
   },
+  "no-thanks": {
+    "label": "NO-THANKS / NO-WAY",
+    "english": "no thanks, no way",
+    "hint": "Open hand pushes out, palm forward: 'no way, no thanks'.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/24/24820_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/24/24820_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/not-2.html",
+    "lessons": [
+      17
+    ]
+  },
+  "not": {
+    "label": "NOT",
+    "english": "not, don't, doesn't",
+    "hint": "Thumb and index ring flicks out from near the chin. Shake your head as well.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/30/3010_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/30/3010_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/not-1.html",
+    "lessons": [
+      17
+    ]
+  },
+  "nothing": {
+    "label": "NOTHING",
+    "english": "nothing",
+    "hint": "Thumb and index ring held up, a small flick: 'zero, nothing'. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/30/3080_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/30/3080_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/nothing-1.html",
+    "lessons": [
+      17
+    ]
+  },
+  "now": {
+    "label": "NOW / CURRENTLY",
+    "english": "now, currently",
+    "hint": "Both open hands, palms up, drop slightly in front of you: 'right now, currently'.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/38610_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/38610_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/now-2.html",
+    "lessons": [
+      13
+    ]
+  },
   "number": {
     "label": "NUMBER",
     "english": "number",
@@ -1550,6 +3018,19 @@
     "entry": "https://auslan.org.au/dictionary/words/number-2.html",
     "lessons": [
       3
+    ]
+  },
+  "office": {
+    "label": "OFFICE",
+    "english": "office, office worker",
+    "hint": "Fist moves across the other palm, like writing or typing. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/64/64450.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/64/64450.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/office-1.html",
+    "lessons": [
+      23
     ]
   },
   "okay": {
@@ -1630,6 +3111,32 @@
       7
     ]
   },
+  "pass": {
+    "label": "PASS (people)",
+    "english": "pass by, go past",
+    "hint": "Two upright index fingers (two people) move past each other.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/92/9250_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/92/9250_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/pass-1.html",
+    "lessons": [
+      26
+    ]
+  },
+  "pay": {
+    "label": "PAY",
+    "english": "pay",
+    "hint": "Thumb rubs fingertips (MONEY) then moves off the palm towards whoever's being paid.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/62/62470_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/62/62470_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/pay-1.html",
+    "lessons": [
+      25
+    ]
+  },
   "phone": {
     "label": "PHONE",
     "english": "phone, call",
@@ -1684,10 +3191,49 @@
       }
     ]
   },
+  "plan": {
+    "label": "PLAN",
+    "english": "plan, arrangements",
+    "hint": "Both hands with fingertips curled, move together in front of the body. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/41/4130.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/41/4130.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/plan-1.html",
+    "lessons": [
+      18
+    ]
+  },
+  "plane": {
+    "label": "PLANE",
+    "english": "plane, flight",
+    "hint": "Thumb and little finger out (with index), moving up and away: a plane taking off.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/65/65710_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/65/65710_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/plane-1.html",
+    "lessons": [
+      20
+    ]
+  },
+  "play": {
+    "label": "PLAY",
+    "english": "play",
+    "hint": "Both open hands shake loosely at the sides.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/38520_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/38520_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/play-1.html",
+    "lessons": [
+      22
+    ]
+  },
   "please": {
     "label": "PLEASE",
     "english": "please",
-    "hint": "Southern: open hand moves out from the chest. Northern: flat hand from the mouth ends as a thumbs-up.",
+    "hint": "Southern: the same sign as THANK-YOU (flat hand from the chin). Northern: flat hand from the mouth, ending as a thumbs-up.",
     "category": "vocab",
     "region": "SouthernDialect-traditional",
     "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/32880_1.mp4",
@@ -1711,10 +3257,23 @@
       }
     ]
   },
+  "prefer": {
+    "label": "PREFER",
+    "english": "prefer, rather",
+    "hint": "Flat hand brushes off the other palm, choosing one over the other.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/15/15181.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/15/15181.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/prefer-1.html",
+    "lessons": [
+      22
+    ]
+  },
   "purple": {
     "label": "PURPLE",
     "english": "purple",
-    "hint": "Southern: flat hand on the cheek. WA: hand at the chin, fingers moving. Northern: index fingers rub together.",
+    "hint": "Southern: flat hand on the cheek (the same sign as Australia-wide GREY). WA: hand at the chin, fingers moving. Northern: index fingers rub together.",
     "category": "vocab",
     "region": "SouthernDialect-traditional",
     "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/32320_1.mp4",
@@ -1757,6 +3316,59 @@
       4
     ]
   },
+  "rain": {
+    "label": "RAIN",
+    "english": "rain",
+    "hint": "Bent fingers move down in front of the body: rain falling.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/29/29840_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/29/29840_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/rain-1.html",
+    "lessons": [
+      21
+    ]
+  },
+  "read": {
+    "label": "READ",
+    "english": "read",
+    "hint": "V-hand (eyes) moves down across the other palm (a page).",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/17/17420.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/17/17420.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/read-1.html",
+    "lessons": [
+      22
+    ]
+  },
+  "ready": {
+    "label": "READY",
+    "english": "ready",
+    "hint": "Bent hand moves down and out, palm up.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/63/63040_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/63/63040_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/ready-1.html",
+    "lessons": [
+      24
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/63/63040_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/63/63040_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/ready-1.html"
+      },
+      {
+        "region": "SouthAustralia-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/55/55400_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/55/55400_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/ready-2.html"
+      }
+    ]
+  },
   "red": {
     "label": "RED",
     "english": "red",
@@ -1782,6 +3394,72 @@
         "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/14/14110.jpg",
         "entry": "https://auslan.org.au/dictionary/words/red-2.html"
       }
+    ]
+  },
+  "remember": {
+    "label": "REMEMBER",
+    "english": "remember",
+    "hint": "Fist touches the forehead, then holds still. (SA: then both fists together at the chest.)",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/22/220_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/22/220_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/remember-1.html",
+    "lessons": [
+      30
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/22/220_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/22/220_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/remember-1.html"
+      },
+      {
+        "region": "SouthAustralia-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13290.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13290.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/remember-2.html"
+      }
+    ]
+  },
+  "reply": {
+    "label": "REPLY",
+    "english": "reply, answer",
+    "hint": "Index finger moves from the other hand towards someone: answering back.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11510.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11510.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/reply-1.html",
+    "lessons": [
+      28
+    ]
+  },
+  "right": {
+    "label": "RIGHT",
+    "english": "right",
+    "hint": "Hand moves to the right. Point or move towards your right side.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33930_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33930_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/right%20%28not%20left%29-1.html",
+    "lessons": [
+      20
+    ]
+  },
+  "room": {
+    "label": "ROOM",
+    "english": "room, area",
+    "hint": "Both hands outline the walls of a room. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11040.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11040.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/room-1.html",
+    "lessons": [
+      27
     ]
   },
   "sad": {
@@ -1810,6 +3488,19 @@
       6
     ]
   },
+  "saturday": {
+    "label": "SATURDAY",
+    "english": "Saturday",
+    "hint": "Bent fingers (a claw) at the chin, moving forward.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/62/62890_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/62/62890_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/Saturday-1.html",
+    "lessons": [
+      14
+    ]
+  },
   "scared": {
     "label": "SCARED",
     "english": "scared, frightened",
@@ -1823,6 +3514,46 @@
       8
     ]
   },
+  "school": {
+    "label": "SCHOOL",
+    "english": "school",
+    "hint": "Australia-wide: flat hand at the side of the face. Northern: fist tapped on the back of the other hand.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/31/31820.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/31/31820.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/school-1.html",
+    "lessons": [
+      19
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/31/31820.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/31/31820.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/school-1.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/59/59060.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/59/59060.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/school-2.html"
+      }
+    ]
+  },
+  "see": {
+    "label": "SEE",
+    "english": "see",
+    "hint": "Index finger moves from the eye outwards.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/55/5510.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/55/5510.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/see-1.html",
+    "lessons": [
+      28
+    ]
+  },
   "see-you-again": {
     "label": "SEE YOU AGAIN",
     "english": "see you later, see you again",
@@ -1834,6 +3565,19 @@
     "region": "AustraliaWide-traditional",
     "lessons": [
       2
+    ]
+  },
+  "send": {
+    "label": "SEND",
+    "english": "send",
+    "hint": "Hand flicks off the other hand, away from you. Directional.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/94/9430_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/94/9430_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/send-1.html",
+    "lessons": [
+      25
     ]
   },
   "seven": {
@@ -1862,6 +3606,32 @@
       3
     ]
   },
+  "shocked": {
+    "label": "SHOCKED",
+    "english": "shocked",
+    "hint": "Both hands move apart sharply; wide eyes, open mouth.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/48/48220_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/48/48220_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/shocked-1.html",
+    "lessons": [
+      28
+    ]
+  },
+  "shop": {
+    "label": "SHOP",
+    "english": "shop, shopping",
+    "hint": "Fists brush against each other, as if handing over and receiving.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/49/49280.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/49/49280.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/shop-1.html",
+    "lessons": [
+      19
+    ]
+  },
   "short": {
     "label": "SHORT",
     "english": "short (person)",
@@ -1873,6 +3643,45 @@
     "entry": "https://auslan.org.au/dictionary/words/short-1.html",
     "lessons": [
       9
+    ]
+  },
+  "shout": {
+    "label": "SHOUT",
+    "english": "shout, yell",
+    "hint": "Hand opens out from the mouth, like a loud voice.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/63/630.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/63/630.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/shout-1.html",
+    "lessons": [
+      28
+    ]
+  },
+  "show": {
+    "label": "SHOW",
+    "english": "show",
+    "hint": "Index finger points to the other palm, then moves towards the viewer. Directional.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/12/12930_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/12/12930_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/show-1.html",
+    "lessons": [
+      25
+    ]
+  },
+  "shower": {
+    "label": "SHOWER",
+    "english": "shower",
+    "hint": "Hand above the head, fingers flicking down: water spraying.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/29/29020.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/29/29020.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/shower-1.html",
+    "lessons": [
+      15
     ]
   },
   "sick": {
@@ -1940,6 +3749,19 @@
       3
     ]
   },
+  "sleep": {
+    "label": "SLEEP",
+    "english": "sleep",
+    "hint": "Thumb and fingers close in front of the eye: eyes closing.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/31/31400_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/31/31400_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/sleep-2.html",
+    "lessons": [
+      15
+    ]
+  },
   "slow": {
     "label": "SLOW",
     "english": "slow, slowly",
@@ -1953,6 +3775,39 @@
       5
     ]
   },
+  "small": {
+    "label": "SMALL",
+    "english": "small",
+    "hint": "Both hands close together, showing a small size. (Southern starts from the mouth; NSW is near the mouth.)",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/37810_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/37810_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/small-1.html",
+    "lessons": [
+      27
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/37810_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/37810_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/small-1.html"
+      },
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/63/63670_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/63/63670_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/small-3.html"
+      },
+      {
+        "region": "NewSouthWales-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/18/18910_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/18/18910_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/small-2.html"
+      }
+    ]
+  },
   "son": {
     "label": "SON",
     "english": "son",
@@ -1964,6 +3819,19 @@
     "entry": "https://auslan.org.au/dictionary/words/son-1.html",
     "lessons": [
       7
+    ]
+  },
+  "soon": {
+    "label": "SOON",
+    "english": "soon",
+    "hint": "Thumb tip at the chin, then moves down and forward a little.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/63/63700_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/63/63700_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/soon-1.html",
+    "lessons": [
+      13
     ]
   },
   "sorry": {
@@ -1999,6 +3867,19 @@
       }
     ]
   },
+  "sport": {
+    "label": "SPORT",
+    "english": "sport",
+    "hint": "Thumbs-up hands with a small alternating movement.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/48/48450_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/48/48450_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/sport-1.html",
+    "lessons": [
+      22
+    ]
+  },
   "spouse": {
     "label": "HUSBAND / WIFE",
     "english": "husband, wife, spouse",
@@ -2010,6 +3891,189 @@
     "entry": "https://auslan.org.au/dictionary/words/husband-2.html",
     "lessons": [
       7
+    ]
+  },
+  "spring": {
+    "label": "SPRING",
+    "english": "spring (season)",
+    "hint": "Hand at the cheek, fingers opening. Signbank lists this one without a region. Watch at 0.5×.",
+    "category": "vocab",
+    "region": null,
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/56/56050_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/56/56050_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/spring-2.html",
+    "lessons": [
+      21
+    ]
+  },
+  "square": {
+    "label": "SQUARE",
+    "english": "square",
+    "hint": "Index fingers trace a square in the air.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/73/7390_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/73/7390_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/square-1.html",
+    "lessons": [
+      27
+    ]
+  },
+  "storm": {
+    "label": "STORM",
+    "english": "storm, lightning",
+    "hint": "Index finger zigzags down from above: lightning.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/66/6610_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/66/6610_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/storm-1.html",
+    "lessons": [
+      21
+    ]
+  },
+  "story": {
+    "label": "STORY",
+    "english": "story, tell a story",
+    "hint": "Australia-wide: hand at the mouth/chin moves forward. Southern: the same sign as SIGN (Lesson 5), signing a story.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/54/54420_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/54/54420_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/story-2.html",
+    "lessons": [
+      30
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/54/54420_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/54/54420_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/story-2.html"
+      },
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/27/27010_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/27/27010_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/story-1.html"
+      }
+    ]
+  },
+  "straight": {
+    "label": "STRAIGHT",
+    "english": "straight ahead",
+    "hint": "Flat hand, palm sideways, moves straight forward.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33620_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/33/33620_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/straight-1.html",
+    "lessons": [
+      20
+    ]
+  },
+  "student": {
+    "label": "STUDENT",
+    "english": "student",
+    "hint": "Hand from the forehead (LEARN) to the other palm.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/28/28710_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/28/28710_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/student-1.html",
+    "lessons": [
+      23
+    ]
+  },
+  "study": {
+    "label": "STUDY",
+    "english": "study",
+    "hint": "Bent fingers wiggle above the other palm: reading and studying.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/28/28610_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/28/28610_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/study-2.html",
+    "lessons": [
+      23
+    ]
+  },
+  "summer": {
+    "label": "SUMMER",
+    "english": "summer",
+    "hint": "Index finger wipes across the forehead: wiping off sweat.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/32690_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/32690_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/summer-1.html",
+    "lessons": [
+      21
+    ]
+  },
+  "sun": {
+    "label": "SUN",
+    "english": "sun, sunny",
+    "hint": "Fist above the head springs open: sun rays.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/50/50.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/50/50.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/sun-1.html",
+    "lessons": [
+      21
+    ]
+  },
+  "sunday": {
+    "label": "SUNDAY",
+    "english": "Sunday",
+    "hint": "Both flat hands come together, palms touching, as if praying.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/36/36840.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/36/36840.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/Sunday-1.html",
+    "lessons": [
+      14
+    ]
+  },
+  "surprised": {
+    "label": "SURPRISED",
+    "english": "surprised",
+    "hint": "Flat hand on the chest, with wide eyes and raised eyebrows.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/25/25030_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/25/25030_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/surprised-1.html",
+    "lessons": [
+      28
+    ]
+  },
+  "swim": {
+    "label": "SWIM",
+    "english": "swim",
+    "hint": "Arms move as if swimming freestyle.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/38720_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/38720_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/swim-1.html",
+    "lessons": [
+      22
+    ]
+  },
+  "table": {
+    "label": "TABLE / FLAT SURFACE",
+    "english": "table, flat surface",
+    "hint": "Both flat hands, palms down, sweep apart: a flat surface.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/38950_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/38/38950_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/table-1.html",
+    "lessons": [
+      27
     ]
   },
   "tall": {
@@ -2025,6 +4089,45 @@
       9
     ]
   },
+  "tea": {
+    "label": "TEA",
+    "english": "tea, cuppa",
+    "hint": "Fingertips together, small circular stirring above the other hand, like stirring a cuppa.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/47/4790.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/47/4790.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/tea-1.html",
+    "lessons": [
+      16
+    ]
+  },
+  "teacher": {
+    "label": "TEACHER",
+    "english": "teacher",
+    "hint": "Index finger moves forward from beside the head: passing knowledge on.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/50940_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/50/50940_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/teacher-1.html",
+    "lessons": [
+      23
+    ]
+  },
+  "tell": {
+    "label": "TELL / SAY",
+    "english": "tell, say",
+    "hint": "Index from the lips moves towards the person you're telling. Directional.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/62/6230.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/62/6230.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/tell-1.html",
+    "lessons": [
+      25
+    ]
+  },
   "ten": {
     "label": "TEN",
     "english": "ten, 10",
@@ -2036,6 +4139,19 @@
     "entry": "https://auslan.org.au/dictionary/words/ten-1.html",
     "lessons": [
       3
+    ]
+  },
+  "text-message": {
+    "label": "TEXT / EMAIL",
+    "english": "text, SMS, email",
+    "hint": "Both thumbs tap, like typing on a phone.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/63/63995.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/63/63995.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/email-1.html",
+    "lessons": [
+      25
     ]
   },
   "thank-you": {
@@ -2064,6 +4180,19 @@
       11
     ]
   },
+  "then": {
+    "label": "THEN",
+    "english": "then, and then",
+    "hint": "Both open hands close and open in front of you, marking the next step. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/37030_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/37030_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/then-1.html",
+    "lessons": [
+      30
+    ]
+  },
   "they": {
     "label": "THEY",
     "english": "they, them",
@@ -2075,6 +4204,45 @@
     "entry": "https://auslan.org.au/dictionary/words/they-1.html",
     "lessons": [
       11
+    ]
+  },
+  "thin": {
+    "label": "THIN (object)",
+    "english": "thin, long and thin",
+    "hint": "Flat hand moves down in front of the body: describing something thin and tall.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/26/2620.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/26/2620.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/thin-2.html",
+    "lessons": [
+      27
+    ]
+  },
+  "think": {
+    "label": "THINK",
+    "english": "think",
+    "hint": "Index finger at the temple.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/58/5861.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/58/5861.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/think-1.html",
+    "lessons": [
+      28
+    ]
+  },
+  "thirsty": {
+    "label": "THIRSTY",
+    "english": "thirsty",
+    "hint": "Index finger traces down the throat.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/65/6580_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/65/6580_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/thirsty-2.html",
+    "lessons": [
+      16
     ]
   },
   "thirteen": {
@@ -2116,6 +4284,32 @@
       3
     ]
   },
+  "thursday": {
+    "label": "THURSDAY",
+    "english": "Thursday",
+    "hint": "Both flat hands, bent at the knuckles, with a small movement side by side. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/65/65420_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/65/65420_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/Thursday-1.html",
+    "lessons": [
+      14
+    ]
+  },
+  "time": {
+    "label": "TIME",
+    "english": "time, what time",
+    "hint": "Index finger taps the back of the other wrist: where a watch goes.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/52/52900_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/52/52900_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/time-3.html",
+    "lessons": [
+      14
+    ]
+  },
   "tired": {
     "label": "TIRED",
     "english": "tired",
@@ -2127,6 +4321,137 @@
     "entry": "https://auslan.org.au/dictionary/words/tired-1.html",
     "lessons": [
       8
+    ]
+  },
+  "today": {
+    "label": "TODAY / NOW",
+    "english": "today, now, nowadays",
+    "hint": "Australia-wide: index finger held up, small downward movement (also means NOW). Northern: flat hands at the chest.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/70/7080_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/70/7080_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/today-2.html",
+    "lessons": [
+      13
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/70/7080_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/70/7080_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/today-2.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/43/43570_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/43/43570_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/today-1.html"
+      }
+    ]
+  },
+  "together": {
+    "label": "TOGETHER / WITH",
+    "english": "together, with",
+    "hint": "Both hands come together and touch, moving as one.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/38/38250.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/38/38250.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/together-1.html",
+    "lessons": [
+      24
+    ]
+  },
+  "toilet": {
+    "label": "TOILET",
+    "english": "toilet, loo",
+    "hint": "Australia-wide: letter T on the hand (same as TUESDAY). Victoria: W at the chin (the same sign as Southern WATER). SA: index flicks.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11770.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11770.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/toilet-2.html",
+    "lessons": [
+      19
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11770.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11770.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/toilet-2.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34830.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34830.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/toilet-1.html"
+      },
+      {
+        "region": "Victoria-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13790.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13790.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/toilet-3.html"
+      },
+      {
+        "region": "SouthAustralia-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/53/53410_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/53/53410_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/toilet-4.html"
+      }
+    ]
+  },
+  "tomorrow": {
+    "label": "TOMORROW",
+    "english": "tomorrow",
+    "hint": "Index finger at the cheek, moving forward: the future is in front of you.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/59/5900_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/59/5900_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/tomorrow-1.html",
+    "lessons": [
+      13
+    ]
+  },
+  "train": {
+    "label": "TRAIN",
+    "english": "train",
+    "hint": "Fist moves in a circle beside the body, like a train's wheel.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/57/57920_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/57/57920_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/train-1.html",
+    "lessons": [
+      20
+    ]
+  },
+  "travel": {
+    "label": "TRAVEL",
+    "english": "travel",
+    "hint": "Both index fingers point forward and move away together.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/52/52390_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/52/52390_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/travel-1.html",
+    "lessons": [
+      22
+    ]
+  },
+  "tuesday": {
+    "label": "TUESDAY",
+    "english": "Tuesday",
+    "hint": "Index finger touches the side of the other upright hand: the letter T. (TOILET uses the same sign.)",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11770.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/11/11770.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/Tuesday-1.html",
+    "lessons": [
+      14
     ]
   },
   "twelve": {
@@ -2195,6 +4520,32 @@
       5
     ]
   },
+  "university": {
+    "label": "UNIVERSITY",
+    "english": "university, graduate",
+    "hint": "Both index fingers point up beside the head: a mortarboard.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/82/8220_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/82/8220_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/university-1.html",
+    "lessons": [
+      23
+    ]
+  },
+  "vehicles-pass": {
+    "label": "PASS (vehicles)",
+    "english": "vehicles passing",
+    "hint": "Two flat hands (vehicles) slide past each other.",
+    "category": "vocab",
+    "region": null,
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/42/42020_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/42/42020_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/pass-2.html",
+    "lessons": [
+      26
+    ]
+  },
   "very": {
     "label": "VERY",
     "english": "very, really",
@@ -2235,6 +4586,87 @@
       5
     ]
   },
+  "walk": {
+    "label": "WALK",
+    "english": "walk",
+    "hint": "Two fingers walk along the other palm. (Victoria: the hand swings forward.)",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/17/17260_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/17/17260_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/walk-2.html",
+    "lessons": [
+      20
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/17/17260_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/17/17260_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/walk-2.html"
+      },
+      {
+        "region": "Victoria-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/21/21230_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/21/21230_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/walk-1.html"
+      }
+    ]
+  },
+  "want": {
+    "label": "WANT",
+    "english": "want",
+    "hint": "Australia-wide: flat hand on the chest moves out, palm up. SA: palm-up hand pulls towards you.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34540.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34540.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/want-2.html",
+    "lessons": [
+      16
+    ],
+    "variants": [
+      {
+        "region": "AustraliaWide-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34540.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34540.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/want-2.html"
+      },
+      {
+        "region": "SouthAustralia-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/34/34800_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/34/34800_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/want-1.html"
+      }
+    ]
+  },
+  "water": {
+    "label": "WATER",
+    "english": "water",
+    "hint": "Southern: thumb and index tap at the chin, like the letter W. Northern: flat hand at the mouth.",
+    "category": "vocab",
+    "region": "SouthernDialect-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13790.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13790.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/water-2.html",
+    "lessons": [
+      16
+    ],
+    "variants": [
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13790.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/13/13790.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/water-2.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/32530_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/32/32530_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/water-1.html"
+      }
+    ]
+  },
   "we": {
     "label": "WE / US",
     "english": "we, us",
@@ -2246,6 +4678,45 @@
     "entry": "https://auslan.org.au/dictionary/words/we-1.html",
     "lessons": [
       11
+    ]
+  },
+  "weather": {
+    "label": "WEATHER",
+    "english": "weather",
+    "hint": "Both open hands raised, palms out, wiggling.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/26/26070.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/26/26070.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/weather-1.html",
+    "lessons": [
+      21
+    ]
+  },
+  "week": {
+    "label": "WEEK / WEDNESDAY",
+    "english": "week; Wednesday",
+    "hint": "Fingers of both hands interlock: the letter W. WEEK and WEDNESDAY share this sign.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26280_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26280_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/week-1.html",
+    "lessons": [
+      14
+    ]
+  },
+  "weekend": {
+    "label": "WEEKEND",
+    "english": "weekend",
+    "hint": "Both hands with crossed fingers near the chest, moving down. Watch at 0.5×.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26320_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/26/26320_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/weekend-1.html",
+    "lessons": [
+      14
     ]
   },
   "what": {
@@ -2359,6 +4830,45 @@
       4
     ]
   },
+  "wide": {
+    "label": "WIDE",
+    "english": "wide, broad",
+    "hint": "Both flat hands, palms facing, move wide apart.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/37780_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/37/37780_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/wide-2.html",
+    "lessons": [
+      27
+    ]
+  },
+  "wind": {
+    "label": "WIND",
+    "english": "wind, windy, breeze",
+    "hint": "Both open hands sway from side to side: wind blowing.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/35/35720.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/35/35720.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/wind%20%28air%29-1.html",
+    "lessons": [
+      21
+    ]
+  },
+  "work": {
+    "label": "WORK / JOB",
+    "english": "work, job",
+    "hint": "Flat hand taps the edge of the other hand repeatedly.",
+    "category": "vocab",
+    "region": "AustraliaWide-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/65/6555.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/Gloss/65/6555.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/work-1.html",
+    "lessons": [
+      15
+    ]
+  },
   "worried": {
     "label": "WORRIED",
     "english": "worried, anxious",
@@ -2423,6 +4933,33 @@
     "entry": "https://auslan.org.au/dictionary/words/yes-1.html",
     "lessons": [
       4
+    ]
+  },
+  "yesterday": {
+    "label": "YESTERDAY",
+    "english": "yesterday",
+    "hint": "Southern: index finger at the cheek/chin, moving back over the shoulder. Northern: hand at the chin moves back.",
+    "category": "vocab",
+    "region": "SouthernDialect-traditional",
+    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/5830_1.mp4",
+    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/5830_1.jpg",
+    "entry": "https://auslan.org.au/dictionary/words/yesterday-1.html",
+    "lessons": [
+      13
+    ],
+    "variants": [
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/5830_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/58/5830_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/yesterday-1.html"
+      },
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/47/47280_1.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/mp4video/47/47280_1.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/yesterday-2.html"
+      }
     ]
   },
   "you": {

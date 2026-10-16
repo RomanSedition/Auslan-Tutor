@@ -268,5 +268,326 @@
       "dog",
       "cat"
     ]
+  },
+  {
+    "id": 13,
+    "slug": "013-time-words",
+    "title": "Time words & time-first order",
+    "date": "2026-10-17",
+    "summary": "TODAY, TOMORROW, YESTERDAY, BEFORE, AFTER, LATER, SOON, FINISH, and why time goes first in an Auslan sentence.",
+    "signs": [
+      "today",
+      "now",
+      "tomorrow",
+      "yesterday",
+      "before",
+      "after",
+      "later",
+      "soon",
+      "finish",
+      "next-week",
+      "last-week"
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "014-days-time",
+    "title": "Days of the week & clock time",
+    "date": "2026-10-17",
+    "summary": "Monday to Sunday, WEEK, WEEKEND, TIME, HOUR, MINUTE, and asking what time something is.",
+    "signs": [
+      "monday",
+      "tuesday",
+      "week",
+      "thursday",
+      "friday",
+      "saturday",
+      "sunday",
+      "weekend",
+      "time",
+      "hour",
+      "minute"
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "015-daily-routine",
+    "title": "Daily routine",
+    "date": "2026-10-17",
+    "summary": "SHOWER, EAT, DRINK, WORK, GO, COME, HOME, SLEEP, BREAKFAST, LUNCH, DINNER, AFTERNOON and NIGHT.",
+    "signs": [
+      "shower",
+      "eat",
+      "drink",
+      "work",
+      "go",
+      "come",
+      "home",
+      "sleep",
+      "breakfast",
+      "lunch",
+      "dinner",
+      "afternoon",
+      "night"
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "016-food-drink",
+    "title": "Food & drink",
+    "date": "2026-10-17",
+    "summary": "COFFEE, TEA, WATER, BREAD, MEAT, FRUIT, MILK, HUNGRY, THIRSTY, LIKE, WANT and ordering at a café.",
+    "signs": [
+      "coffee",
+      "tea",
+      "water",
+      "milk",
+      "bread",
+      "meat",
+      "fruit",
+      "cafe",
+      "hungry",
+      "thirsty",
+      "like",
+      "want"
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "017-negation",
+    "title": "Negation: not, never, can't",
+    "date": "2026-10-17",
+    "summary": "NOT, NO-THANKS, NOTHING, NEVER, CAN and CAN'T, plus the headshake that makes any sentence negative.",
+    "signs": [
+      "not",
+      "no-thanks",
+      "nothing",
+      "never",
+      "can",
+      "cant"
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "018-review-my-week",
+    "title": "★ Review: my day and my week",
+    "date": "2026-10-17",
+    "summary": "Put Unit 3 together: describe your day and your week, make plans, and say what you do and don't do. Plus BUSY, FREE, HOLIDAY and PLAN.",
+    "signs": [
+      "busy",
+      "free",
+      "holiday",
+      "plan"
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "019-places",
+    "title": "Places around town",
+    "date": "2026-10-17",
+    "summary": "SHOP, SCHOOL, HOSPITAL, BEACH, CITY, HOUSE, TOILET, LIBRARY, CHURCH and LIVE WHERE?",
+    "signs": [
+      "shop",
+      "school",
+      "hospital",
+      "beach",
+      "city",
+      "house",
+      "library",
+      "church",
+      "toilet"
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "020-transport-directions",
+    "title": "Transport & directions",
+    "date": "2026-10-17",
+    "summary": "CAR, BUS, TRAIN, BIKE, PLANE, WALK, DRIVE, LEFT, RIGHT, STRAIGHT, NEAR, FAR, and giving directions in space.",
+    "signs": [
+      "car",
+      "bus",
+      "train",
+      "bike",
+      "plane",
+      "walk",
+      "drive",
+      "left",
+      "right",
+      "straight",
+      "near",
+      "far"
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "021-weather",
+    "title": "Weather & seasons",
+    "date": "2026-10-17",
+    "summary": "WEATHER, HOT, COLD, RAIN, SUN, WIND, STORM, CLOUD and the four seasons.",
+    "signs": [
+      "weather",
+      "hot",
+      "cold",
+      "rain",
+      "sun",
+      "wind",
+      "storm",
+      "cloud",
+      "summer",
+      "autumn",
+      "spring"
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "022-hobbies-sport",
+    "title": "Hobbies & sport",
+    "date": "2026-10-17",
+    "summary": "SPORT, SWIM, FOOTBALL, CRICKET, READ, MOVIE, MUSIC, COOK, TRAVEL, PLAY, GAME, FAVOURITE and PREFER.",
+    "signs": [
+      "sport",
+      "swim",
+      "football",
+      "cricket",
+      "play",
+      "game",
+      "read",
+      "movie",
+      "music",
+      "cook",
+      "travel",
+      "favourite",
+      "prefer"
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "023-work-study",
+    "title": "Work & study",
+    "date": "2026-10-17",
+    "summary": "STUDY, STUDENT, TEACHER, DOCTOR, OFFICE, BOSS, INTERPRETER, UNIVERSITY, COMPUTER and asking about jobs.",
+    "signs": [
+      "office",
+      "boss",
+      "computer",
+      "doctor",
+      "teacher",
+      "study",
+      "student",
+      "university",
+      "interpreter"
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "024-review-making-plans",
+    "title": "★ Review: making plans with a friend",
+    "date": "2026-10-17",
+    "summary": "Put Unit 4 together: plan an outing (when, where, how to get there, what to do), plus TOGETHER, READY, LATE, EARLY, INVITE and FUN.",
+    "signs": [
+      "together",
+      "ready",
+      "late",
+      "early",
+      "invite",
+      "fun"
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "025-directional-verbs",
+    "title": "Directional verbs",
+    "date": "2026-10-17",
+    "summary": "GIVE, ASK, TELL, HELP, SHOW, PAY, SEND and TEXT: verbs whose movement shows who does what to whom.",
+    "signs": [
+      "give",
+      "ask",
+      "tell",
+      "help",
+      "show",
+      "pay",
+      "send",
+      "text-message"
+    ]
+  },
+  {
+    "id": 26,
+    "slug": "026-depicting-movement",
+    "title": "Depicting signs 1: people & vehicles",
+    "date": "2026-10-17",
+    "summary": "Handshapes that stand for people and vehicles, moved through space to show paths, passing, following and crashing.",
+    "signs": [
+      "pass",
+      "follow",
+      "vehicles-pass",
+      "crash"
+    ]
+  },
+  {
+    "id": 27,
+    "slug": "027-size-shape",
+    "title": "Depicting signs 2: size & shape",
+    "date": "2026-10-17",
+    "summary": "BIG, SMALL, LONG, THIN, WIDE, SQUARE, BALL, BOX, TABLE and ROOM: tracing and shaping objects in space.",
+    "signs": [
+      "big",
+      "small",
+      "long",
+      "thin",
+      "wide",
+      "square",
+      "ball",
+      "box",
+      "table",
+      "room"
+    ]
+  },
+  {
+    "id": 28,
+    "slug": "028-role-shift",
+    "title": "Role shift: becoming the character",
+    "date": "2026-10-17",
+    "summary": "LOOK, SEE, THINK, SURPRISED, SHOCKED, LAUGH, CRY, SHOUT, REPLY, and shifting your body to become different people in a story.",
+    "signs": [
+      "look",
+      "see",
+      "think",
+      "surprised",
+      "shocked",
+      "laugh",
+      "cry",
+      "shout",
+      "reply"
+    ]
+  },
+  {
+    "id": 29,
+    "slug": "029-deaf-culture",
+    "title": "Deaf culture & community",
+    "date": "2026-10-17",
+    "summary": "DEAF-CLUB, COMMUNITY, CULTURE, HISTORY and HEARING-AID, plus Deaf identity, Auslan's history, technology and etiquette for hearing learners.",
+    "signs": [
+      "deaf-club",
+      "community",
+      "culture",
+      "history",
+      "hearing-aid"
+    ]
+  },
+  {
+    "id": 30,
+    "slug": "030-final-story",
+    "title": "★ Final review: tell a story",
+    "date": "2026-10-17",
+    "summary": "STORY, HAPPEN, FIRST, THEN, FINALLY and REMEMBER: tell a short story using everything from the course.",
+    "signs": [
+      "story",
+      "happen",
+      "first",
+      "then",
+      "finally",
+      "remember"
+    ]
   }
 ]

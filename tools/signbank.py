@@ -52,6 +52,11 @@ def fetch(url):
     if "/dictionary/words/" in url and "/dictionary/words/" not in final:
         key.write_text("__404__", encoding="utf-8")
         return None
+    # Signbank sometimes answers an entry URL with a generic page (no sign on it), e.g. when
+    # it's busy. Don't cache that, so a later run can retry; treat it as missing for now.
+    if "/dictionary/words/" in url and 'id="definitionblock"' not in text:
+        print(f"warning: no sign content at {url} (Signbank busy?); not cached", file=sys.stderr)
+        return None
     key.write_text(text, encoding="utf-8")
     time.sleep(0.3)  # be polite
     return text
