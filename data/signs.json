@@ -376,30 +376,31 @@
       2
     ]
   },
-  "good-morning-n": {
+  "good-morning": {
     "label": "GOOD MORNING",
     "english": "good morning",
-    "hint": "Thumbs-up hand brought in to the upper chest. Northern variant.",
+    "hint": "Thumbs-up (GOOD) hand at the upper chest. The Northern and Southern versions differ slightly, so compare them at 0.25×.",
     "category": "vocab",
+    "region": "NorthernDialect-traditional",
     "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34770.mp4",
     "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34770.jpg",
     "entry": "https://auslan.org.au/dictionary/words/Good%20morning-1.html",
-    "region": "NorthernDialect-traditional",
     "lessons": [
       2
-    ]
-  },
-  "good-morning-s": {
-    "label": "GOOD MORNING",
-    "english": "good morning",
-    "hint": "Thumbs-up hand held against the upper chest, then moves forward. Southern variant.",
-    "category": "vocab",
-    "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34910.mp4",
-    "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34910.jpg",
-    "entry": "https://auslan.org.au/dictionary/words/Good%20morning-2.html",
-    "region": "SouthernDialect-traditional",
-    "lessons": [
-      2
+    ],
+    "variants": [
+      {
+        "region": "NorthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34770.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34770.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/Good%20morning-1.html"
+      },
+      {
+        "region": "SouthernDialect-traditional",
+        "video": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34910.mp4",
+        "poster": "https://object-store.rc.nectar.org.au/v1/AUTH_92e2f9b70316412697cddc6f3ac0ee4e/staticauslanorgau/auslan/34/34910.jpg",
+        "entry": "https://auslan.org.au/dictionary/words/Good%20morning-2.html"
+      }
     ]
   },
   "hearing": {

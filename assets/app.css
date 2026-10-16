@@ -213,6 +213,7 @@ auslan-sign { display: block; }
 .sign-controls { display: flex; align-items: center; gap: 4px; padding: 8px 10px; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
 .sign-controls .speeds { display: flex; gap: 3px; }
 .sign-controls .grow { flex: 1; }
+.sign-variants { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; padding: 8px 10px; border-bottom: 1px solid var(--border); font-size: .8rem; }
 .sign-tips { padding: 10px 14px 14px; font-size: .92rem; }
 .sign-tips:empty { display: none; }
 .sign-tips > :first-child { margin-top: 0; }
@@ -352,7 +353,7 @@ main.wrap:has(+ .site-footer) { padding-bottom: 40px; }
 .site-footer p { max-width: 52em; margin: 0 0 8px; }
 .site-footer a { color: var(--muted); }
 .name-form { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 12px; }
-.name-form input {
+.name-form input, .name-form select {
   font: 600 1rem var(--font); padding: 9px 12px; border-radius: 10px; border: 1px solid var(--border);
   background: var(--surface); color: var(--text); min-width: 0; flex: 0 1 220px;
 }

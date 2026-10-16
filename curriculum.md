@@ -1,7 +1,7 @@
 # Auslan curriculum (beginner track)
 
-Roman started as a complete beginner on 2026-10-17. Claude follows this order for "next lesson",
-adapts it to what Roman asks for, and ticks items off as lessons are written.
+A beginner track. Claude follows this order for "next lesson", adapts it to what's asked for,
+and ticks items off as lessons are written.
 Each lesson should reuse 3–5 signs from earlier lessons in its phrases and quiz, as spaced review.
 
 ## Unit 1: Foundations
@@ -29,7 +29,3 @@ Each lesson should reuse 3–5 signs from earlier lessons in its phrases and qui
 ## Communication strategies (any time)
 - Asking someone to repeat or sign slower, saying “I don't understand”
 - Clarifying through fingerspelling
-
-## Notes on Roman's progress
-- Region: **Western Australia → Southern dialect** (confirmed 2026-10-17). Teach the Southern variant
-  as the main sign; mention the Northern one only as a "you may also see" aside.

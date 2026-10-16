@@ -2,3 +2,4 @@
 # Signbank page cache and compiled helper binaries (rebuilt locally)
 tools/.cache/
 tools/.bin/
+CLAUDE.local.md

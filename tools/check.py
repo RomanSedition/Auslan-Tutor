@@ -60,9 +60,14 @@ for key, s in signs.items():
     for lid in s.get("lessons", []):
         if lid not in lesson_ids:
             err(f"signs.json '{key}': lesson {lid} doesn't exist")
+    for i, v in enumerate(s.get("variants", [])):
+        for field in ("region", "video", "poster", "entry"):
+            if not v.get(field):
+                err(f"signs.json '{key}': variant {i} missing {field}")
 
 if "--online" in sys.argv:
-    urls = sorted({s[f] for s in signs.values() for f in ("video", "poster") if s.get(f)})
+    records = [r for s in signs.values() for r in [s, *s.get("variants", [])]]
+    urls = sorted({r[f] for r in records for f in ("video", "poster") if r.get(f)})
 
     def head(url):
         try:

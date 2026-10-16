@@ -13,9 +13,14 @@
     <h1 id="greeting">G'day 🤟</h1>
     <p>Free beginner Auslan lessons. The sign videos come straight from <a href="https://auslan.org.au" target="_blank" rel="noopener">Auslan Signbank</a>, and the camera mirror (<kbd>M</kbd>) lets you check your own signing as you go. Your progress is saved in this browser.</p>
     <form class="name-form" id="name-form">
-      <label for="name-input" class="muted" id="name-label">What's your name? It's used for your fingerspelling practice and stays in this browser.</label>
-      <input id="name-input" autocomplete="given-name" maxlength="30" placeholder="First name">
+      <span class="muted" id="name-label" style="flex-basis:100%">Tell us a little about you. It personalises your lessons and stays in this browser.</span>
+      <input id="name-input" autocomplete="given-name" maxlength="30" placeholder="First name" aria-label="First name">
+      <select id="state-input" aria-label="Your state or territory">
+        <option value="">State / territory…</option>
+      </select>
       <button class="btn primary" type="submit">Save</button>
+      <span class="muted" id="saved-msg" style="font-size:.9rem"></span>
+      <span class="muted" style="flex-basis:100%;font-size:.85rem">Some signs differ by region. With your state set, lessons show the version used near you first (and you can still switch).</span>
     </form>
   </section>
 
@@ -50,20 +55,30 @@
 
 <script src="assets/app.js"></script>
 <script>
-// Name: greeting + form
+// Name + state: greeting + form
 (() => {
-  const { userName, setUserName } = AuslanTutor;
+  const { h, userName, setUserName, userState, setUserState, STATES, DIALECT } = AuslanTutor;
   const form = document.getElementById("name-form"), input = document.getElementById("name-input");
-  const greeting = document.getElementById("greeting"), label = document.getElementById("name-label");
+  const stateSel = document.getElementById("state-input"), saved = document.getElementById("saved-msg");
+  const greeting = document.getElementById("greeting");
+  for (const [abbr, name] of Object.entries(STATES)) stateSel.append(h("option", { value: abbr }, name));
+  stateSel.append(h("option", { value: "none" }, "Outside Australia / no preference"));
   const render = () => {
     const name = userName();
     greeting.textContent = name ? `G'day, ${name} 🤟` : "G'day 🤟";
     input.value = name;
-    label.textContent = name
-      ? "Change your name (used in fingerspelling practice):"
-      : "What's your name? It's used for your fingerspelling practice and stays in this browser.";
+    stateSel.value = userState() || "";
   };
-  form.addEventListener("submit", (e) => { e.preventDefault(); setUserName(input.value); render(); });
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    setUserName(input.value);
+    setUserState(stateSel.value);
+    const st = stateSel.value;
+    saved.textContent = !st || st === "none"
+      ? "Saved ✓"
+      : `Saved ✓  You'll see ${st} signs first${DIALECT[st] ? `, then the ${DIALECT[st]} dialect` : ""}.`;
+    render();
+  });
   render();
 })();
 

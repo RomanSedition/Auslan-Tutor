@@ -50,7 +50,7 @@
   }
 
   /* ---------- progress file: save / load / merge ---------- */
-  const EXTRA_KEYS = [NAME_KEY, "auslan.spell.best", "auslan.spell.level", "auslan.spell.speed", "auslan.speed"];
+  const EXTRA_KEYS = [NAME_KEY, "auslan.user.state", "auslan.spell.best", "auslan.spell.level", "auslan.spell.speed", "auslan.speed"];
 
   function exportProgress() {
     const data = { app: "auslan-tutor", version: 1, exported: new Date().toISOString(), progress, settings: {} };
@@ -76,6 +76,7 @@
     saveProgress();
     const s = data.settings || {};
     if (s[NAME_KEY] && !userName()) store.set(NAME_KEY, s[NAME_KEY]);
+    if (s["auslan.user.state"] && !store.get("auslan.user.state", "")) store.set("auslan.user.state", s["auslan.user.state"]);
     if ((s["auslan.spell.best"] || 0) > store.get("auslan.spell.best", 0)) store.set("auslan.spell.best", s["auslan.spell.best"]);
     for (const k of ["auslan.spell.level", "auslan.spell.speed", "auslan.speed"]) if (s[k] != null) store.set(k, s[k]);
     return { lessons, signs };
@@ -90,7 +91,46 @@
       if (!r.ok) throw new Error(`${path}: ${r.status}`);
       return r.json();
     });
-  const loadSigns = () => (signsPromise ||= loadJSON("data/signs.json"));
+  const loadSigns = () => (signsPromise ||= loadJSON("data/signs.json").then(applyRegions));
+
+  /* ---------- regions: prefer the visitor's state, then dialect, then Australia-wide ---------- */
+  const STATE_KEY = "auslan.user.state";
+  const STATES = {
+    WA: "Western Australia", SA: "South Australia", VIC: "Victoria", TAS: "Tasmania",
+    NSW: "New South Wales", QLD: "Queensland", ACT: "Australian Capital Territory", NT: "Northern Territory",
+  };
+  // Auslan's two main dialects. NT isn't clearly either, so it just gets state matches and Australia-wide.
+  const DIALECT = { WA: "Southern", SA: "Southern", VIC: "Southern", TAS: "Southern", NSW: "Northern", QLD: "Northern", ACT: "Northern" };
+  // Signbank region tags (from its map images) → short labels.
+  const REGION_ABBR = {
+    WesternAustralia: "WA", SouthAustralia: "SA", Victoria: "VIC", Tasmania: "TAS", NewSouthWales: "NSW",
+    Queensland: "QLD", AustralianCapitalTerritory: "ACT", NorthernTerritory: "NT",
+    SouthernDialect: "Southern", NorthernDialect: "Northern", AustraliaWide: "Australia-wide",
+  };
+  const userState = () => store.get(STATE_KEY, "");
+  const regionLabel = (region) => {
+    const base = (region || "").replace(/-.*$/, "");
+    return REGION_ABBR[base] || base.replace(/([a-z])([A-Z])/g, "$1 $2") || "Australia-wide";
+  };
+  // Higher = better match for this visitor.
+  function regionScore(region, state = userState()) {
+    const label = regionLabel(region);
+    if (state && label === state) return 3;
+    if (state && DIALECT[state] && label === DIALECT[state]) return 2;
+    if (label === "Australia-wide") return 1;
+    return 0;
+  }
+  const bestVariant = (variants) =>
+    variants.reduce((best, v) => (regionScore(v.region) > regionScore(best.region) ? v : best), variants[0]);
+  // For signs with regional variants, copy the best variant's video/poster/entry/region onto the sign,
+  // so every component (cards, quizzes, phrases, review) uses the visitor's version.
+  function applyRegions(signs) {
+    for (const s of Object.values(signs)) {
+      if (s.variants?.length) Object.assign(s, bestVariant(s.variants));
+    }
+    return signs;
+  }
+  const setUserState = (state) => store.set(STATE_KEY, state);
   const loadLessons = () => (lessonsPromise ||= loadJSON("data/lessons.json"));
 
   /* ---------- tiny DOM helper ---------- */
@@ -371,7 +411,7 @@
       const all = await loadSigns().catch(() => ({}));
       const s = all[d.key];
       if (!s) console.warn(`auslan-sign: "${d.key}" is not in data/signs.json`);
-      for (const k of ["label", "english", "video", "poster", "entry", "region"]) d[k] ||= s?.[k];
+      for (const k of ["label", "english", "video", "poster", "entry", "region", "variants"]) d[k] ||= s?.[k];
     }
     d.label ||= (d.key || "").toUpperCase();
     return d;
@@ -436,11 +476,44 @@
       const credit = d.entry
         ? h("a", { class: "sign-credit", href: d.entry, target: "_blank", rel: "noopener", title: "View on Auslan Signbank" }, "Signbank ↗")
         : null;
+      const regionTag = h("span", { class: "tag teal" });
+      const showRegion = () => {
+        const label = regionLabel(d.region);
+        regionTag.hidden = !d.region || label === "Australia-wide";
+        regionTag.textContent = label;
+      };
+      showRegion();
+
+      // Regional versions: chips to switch between them. The visitor's best match is shown first.
+      let variantRow = null;
+      if (d.variants?.length > 1) {
+        const ordered = [...d.variants].sort((a, b) => regionScore(b.region) - regionScore(a.region));
+        const chips = ordered.map((v) => {
+          const label = regionLabel(v.region);
+          const yours = regionScore(v.region) >= 2;
+          const chip = h("button", {
+            class: "chip" + (v.video === d.video ? " on" : ""),
+            title: `Show the ${label} version`,
+            onclick: () => {
+              Object.assign(d, v);
+              video.poster = v.poster || "";
+              video.src = v.video;
+              video.play().catch(() => {});
+              if (credit) credit.href = v.entry;
+              chips.forEach((c) => c.classList.toggle("on", c === chip));
+              showRegion();
+            },
+          }, label + (yours ? " · yours" : ""));
+          return chip;
+        });
+        variantRow = h("div", { class: "sign-variants" }, h("span", { class: "muted" }, "Regional versions:"), chips);
+      }
+
       card.append(
         h("div", { class: "sign-head" },
           h("span", { class: "sign-label" }, d.label),
           !compact && d.english ? h("span", { class: "sign-english" }, d.english) : null,
-          d.region && !/AustraliaWide/i.test(d.region) ? h("span", { class: "tag teal" }, d.region.replace(/-.*$/, "").replace(/Dialect$/, "")) : null,
+          regionTag,
           compact ? h("span", { class: "grow" }) : null,
           compact ? credit : null),
         wrap,
@@ -450,6 +523,7 @@
           h("span", { class: "grow" }),
           practise,
           compact ? null : credit),
+        variantRow,
         h("div", { class: "sign-tips" }, tips));
       this.replaceChildren(card);
     }
@@ -866,6 +940,7 @@
   window.AuslanTutor = {
     ROOT, h, store, shuffle, loadSigns, loadLessons, progress, saveProgress, Mirror,
     userName, setUserName, applyUserName, exportProgress, importProgress, isAuthor,
+    STATES, DIALECT, userState, setUserState, regionLabel,
   };
 
   renderHeader();
