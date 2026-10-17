@@ -579,10 +579,11 @@
    * between signs blends instead of stopping. Returns a cancel function.
    * onStep(i) fires as clip i starts, onStep(-1) at the end.
    * ===================================================================== */
-  // A fingerspelled letter as a sequence clip: just ~0.7 s of its held handshape, so letters run
-  // together like real fingerspelling (hands stay up between letters).
+  // A fingerspelled letter as a sequence clip: the hands arriving and meeting (two-handed letters like G
+  // and B form *as* the hands come together), then ~0.6 s of the held handshape, so letters run together
+  // like real fingerspelling without losing how each one is formed.
   const letterClip = (s) => s.hold
-    ? { video: s.video, trim: [s.hold[0], Math.min(s.hold[1], s.hold[0] + 0.7)], overlap: 0.1 }
+    ? { video: s.video, trim: [Math.max(s.trim?.[0] ?? 0, s.hold[0] - 0.45), Math.min(s.hold[1], s.hold[0] + 0.6)], overlap: 0.1 }
     // Letters with no still hold either move (H brushes, J and Z trace) or are very short (P):
     // play them right through before the next letter starts.
     : { video: s.video, trim: s.trim, overlap: 0 };
