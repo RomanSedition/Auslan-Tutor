@@ -583,7 +583,7 @@
   // together like real fingerspelling (hands stay up between letters).
   const letterClip = (s) => s.hold
     ? { video: s.video, trim: [s.hold[0], Math.min(s.hold[1], s.hold[0] + 0.7)], overlap: 0.1 }
-    : { video: s.video, trim: s.trim, overlap: 0.3 };
+    : { video: s.video, trim: s.trim, overlap: s.trim ? 0.3 : 0 }; // untrimmed (short) clips like P play in full
 
   function playSequence(stage, clips, rate, onStep, { overlap = 0.3, fade = 0.18 } = {}) {
     let cancelled = false;
@@ -635,7 +635,9 @@
           setTimeout(() => { p.style.opacity = "0"; setTimeout(() => p.pause(), fade * 1000); }, fade * 1000);
         }
         const last = i === vids.length - 1;
-        await reach(v, t1, last ? 0 : (c.overlap ?? overlap));
+        // Never let the overlap eat more than a quarter of a short clip.
+        const ov = Math.min(c.overlap ?? overlap, Math.max(0, (t1 - t0) * 0.25));
+        await reach(v, t1, last ? 0 : ov);
         prev = v;
       }
       if (cancelled) return;
