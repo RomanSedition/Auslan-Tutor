@@ -16,7 +16,7 @@
 
   <div class="toolbar">
     <input type="search" id="q" placeholder="Search signs or English…" autofocus>
-    <select id="lesson"><option value="">All lessons</option></select>
+    <select id="lesson"><option value="done">✓ Known (completed lessons)</option><option value="">All lessons</option></select>
     <select id="cat">
       <option value="vocab">Vocabulary</option>
       <option value="fingerspelling">Fingerspelling</option>
@@ -34,21 +34,42 @@
   const q = document.getElementById("q"), lessonSel = document.getElementById("lesson"), cat = document.getElementById("cat");
   lessons.forEach((l) => lessonSel.append(h("option", { value: l.id }, `${l.id}. ${l.title}`)));
   cat.value = store.get("auslan.glossary.cat", "vocab");
+  lessonSel.value = store.get("auslan.glossary.lesson", "done");
+  const completed = () => lessons.filter((l) => progress.lessons[l.id]).length;
+  const inScope = (s) => {
+    const v = lessonSel.value;
+    if (!v) return true;
+    if (v === "done") return s.lessons.some((id) => progress.lessons[id]);
+    return s.lessons.includes(+v);
+  };
+  const showAll = () => { lessonSel.value = ""; render(); };
 
   function render() {
     store.set("auslan.glossary.cat", cat.value);
+    store.set("auslan.glossary.lesson", lessonSel.value);
     const term = q.value.trim().toLowerCase();
-    const items = Object.entries(signs)
+    const matching = Object.entries(signs)
       .filter(([k, s]) => !cat.value || s.category === cat.value)
-      .filter(([k, s]) => !lessonSel.value || s.lessons.includes(+lessonSel.value))
-      .filter(([k, s]) => !term || [s.label, s.english, s.hint, k].join(" ").toLowerCase().includes(term))
-      .sort((a, b) => a[1].label.localeCompare(b[1].label));
+      .filter(([k, s]) => !term || [s.label, s.english, s.hint, k].join(" ").toLowerCase().includes(term));
+    const items = matching.filter(([k, s]) => inScope(s)).sort((a, b) => a[1].label.localeCompare(b[1].label));
+    const hidden = matching.length - items.length; // matches outside the current lesson filter
 
     const out = document.getElementById("out");
-    if (!items.length) { out.replaceChildren(h("p", { class: "empty" }, "No signs match.")); return; }
+    const more = hidden && lessonSel.value
+      ? h("p", { class: "muted", style: "margin:0 0 12px" }, `${hidden} more sign${hidden > 1 ? "s" : ""} in other lessons. `,
+          h("a", { href: "#", onclick: (e) => { e.preventDefault(); showAll(); } }, "Show all lessons"))
+      : null;
+    if (lessonSel.value === "done" && !completed()) {
+      out.replaceChildren(h("div", { class: "empty" },
+        h("p", { style: "font-size:2rem;margin:0" }, "📚"),
+        h("p", {}, "Your known signs will appear here once you've marked a lesson complete (the button at the top of each lesson)."),
+        h("button", { class: "btn", onclick: showAll }, "Show every sign")));
+      return;
+    }
+    if (!items.length) { out.replaceChildren(h("p", { class: "empty" }, "No signs match."), ...(more ? [more] : [])); return; }
     const groups = {};
     for (const it of items) (groups[it[1].label[0].toUpperCase()] ||= []).push(it);
-    out.replaceChildren(...Object.entries(groups).flatMap(([letter, list]) => [
+    out.replaceChildren(...(more ? [more] : []), ...Object.entries(groups).flatMap(([letter, list]) => [
       h("div", { class: "gloss-letter" }, letter),
       h("div", { class: "sign-grid" + (cat.value === "fingerspelling" ? " compact" : "") }, list.map(([k, s]) => {
         const grade = progress.signs[k]?.grade || "";
