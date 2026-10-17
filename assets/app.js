@@ -572,28 +572,75 @@
   }
 
   /* =====================================================================
-   * Sequence player: plays several Signbank clips back-to-back in `stage`.
-   * One preloaded <video> per clip so playback doesn't stall between them.
-   * Returns a cancel function. onStep(i) fires as each clip starts, onStep(-1) at the end.
+   * Sequence player: plays several Signbank clips back-to-back in `stage`, smoothly.
+   * clips: [{ video, trim: [start, end] | undefined }] (or plain URL strings).
+   * Each clip plays only its trimmed window (skipping the signer standing still), and the next clip
+   * starts `overlap` seconds before the current one ends, with a crossfade, so the hands-down/hands-up
+   * between signs blends instead of stopping. Returns a cancel function.
+   * onStep(i) fires as clip i starts, onStep(-1) at the end.
    * ===================================================================== */
-  function playSequence(stage, urls, rate, onStep) {
+  // A fingerspelled letter as a sequence clip: just ~0.7 s of its held handshape, so letters run
+  // together like real fingerspelling (hands stay up between letters).
+  const letterClip = (s) => s.hold
+    ? { video: s.video, trim: [s.hold[0], Math.min(s.hold[1], s.hold[0] + 0.7)], overlap: 0.1 }
+    : { video: s.video, trim: s.trim, overlap: 0.3 };
+
+  function playSequence(stage, clips, rate, onStep, { overlap = 0.3, fade = 0.18 } = {}) {
     let cancelled = false;
-    const vids = urls.map((src) => h("video", { muted: true, playsInline: true, preload: "auto", src, style: "display:none" }));
+    const items = clips.map((c) => (typeof c === "string" ? { video: c } : c));
+    stage.classList.add("seq-stage");
+    const vids = items.map((c) => {
+      const v = h("video", { muted: true, playsInline: true, preload: "auto", src: c.video, class: "seq-clip" });
+      v.style.transition = `opacity ${fade}s linear`;
+      const t0 = c.trim?.[0] || 0;
+      const seek = () => { if (v.currentTime < t0 - 0.05 || v.currentTime > t0 + 0.05) v.currentTime = t0; };
+      if (v.readyState >= 1) seek(); else v.addEventListener("loadedmetadata", seek, { once: true });
+      return v;
+    });
     stage.replaceChildren(...vids);
+
+    // Resolve when a clip can play (or give up after a few seconds so a slow clip can't freeze the sequence).
+    const ready = (v) => v.readyState >= 3 ? Promise.resolve() : new Promise((res) => {
+      const done = () => { clearTimeout(t); res(); };
+      const t = setTimeout(done, 4000);
+      v.addEventListener("canplay", done, { once: true });
+      v.addEventListener("error", done, { once: true });
+    });
+    // Resolve when clip i reaches `at` seconds before its end (or ends / errors / is cancelled).
+    const reach = (v, endT, before) => new Promise((res) => {
+      const tick = () => {
+        if (cancelled || v.error || v.ended || v.currentTime >= endT - before * v.playbackRate) return res();
+        requestAnimationFrame(tick);
+      };
+      tick();
+    });
+
     (async () => {
+      let prev = null;
       for (let i = 0; i < vids.length; i++) {
         if (cancelled) return;
-        const v = vids[i];
-        vids.forEach((x) => (x.style.display = x === v ? "block" : "none"));
-        onStep?.(i);
+        const v = vids[i], c = items[i];
+        await ready(v);
+        if (cancelled) return;
+        const t0 = c.trim?.[0] || 0;
+        const t1 = Math.min(c.trim?.[1] || v.duration || Infinity, v.duration || Infinity);
+        v.currentTime = t0;
         v.playbackRate = rate;
-        await new Promise((resolve) => {
-          v.onended = resolve;
-          v.onerror = resolve;
-          v.play().catch(resolve);
-        });
+        v.style.zIndex = String(i + 1);
+        v.style.opacity = "1";
+        v.play().catch(() => {});
+        onStep?.(i);
+        if (prev) { // fade the previous clip out underneath, then stop it
+          const p = prev;
+          setTimeout(() => { p.style.opacity = "0"; setTimeout(() => p.pause(), fade * 1000); }, fade * 1000);
+        }
+        const last = i === vids.length - 1;
+        await reach(v, t1, last ? 0 : (c.overlap ?? overlap));
+        prev = v;
       }
-      if (!cancelled) onStep?.(-1);
+      if (cancelled) return;
+      prev?.pause();
+      onStep?.(-1);
     })();
     return () => { cancelled = true; vids.forEach((v) => v.pause()); };
   }
@@ -613,10 +660,10 @@
       const labels = tokens.map((t, ti) => {
         if (t.startsWith("fs:")) {
           const word = t === "fs:@name" ? nameLetters() : t.slice(3).toLowerCase();
-          [...word].forEach((c) => all[`letter-${c}`] && clips.push({ url: all[`letter-${c}`].video, ti }));
+          [...word].forEach((c) => all[`letter-${c}`] && clips.push({ ...letterClip(all[`letter-${c}`]), ti }));
           return word.toUpperCase().split("").join("-");
         }
-        if (all[t]) clips.push({ url: all[t].video, ti });
+        if (all[t]) clips.push({ video: all[t].video, trim: all[t].trim, ti });
         else console.warn(`sign-phrase: "${t}" is not in data/signs.json`);
         return all[t]?.label || t.toUpperCase();
       });
@@ -632,7 +679,7 @@
       btn.addEventListener("click", () => {
         cancel?.();
         stage.hidden = false;
-        cancel = playSequence(stage, clips.map((c) => c.url), +rate.value, highlight);
+        cancel = playSequence(stage, clips, +rate.value, highlight);
       });
 
       const displayName = userName() || FALLBACK_NAME;
@@ -849,8 +896,9 @@
     play(word, showLetters) {
       this.stop();
       word = [...word].filter((c) => this.all[`letter-${c}`]).join("");
-      const urls = [...word].map((c) => this.all[`letter-${c}`].video);
-      this.cancel = playSequence(this.stage, urls, +this.speed.value, (i) => this.showLetters(word, i, showLetters));
+      const clips = [...word].map((c) => letterClip(this.all[`letter-${c}`]));
+      // Letters flow into each other more tightly than whole signs, like real fingerspelling.
+      this.cancel = playSequence(this.stage, clips, +this.speed.value, (i) => this.showLetters(word, i, showLetters), { fade: 0.1 });
     }
   }
 

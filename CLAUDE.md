@@ -35,6 +35,7 @@ not file://, because the camera and `fetch()` need it.
 - `PLANNED_FEATURES.md`: app features that were discussed but not built yet. When one gets built, move it to "Done".
 - `tools/signbank.py`: look up signs on Signbank (JSON out, cached in `tools/.cache/`)
 - `tools/framesheet.swift`: renders a sign video as a frame contact sheet so you can see how it's made
+- `tools/trim.py` + `tools/motion.swift`: detect the signing window (`trim`) and letter holds (`hold`) in each clip
 - `tools/check.py`: validates lessons and data (`--online` also checks every video URL, including variants)
 
 ## Delivering a lesson ("next lesson", "a lesson on X")
@@ -60,10 +61,12 @@ not file://, because the camera and `fetch()` need it.
    `data-lesson`, the hero, goals, vocab cards, notes, phrases, mirror steps, quiz and recap.
    Use `<sign-phrase>` glosses in Auslan word order, with a `face` hint. Put Deaf-culture notes in `.note.culture`.
 6. **Register it.** Append to `data/lessons.json` and tick it off in `curriculum.md`.
-7. **Verify.** Run `python3 tools/stamp.py` (cache-busts `assets/app.js` and `app.css` in every page, including new
+7. **Trim.** Run `python3 tools/trim.py` (macOS only). It finds where the signing happens in each new clip, so phrases
+   and fingerspelling play smoothly. Cloud sessions can't run it; untrimmed signs still play, just with pauses.
+8. **Verify.** Run `python3 tools/stamp.py` (cache-busts `assets/app.js` and `app.css` in every page, including new
    ones), then `python3 tools/check.py --online`; it must print OK. Any edit to `assets/` also needs `stamp.py`,
    or browsers keep serving the old cached copy.
-8. **Publish.** Commit and push. Then reply with the lesson title, the live URL
+9. **Publish.** Commit and push. Then reply with the lesson title, the live URL
    (https://romansedition.github.io/Auslan-Tutor/lessons/NNN-slug.html) and a one-line summary.
 
 ## Cloud sessions (Claude Code on the web / phone)
