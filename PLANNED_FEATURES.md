@@ -68,12 +68,8 @@ That mostly works today, because Claude follows [CLAUDE.md](CLAUDE.md) in any co
 - [ ] **Conditional publishing in CLAUDE.md.** The workflow says "commit and push to `main`" and names the author's GitHub Pages URL. Change it so Claude only pushes when the repo belongs to the person running it (for example, `gh repo view` shows push access). Otherwise lessons stay local. The live URL should be worked out from the repo owner, not hard-coded.
 - [ ] **Non-Mac fallback.** `tools/framesheet.swift` needs macOS (AVFoundation). Add instructions for other systems: use the Signbank poster image plus the entry's definitions, and describe movement more cautiously ("watch at 0.5×").
 - [ ] **Lesson numbering in forks.** Solved by private lessons (§1): personal lessons live in the gitignored `local/` folder with `my-` IDs, so they never clash with upstream numbering.
-- [ ] **README.md.** What the app is, a screenshot, quick start (`git clone` → `./serve.sh` → ask Claude "next lesson"), requirements (Python 3, a modern browser, Claude Code for lesson authoring), and a note that videos stream from Signbank, so it needs internet.
-- [ ] **Licence.** There's no LICENSE file, so legally others can't reuse the code. **Decision needed:**
-  - **MIT:** anyone can reuse the code, even commercially.
-  - **CC BY-NC 4.0:** non-commercial only, which matches the spirit of Signbank's licence.
-  - Either way, add a note that Signbank videos and entries stay under **CC BY-NC-ND 4.0** and aren't covered by the repo licence.
-
+- [x] **README.md.** (basic version added) What the app is, a screenshot, quick start (`git clone` → `./serve.sh` → ask Claude "next lesson"), requirements (Python 3, a modern browser, Claude Code for lesson authoring), and a note that videos stream from Signbank, so it needs internet.
+- [x] **Licence.** Decided: code under PolyForm Noncommercial 1.0.0 (`LICENSE`), lesson content under CC BY-NC-SA 4.0 (`LICENSE-CONTENT.md`), Signbank media excluded (CC BY-NC-ND 4.0). See README.md.
 ## 3. Let visitors request lessons
 
 **Today:** only the author can create lessons (Claude Code on their machine, plus push access).
