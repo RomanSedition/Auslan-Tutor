@@ -65,7 +65,7 @@ not file://, because the camera and `fetch()` need it.
 7. **Trim.** Run `python3 tools/trim.py` (macOS only). It finds where the signing happens in each new clip, so phrases
    and fingerspelling play smoothly. Cloud sessions can't run it; untrimmed signs still play, just with pauses.
 8. **Verify.** Run `python3 tools/phrases.py` (collects lesson phrases for the Review phrase game), then `python3 tools/stamp.py` (cache-busts `assets/app.js` and `app.css` in every page, including new
-   ones), then `python3 tools/check.py --online`; it must print OK. Any edit to `assets/` also needs `stamp.py`,
+   ones, and updates meta descriptions + `sitemap.xml` from `data/lessons.json`), then `python3 tools/check.py --online`; it must print OK. Any edit to `assets/` also needs `stamp.py`,
    or browsers keep serving the old cached copy.
 9. **Publish.** Commit and push. Then reply with the lesson title, the live URL
    (https://romansedition.github.io/Auslan-Tutor/lessons/NNN-slug.html) and a one-line summary.
