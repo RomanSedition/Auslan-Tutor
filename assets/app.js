@@ -583,7 +583,9 @@
   // together like real fingerspelling (hands stay up between letters).
   const letterClip = (s) => s.hold
     ? { video: s.video, trim: [s.hold[0], Math.min(s.hold[1], s.hold[0] + 0.7)], overlap: 0.1 }
-    : { video: s.video, trim: s.trim, overlap: s.trim ? 0.3 : 0 }; // untrimmed (short) clips like P play in full
+    // Letters with no still hold either move (H brushes, J and Z trace) or are very short (P):
+    // play them right through before the next letter starts.
+    : { video: s.video, trim: s.trim, overlap: 0 };
 
   function playSequence(stage, clips, rate, onStep, { overlap = 0.3, fade = 0.18 } = {}) {
     let cancelled = false;
