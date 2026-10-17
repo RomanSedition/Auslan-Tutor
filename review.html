@@ -20,6 +20,20 @@
   .quiz-options button.sel { border-color: var(--accent); background: var(--accent-soft); }
   .quiz-options button:disabled { cursor: default; text-decoration: none; }
   .quiz-options button.wrong-flash { animation: match-wrong .6s; }
+  /* 🧱 Phrase builder: tap sign tiles in the order they were signed. */
+  .phrase-game .fs-stage { margin: 10px; border-radius: 10px; }
+  .phrase-row { display: flex; flex-wrap: wrap; gap: 6px; min-height: 48px; padding: 8px 10px; margin: 0 10px;
+    border: 2px dashed var(--border); border-radius: 12px; align-items: center; }
+  .phrase-row.bank { border-style: solid; border-color: transparent; background: var(--surface-2); margin-top: 8px; }
+  .phrase-row .slot-hint { color: var(--muted); font-size: .85rem; }
+  .ptile { font: 700 .95rem var(--font-display); letter-spacing: .03em; padding: 9px 12px; border-radius: 10px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; }
+  .ptile:hover { border-color: var(--accent); }
+  .ptile.right { border-color: var(--good); background: color-mix(in srgb, var(--good) 18%, var(--surface)); }
+  .ptile.wrong { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 14%, var(--surface)); }
+  .ptile.now { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .phrase-tools { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; padding: 12px 10px 4px; }
+  .phrase-tools select { font: 600 .85rem var(--font); padding: 6px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
   @keyframes match-wrong {
     0%, 60% { outline-color: var(--bad); border-color: var(--bad); background: color-mix(in srgb, var(--bad) 14%, var(--surface)); }
   }
@@ -38,6 +52,7 @@
       <option value="do">✋ Meaning → sign it (with mirror)</option>
       <option value="quiz">🎯 Multiple choice (completed lessons)</option>
       <option value="match">🧩 Match pairs</option>
+      <option value="phrase">🧱 Phrase builder</option>
       <option value="spell">🔤 Fingerspelling game</option>
     </select>
     <select id="deck" title="Deck">
@@ -53,7 +68,7 @@
   <p class="muted" id="keys" style="text-align:center;margin-top:16px">Keys: <kbd>Space</kbd> show answer · <kbd>1</kbd> again · <kbd>2</kbd> hard · <kbd>3</kbd> good · <kbd>M</kbd> mirror</p>
 </main>
 
-<script src="assets/app.js?v=7bf74d279d"></script>
+<script src="assets/app.js?v=ccbb81a6bf"></script>
 <script>
 (async () => {
   const { h, loadLessons, loadSigns, progress, saveProgress, store, Mirror } = AuslanTutor;
@@ -129,6 +144,7 @@
   function next() {
     const spell = modeSel.value === "spell";
     deckSel.hidden = lessonSel.hidden = document.getElementById("counts").hidden = document.getElementById("keys").hidden = spell;
+    if (!spell) deckSel.hidden = modeSel.value === "phrase";
     if (spell) {
       current = null;
       document.getElementById("card").replaceChildren(
@@ -140,9 +156,12 @@
       ? "Keys: <kbd>1</kbd>–<kbd>4</kbd> answer · <kbd>R</kbd> replay · <kbd>S</kbd> slow · <kbd>Enter</kbd> next"
       : modeSel.value === "match"
       ? "Tap a video, then the label that matches it · <kbd>Enter</kbd> next round"
+      : modeSel.value === "phrase"
+      ? "Keys: <kbd>Space</kbd> replay · <kbd>⌫</kbd> undo · <kbd>Enter</kbd> check / next"
       : "Keys: <kbd>Space</kbd> show answer · <kbd>1</kbd> again · <kbd>2</kbd> hard · <kbd>3</kbd> good · <kbd>M</kbd> mirror";
     if (modeSel.value === "quiz") return nextQuiz();
     if (modeSel.value === "match") return nextMatch();
+    if (modeSel.value === "phrase") return nextPhrase();
     current = pick();
     revealed = false;
     const box = document.getElementById("card");
@@ -409,8 +428,156 @@
       h("div", { class: "match-videos" }, tiles), h("div", { class: "quiz-options" }, buttons), status, nextBtn));
   }
 
+
+  /* ---------- 🧱 Phrase builder ---------- */
+  // Watch a lesson phrase signed as one smooth sequence, then tap the sign tiles in the order you saw them.
+  let phrasesP = null;
+  const loadPhrases = () => (phrasesP ||= fetch(AuslanTutor.ROOT + "data/phrases.json", { cache: "no-cache" })
+    .then((r) => (r.ok ? r.json() : [])).catch(() => []));
+  const phraseScore = { right: 0, total: 0, streak: 0, best: store.get("auslan.phrase.best", 0) };
+  const recentPhrases = [];
+  let phraseGame = null;
+
+  const phraseInScope = (ph) => {
+    const v = lessonSel.value;
+    if (!v) return true;
+    if (v === "done") return !!progress.lessons[ph.lesson];
+    return ph.lesson === +v;
+  };
+
+  async function nextPhrase() {
+    current = null;
+    phraseGame?.stop();
+    const box = document.getElementById("card");
+    const all = (await loadPhrases()).filter((ph) =>
+      ph.signs.split(/\s+/).every((t) => t.startsWith("fs:") || signs[t]));
+    const pool = all.filter(phraseInScope);
+    document.getElementById("counts").textContent = `${pool.length} phrases in play`;
+    if (lessonSel.value === "done" && !completedIds().length) return gameEmpty(box, []);
+    if (!pool.length) {
+      box.replaceChildren(h("div", { class: "review-card" }, h("div", { class: "empty" },
+        h("p", {}, "No phrases in this selection yet. Try “All lessons”."))));
+      return;
+    }
+
+    const fresh = pool.filter((ph) => !recentPhrases.includes(ph.id));
+    const ph = (fresh.length ? fresh : pool)[Math.floor(Math.random() * (fresh.length || pool.length))];
+    recentPhrases.push(ph.id); if (recentPhrases.length > Math.min(10, pool.length - 1)) recentPhrases.shift();
+
+    const tokens = ph.signs.split(/\s+/);
+    const { clips, labels } = AuslanTutor.phraseClips(tokens, signs);
+    const name = AuslanTutor.userName() || AuslanTutor.FALLBACK_NAME;
+    const english = ph.english.replaceAll("{name}", name), face = ph.face.replaceAll("{name}", name);
+
+    // Decoys: signs from other phrases in play (so they're familiar), never one that looks the same.
+    const phraseVideos = new Set(tokens.filter((t) => signs[t]).flatMap((t) => [...videosOf(t)]));
+    const familiar = [...new Set(pool.flatMap((p) => p.signs.split(/\s+/)))];
+    const decoyKeys = AuslanTutor.shuffle(familiar.filter((t) =>
+      signs[t] && !labels.includes(signs[t].label) && ![...videosOf(t)].some((v) => phraseVideos.has(v))))
+      .slice(0, tokens.length >= 6 ? 2 : 3);
+    // Tiles: one per token, plus decoys. Duplicate labels (ME … ME) are separate tiles.
+    const tiles = AuslanTutor.shuffle([...labels.map((l, i) => ({ label: l, id: "t" + i })),
+      ...decoyKeys.map((k, i) => ({ label: signs[k].label, id: "d" + i }))]);
+
+    let answer = [], done = false, firstTry = true, cancel = null;
+    const stage = h("div", { class: "fs-stage phrase-stage" });
+    const rate = h("select", { title: "Speed" }, [0.5, 0.75, 1].map((r) => h("option", { value: r, selected: r === store.get("auslan.phrase.rate", 0.75) }, `${r}×`)));
+    rate.addEventListener("change", () => { store.set("auslan.phrase.rate", +rate.value); play(); });
+    const answerRow = h("div", { class: "phrase-row", "aria-label": "Your answer" });
+    const bankRow = h("div", { class: "phrase-row bank", "aria-label": "Sign tiles" });
+    const feedback = h("div", { class: "quiz-feedback", style: "text-align:center;min-height:3.2em;padding:6px 14px 0" });
+    const scoreEl = h("p", { class: "muted", style: "text-align:center;margin:4px 0 14px;font-size:.9rem" });
+    const renderScore = () => {
+      scoreEl.textContent = phraseScore.total
+        ? `Score ${phraseScore.right}/${phraseScore.total} · streak ${phraseScore.streak} · best ${phraseScore.best}`
+        : `Best streak: ${phraseScore.best}`;
+    };
+
+    const play = () => {
+      cancel?.();
+      // Highlight tiles as they're signed only once the answer is out (otherwise it gives the order away).
+      const answerTiles = () => [...answerRow.querySelectorAll(".ptile")];
+      cancel = AuslanTutor.playSequence(stage, clips, +rate.value, (i) => {
+        if (!done) return;
+        answerTiles().forEach((t, ti) => t.classList.toggle("now", i >= 0 && clips[i].ti === ti));
+      });
+    };
+
+    function render() {
+      answerRow.replaceChildren(...(answer.length ? answer.map((t, i) => h("button", {
+        class: "ptile" + (t.state ? " " + t.state : ""), disabled: done,
+        onclick: () => { if (done) return; answer.splice(i, 1); answer.forEach((a) => (a.state = "")); render(); },
+      }, t.label)) : [h("span", { class: "slot-hint" }, `Tap the ${labels.length} signs in order…`)]));
+      const used = new Set(answer.map((t) => t.id));
+      bankRow.replaceChildren(...tiles.filter((t) => !used.has(t.id)).map((t) => h("button", {
+        class: "ptile", disabled: done,
+        onclick: () => { if (done) return; answer.push({ ...t, state: "" }); render(); },
+      }, t.label)));
+      bankRow.hidden = done;
+    }
+
+    function finish(won) {
+      done = true;
+      phraseScore.total++;
+      if (won && firstTry) {
+        phraseScore.right++; phraseScore.streak++;
+        if (phraseScore.streak > phraseScore.best) { phraseScore.best = phraseScore.streak; store.set("auslan.phrase.best", phraseScore.best); }
+      } else phraseScore.streak = 0;
+      feedback.replaceChildren(h("b", {}, won ? (firstTry ? "✓ Spot on!" : "✓ Got it") : "Here's the phrase"),
+        h("br"), `“${english}”`, face ? h("br") : "", face ? h("span", { class: "muted" }, `Face: ${face}`) : "");
+      checkBtn.hidden = revealBtn.hidden = undoBtn.hidden = true;
+      nextBtn.hidden = false;
+      render(); renderScore();
+      play(); // replay with the tiles lighting up in time
+    }
+
+    function check() {
+      if (done) return;
+      if (answer.length !== labels.length) {
+        feedback.textContent = `Use ${labels.length} signs. You have ${answer.length}.`;
+        return;
+      }
+      let ok = true;
+      answer.forEach((t, i) => { t.state = t.label === labels[i] ? "right" : "wrong"; if (t.state === "wrong") ok = false; });
+      if (ok) return finish(true);
+      firstTry = false;
+      feedback.textContent = "Not quite. Red tiles are in the wrong place. Replay and try again.";
+      render();
+    }
+    function reveal() {
+      if (done) return;
+      answer = labels.map((l, i) => ({ label: l, id: "r" + i, state: "right" }));
+      firstTry = false;
+      finish(false);
+    }
+    const undo = () => { if (done || !answer.length) return; answer.pop(); answer.forEach((a) => (a.state = "")); render(); };
+
+    const replayBtn = h("button", { class: "btn small", onclick: () => play() }, "↺ Replay");
+    const undoBtn = h("button", { class: "btn small", onclick: undo }, "⌫ Undo");
+    const revealBtn = h("button", { class: "btn small", onclick: reveal }, "Reveal");
+    const checkBtn = h("button", { class: "btn small primary", onclick: check }, "Check ", h("kbd", {}, "↵"));
+    const nextBtn = h("button", { class: "btn small primary", hidden: true, onclick: () => nextPhrase() }, "Next phrase ", h("kbd", {}, "↵"));
+
+    phraseGame = {
+      stop: () => cancel?.(),
+      key: (e) => {
+        if (e.key === " ") { e.preventDefault(); play(); }
+        else if (e.key === "Backspace") { e.preventDefault(); undo(); }
+        else if (e.key === "Enter") { e.preventDefault(); done ? nextPhrase() : check(); }
+      },
+    };
+    render(); renderScore();
+    box.replaceChildren(h("div", { class: "review-card phrase-game" },
+      h("div", { class: "q", style: "padding:10px 14px 0;font-weight:600;color:var(--muted)" },
+        "Watch the phrase, then build it from the tiles."),
+      stage, h("div", { class: "phrase-tools" }, replayBtn, rate, undoBtn, revealBtn, checkBtn, nextBtn),
+      answerRow, bankRow, feedback, scoreEl));
+    play();
+  }
+
   document.addEventListener("keydown", (e) => {
     if (e.target.closest?.("input, select, textarea") || e.metaKey || e.ctrlKey) return;
+    if (modeSel.value === "phrase") { phraseGame?.key(e); return; }
     if (modeSel.value === "quiz") {
       if (!quiz) return;
       const n = Number(e.key);
@@ -434,6 +601,7 @@
     store.set("auslan.review.mode", modeSel.value);
     store.set("auslan.review.deck", deckSel.value);
     store.set("auslan.review.lesson", lessonSel.value);
+    phraseGame?.stop();
     practiceAnyway = false;
     next();
   });

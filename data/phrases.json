@@ -1,0 +1,1381 @@
+[
+ {
+  "id": "002-1",
+  "lesson": 2,
+  "signs": "hello how-are-you",
+  "english": "Hi! How are you?",
+  "face": "eyebrows UP on HOW ARE YOU"
+ },
+ {
+  "id": "002-2",
+  "lesson": 2,
+  "signs": "how-are-you thank-you you",
+  "english": "Good, thanks. You?",
+  "face": "nod on GOOD · eyebrows UP on YOU"
+ },
+ {
+  "id": "002-3",
+  "lesson": 2,
+  "signs": "my name fs:@name",
+  "english": "My name is {name}.",
+  "face": "neutral, mouth “{name}” as you spell"
+ },
+ {
+  "id": "002-4",
+  "lesson": 2,
+  "signs": "your name what",
+  "english": "What's your name?",
+  "face": "eyebrows DOWN through the whole question"
+ },
+ {
+  "id": "002-5",
+  "lesson": 2,
+  "signs": "nice meet you",
+  "english": "Nice to meet you.",
+  "face": "smile"
+ },
+ {
+  "id": "002-6",
+  "lesson": 2,
+  "signs": "me hearing me learn auslan",
+  "english": "I'm hearing. I'm learning Auslan.",
+  "face": "neutral; a nod helps"
+ },
+ {
+  "id": "002-7",
+  "lesson": 2,
+  "signs": "you deaf",
+  "english": "Are you Deaf?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "002-8",
+  "lesson": 2,
+  "signs": "thank-you see-you-again bye",
+  "english": "Thanks, see you later. Bye!",
+  "face": "smile"
+ },
+ {
+  "id": "003-1",
+  "lesson": 3,
+  "signs": "you age",
+  "english": "How old are you?",
+  "face": "eyebrows DOWN (it's a how-old question)"
+ },
+ {
+  "id": "003-2",
+  "lesson": 3,
+  "signs": "me age nineteen",
+  "english": "I'm 19.",
+  "face": "neutral, nod"
+ },
+ {
+  "id": "003-3",
+  "lesson": 3,
+  "signs": "my phone number zero four one two",
+  "english": "My phone number is 0412…",
+  "face": "neutral; steady rhythm on the digits"
+ },
+ {
+  "id": "003-4",
+  "lesson": 3,
+  "signs": "number what",
+  "english": "What number?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "004-1",
+  "lesson": 4,
+  "signs": "you deaf hearing which",
+  "english": "Are you Deaf or hearing?",
+  "face": "eyebrows DOWN (it's a which-question)"
+ },
+ {
+  "id": "004-2",
+  "lesson": 4,
+  "signs": "you learn auslan why",
+  "english": "Why are you learning Auslan?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "004-3",
+  "lesson": 4,
+  "signs": "deaf who",
+  "english": "Who's Deaf?",
+  "face": "eyebrows DOWN, look around"
+ },
+ {
+  "id": "004-4",
+  "lesson": 4,
+  "signs": "you deaf",
+  "english": "Are you Deaf?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "004-5",
+  "lesson": 4,
+  "signs": "yes me hearing",
+  "english": "Yes, I'm hearing.",
+  "face": "nod"
+ },
+ {
+  "id": "004-6",
+  "lesson": 4,
+  "signs": "my phone where",
+  "english": "Where's my phone?",
+  "face": "eyebrows DOWN, look around"
+ },
+ {
+  "id": "004-7",
+  "lesson": 4,
+  "signs": "how-many deaf",
+  "english": "How many are Deaf?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "005-1",
+  "lesson": 5,
+  "signs": "again please",
+  "english": "Again, please? / Pardon?",
+  "face": "eyebrows UP, lean in"
+ },
+ {
+  "id": "005-2",
+  "lesson": 5,
+  "signs": "slow please",
+  "english": "Slower, please.",
+  "face": "polite, eyebrows up"
+ },
+ {
+  "id": "005-3",
+  "lesson": 5,
+  "signs": "sorry me understand",
+  "english": "Sorry, I don't understand.",
+  "face": "HEADSHAKE through ME UNDERSTAND"
+ },
+ {
+  "id": "005-4",
+  "lesson": 5,
+  "signs": "fingerspell please",
+  "english": "Can you fingerspell it, please?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "005-5",
+  "lesson": 5,
+  "signs": "fs:emu sign how",
+  "english": "How do you sign ‘emu’?",
+  "face": "eyebrows DOWN on SIGN HOW"
+ },
+ {
+  "id": "005-8",
+  "lesson": 5,
+  "signs": "understand thank-you",
+  "english": "Got it, thanks!",
+  "face": "nod, smile"
+ },
+ {
+  "id": "006-1",
+  "lesson": 6,
+  "signs": "hello how-are-you",
+  "english": "A: Hi! How are you?",
+  "face": "eyebrows UP on HOW-ARE-YOU"
+ },
+ {
+  "id": "006-2",
+  "lesson": 6,
+  "signs": "how-are-you thank-you you",
+  "english": "B: Good, thanks. You?",
+  "face": "nod, then eyebrows UP"
+ },
+ {
+  "id": "006-3",
+  "lesson": 6,
+  "signs": "your name what",
+  "english": "A: What's your name?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "006-4",
+  "lesson": 6,
+  "signs": "my name fs:@name",
+  "english": "B: My name's {name}.",
+  "face": "neutral; mouth the name"
+ },
+ {
+  "id": "006-5",
+  "lesson": 6,
+  "signs": "you from where",
+  "english": "A: Where are you from?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "006-6",
+  "lesson": 6,
+  "signs": "me from fs:adelaide",
+  "english": "B: I'm from Adelaide. (spell your own town!)",
+  "face": "neutral"
+ },
+ {
+  "id": "006-7",
+  "lesson": 6,
+  "signs": "you deaf",
+  "english": "B: Are you Deaf?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "006-8",
+  "lesson": 6,
+  "signs": "yes deaf you",
+  "english": "A: Yes, Deaf. You?",
+  "face": "nod, then eyebrows UP"
+ },
+ {
+  "id": "006-9",
+  "lesson": 6,
+  "signs": "me hearing me learn auslan",
+  "english": "B: I'm hearing. I'm learning Auslan.",
+  "face": "neutral"
+ },
+ {
+  "id": "006-10",
+  "lesson": 6,
+  "signs": "again please slow",
+  "english": "A signs fast… B: Again please, slowly.",
+  "face": "eyebrows UP, lean in"
+ },
+ {
+  "id": "006-11",
+  "lesson": 6,
+  "signs": "my friend deaf also",
+  "english": "B: My friend is Deaf too.",
+  "face": "nod"
+ },
+ {
+  "id": "006-12",
+  "lesson": 6,
+  "signs": "nice meet you see-you-again",
+  "english": "Nice to meet you, see you again!",
+  "face": "smile"
+ },
+ {
+  "id": "007-1",
+  "lesson": 7,
+  "signs": "you have sister",
+  "english": "Do you have a sister?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "007-2",
+  "lesson": 7,
+  "signs": "me have brother two",
+  "english": "I have two brothers.",
+  "face": "nod"
+ },
+ {
+  "id": "007-3",
+  "lesson": 7,
+  "signs": "brother how-many",
+  "english": "How many brothers?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "007-4",
+  "lesson": 7,
+  "signs": "my mother deaf",
+  "english": "My mother is Deaf.",
+  "face": "neutral"
+ },
+ {
+  "id": "007-5",
+  "lesson": 7,
+  "signs": "your family deaf hearing which",
+  "english": "Is your family Deaf or hearing?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "007-6",
+  "lesson": 7,
+  "signs": "my grandmother age nineteen",
+  "english": "(joke) My grandmother is 19!",
+  "face": "cheeky smile"
+ },
+ {
+  "id": "007-7",
+  "lesson": 7,
+  "signs": "me have child",
+  "english": "I don't have children.",
+  "face": "HEADSHAKE through the sentence"
+ },
+ {
+  "id": "008-2",
+  "lesson": 8,
+  "signs": "me tired very",
+  "english": "I'm really tired.",
+  "face": "heavy eyes, slumped, slow movement"
+ },
+ {
+  "id": "008-3",
+  "lesson": 8,
+  "signs": "you okay",
+  "english": "Are you okay?",
+  "face": "eyebrows UP, concerned"
+ },
+ {
+  "id": "008-4",
+  "lesson": 8,
+  "signs": "why sad",
+  "english": "Why are you sad?",
+  "face": "eyebrows DOWN, sympathetic"
+ },
+ {
+  "id": "008-5",
+  "lesson": 8,
+  "signs": "my mother sick",
+  "english": "My mum's sick.",
+  "face": "sad face"
+ },
+ {
+  "id": "008-6",
+  "lesson": 8,
+  "signs": "me excited learn auslan",
+  "english": "I'm excited to learn Auslan!",
+  "face": "big smile, bright eyes"
+ },
+ {
+  "id": "008-7",
+  "lesson": 8,
+  "signs": "me love auslan",
+  "english": "I love Auslan.",
+  "face": "warm smile"
+ },
+ {
+  "id": "009-1",
+  "lesson": 9,
+  "signs": "my father tall",
+  "english": "My dad is tall.",
+  "face": "neutral"
+ },
+ {
+  "id": "009-2",
+  "lesson": 9,
+  "signs": "my sister hair red",
+  "english": "My sister has red hair.",
+  "face": "neutral"
+ },
+ {
+  "id": "009-3",
+  "lesson": 9,
+  "signs": "brother glasses beard",
+  "english": "My brother has glasses and a beard.",
+  "face": "neutral"
+ },
+ {
+  "id": "009-4",
+  "lesson": 9,
+  "signs": "grandmother hair white",
+  "english": "Grandma has white hair.",
+  "face": "warm"
+ },
+ {
+  "id": "009-5",
+  "lesson": 9,
+  "signs": "you hair colour what",
+  "english": "What colour is your hair?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "009-6",
+  "lesson": 9,
+  "signs": "child short young",
+  "english": "The child is small and young.",
+  "face": "slight smile"
+ },
+ {
+  "id": "010-2",
+  "lesson": 10,
+  "signs": "five dollar",
+  "english": "Five dollars.",
+  "face": "neutral"
+ },
+ {
+  "id": "010-3",
+  "lesson": 10,
+  "signs": "phone how-much",
+  "english": "How much is the phone?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "010-4",
+  "lesson": 10,
+  "signs": "one hundred dollar",
+  "english": "A hundred dollars!",
+  "face": "eyes wide (expensive!)"
+ },
+ {
+  "id": "010-5",
+  "lesson": 10,
+  "signs": "me buy phone",
+  "english": "I'm buying a phone.",
+  "face": "neutral"
+ },
+ {
+  "id": "010-6",
+  "lesson": 10,
+  "signs": "your birthday when",
+  "english": "When's your birthday?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "010-7",
+  "lesson": 10,
+  "signs": "me have money",
+  "english": "I don't have money.",
+  "face": "HEADSHAKE, sheepish"
+ },
+ {
+  "id": "011-1",
+  "lesson": 11,
+  "signs": "we learn auslan",
+  "english": "We're learning Auslan.",
+  "face": "neutral"
+ },
+ {
+  "id": "011-2",
+  "lesson": 11,
+  "signs": "they hearing",
+  "english": "They're hearing.",
+  "face": "point across where they are"
+ },
+ {
+  "id": "011-3",
+  "lesson": 11,
+  "signs": "both deaf",
+  "english": "Both of them are Deaf.",
+  "face": "nod"
+ },
+ {
+  "id": "011-4",
+  "lesson": 11,
+  "signs": "our family",
+  "english": "Our family.",
+  "face": "warm"
+ },
+ {
+  "id": "011-5",
+  "lesson": 11,
+  "signs": "their mother deaf",
+  "english": "Their mother is Deaf.",
+  "face": "aim THEIR at their location"
+ },
+ {
+  "id": "011-6",
+  "lesson": 11,
+  "signs": "everyone happy",
+  "english": "Everyone's happy!",
+  "face": "smile"
+ },
+ {
+  "id": "011-7",
+  "lesson": 11,
+  "signs": "all understand",
+  "english": "Does everyone understand?",
+  "face": "eyebrows UP, look around"
+ },
+ {
+  "id": "012-1",
+  "lesson": 12,
+  "signs": "my family",
+  "english": "Let me tell you about my family.",
+  "face": "warm"
+ },
+ {
+  "id": "012-2",
+  "lesson": 12,
+  "signs": "my mother he-she deaf",
+  "english": "My mum (placed left) is Deaf.",
+  "face": "point to her spot"
+ },
+ {
+  "id": "012-3",
+  "lesson": 12,
+  "signs": "my father he-she hearing tall",
+  "english": "My dad (placed right) is hearing and tall.",
+  "face": "point to his spot"
+ },
+ {
+  "id": "012-4",
+  "lesson": 12,
+  "signs": "both live fs:adelaide",
+  "english": "They both live in Adelaide.",
+  "face": "neutral (spell your own town)"
+ },
+ {
+  "id": "012-5",
+  "lesson": 12,
+  "signs": "my sister married",
+  "english": "My sister is married.",
+  "face": "neutral"
+ },
+ {
+  "id": "012-6",
+  "lesson": 12,
+  "signs": "he-she have dog cat",
+  "english": "She has a dog and a cat.",
+  "face": "point to her spot first"
+ },
+ {
+  "id": "012-7",
+  "lesson": 12,
+  "signs": "my uncle aunt cousin they live fs:darwin",
+  "english": "My uncle, aunt and cousins live in Darwin.",
+  "face": "sweep THEY across"
+ },
+ {
+  "id": "012-8",
+  "lesson": 12,
+  "signs": "me love my family",
+  "english": "I love my family.",
+  "face": "warm smile"
+ },
+ {
+  "id": "013-1",
+  "lesson": 13,
+  "signs": "tomorrow me learn auslan",
+  "english": "Tomorrow I'm learning Auslan.",
+  "face": "neutral"
+ },
+ {
+  "id": "013-2",
+  "lesson": 13,
+  "signs": "yesterday me tired very",
+  "english": "Yesterday I was really tired.",
+  "face": "tired face"
+ },
+ {
+  "id": "013-3",
+  "lesson": 13,
+  "signs": "me eat finish",
+  "english": "I've already eaten.",
+  "face": "small nod on FINISH"
+ },
+ {
+  "id": "013-4",
+  "lesson": 13,
+  "signs": "you finish",
+  "english": "Are you done?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "013-5",
+  "lesson": 13,
+  "signs": "later see-you-again",
+  "english": "See you later!",
+  "face": "smile"
+ },
+ {
+  "id": "013-6",
+  "lesson": 13,
+  "signs": "next-week my birthday",
+  "english": "My birthday's next week.",
+  "face": "happy"
+ },
+ {
+  "id": "013-7",
+  "lesson": 13,
+  "signs": "before me sick today okay",
+  "english": "I was sick before; today I'm okay.",
+  "face": "shift from sad to relieved"
+ },
+ {
+  "id": "014-1",
+  "lesson": 14,
+  "signs": "time what",
+  "english": "What time is it?",
+  "face": "eyebrows DOWN, tap the wrist"
+ },
+ {
+  "id": "014-2",
+  "lesson": 14,
+  "signs": "time three",
+  "english": "It's three o'clock.",
+  "face": "neutral"
+ },
+ {
+  "id": "014-3",
+  "lesson": 14,
+  "signs": "saturday you free",
+  "english": "Are you free on Saturday?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "014-4",
+  "lesson": 14,
+  "signs": "weekend me sleep",
+  "english": "On the weekend I sleep!",
+  "face": "relaxed smile"
+ },
+ {
+  "id": "014-5",
+  "lesson": 14,
+  "signs": "monday me work",
+  "english": "I work on Monday.",
+  "face": "neutral"
+ },
+ {
+  "id": "014-6",
+  "lesson": 14,
+  "signs": "friday finish work happy",
+  "english": "Friday, work's done: happy!",
+  "face": "big smile"
+ },
+ {
+  "id": "014-7",
+  "lesson": 14,
+  "signs": "one hour",
+  "english": "One hour.",
+  "face": "neutral"
+ },
+ {
+  "id": "015-1",
+  "lesson": 15,
+  "signs": "good-morning me shower breakfast",
+  "english": "Morning: I shower and have breakfast.",
+  "face": "bright"
+ },
+ {
+  "id": "015-2",
+  "lesson": 15,
+  "signs": "me go work",
+  "english": "I go to work.",
+  "face": "neutral; GO moves away"
+ },
+ {
+  "id": "015-3",
+  "lesson": 15,
+  "signs": "lunch me eat",
+  "english": "At lunch I eat.",
+  "face": "neutral"
+ },
+ {
+  "id": "015-4",
+  "lesson": 15,
+  "signs": "afternoon me home",
+  "english": "In the afternoon I go home.",
+  "face": "neutral"
+ },
+ {
+  "id": "015-5",
+  "lesson": 15,
+  "signs": "night me tired sleep",
+  "english": "At night I'm tired and sleep.",
+  "face": "sleepy face"
+ },
+ {
+  "id": "015-6",
+  "lesson": 15,
+  "signs": "you work finish",
+  "english": "Have you finished work?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "016-1",
+  "lesson": 16,
+  "signs": "you want coffee tea which",
+  "english": "Coffee or tea?",
+  "face": "eyebrows DOWN on WHICH"
+ },
+ {
+  "id": "016-2",
+  "lesson": 16,
+  "signs": "me want coffee milk please",
+  "english": "A coffee with milk, please.",
+  "face": "polite"
+ },
+ {
+  "id": "016-3",
+  "lesson": 16,
+  "signs": "me hungry very",
+  "english": "I'm really hungry!",
+  "face": "big hungry face"
+ },
+ {
+  "id": "016-4",
+  "lesson": 16,
+  "signs": "you thirsty",
+  "english": "Are you thirsty?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "016-5",
+  "lesson": 16,
+  "signs": "me like fruit",
+  "english": "I like fruit.",
+  "face": "smile"
+ },
+ {
+  "id": "016-6",
+  "lesson": 16,
+  "signs": "me like meat",
+  "english": "I don't like meat.",
+  "face": "HEADSHAKE"
+ },
+ {
+  "id": "016-7",
+  "lesson": 16,
+  "signs": "coffee how-much",
+  "english": "How much is a coffee?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "017-1",
+  "lesson": 17,
+  "signs": "me understand not",
+  "english": "I don't understand.",
+  "face": "HEADSHAKE throughout"
+ },
+ {
+  "id": "017-2",
+  "lesson": 17,
+  "signs": "me can sign auslan",
+  "english": "I can sign Auslan.",
+  "face": "nod"
+ },
+ {
+  "id": "017-3",
+  "lesson": 17,
+  "signs": "me cant come",
+  "english": "I can't come.",
+  "face": "HEADSHAKE, apologetic"
+ },
+ {
+  "id": "017-4",
+  "lesson": 17,
+  "signs": "me never drink coffee",
+  "english": "I never drink coffee.",
+  "face": "firm headshake"
+ },
+ {
+  "id": "017-5",
+  "lesson": 17,
+  "signs": "coffee no-thanks",
+  "english": "Coffee? No thanks.",
+  "face": "polite headshake"
+ },
+ {
+  "id": "017-6",
+  "lesson": 17,
+  "signs": "me have money nothing",
+  "english": "I've got no money.",
+  "face": "HEADSHAKE"
+ },
+ {
+  "id": "017-7",
+  "lesson": 17,
+  "signs": "you can come saturday",
+  "english": "Can you come on Saturday?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "018-1",
+  "lesson": 18,
+  "signs": "saturday you free",
+  "english": "A: Are you free on Saturday?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "018-2",
+  "lesson": 18,
+  "signs": "saturday me busy work",
+  "english": "B: Saturday I'm busy, working.",
+  "face": "apologetic"
+ },
+ {
+  "id": "018-3",
+  "lesson": 18,
+  "signs": "sunday you free",
+  "english": "A: Sunday?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "018-4",
+  "lesson": 18,
+  "signs": "sunday me free",
+  "english": "B: Sunday I'm free!",
+  "face": "nod, smile"
+ },
+ {
+  "id": "018-5",
+  "lesson": 18,
+  "signs": "we coffee time eleven",
+  "english": "A: Coffee at 11?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "018-6",
+  "lesson": 18,
+  "signs": "how-are-you see-you-again sunday",
+  "english": "B: Good (thumbs-up), see you Sunday.",
+  "face": "nod, smile"
+ },
+ {
+  "id": "018-7",
+  "lesson": 18,
+  "signs": "next-week me holiday",
+  "english": "B: Next week I'm on holiday.",
+  "face": "happy"
+ },
+ {
+  "id": "019-1",
+  "lesson": 19,
+  "signs": "toilet where",
+  "english": "Where's the toilet?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "019-2",
+  "lesson": 19,
+  "signs": "you live where",
+  "english": "Where do you live?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "019-3",
+  "lesson": 19,
+  "signs": "me live near beach",
+  "english": "I live near the beach.",
+  "face": "neutral"
+ },
+ {
+  "id": "019-4",
+  "lesson": 19,
+  "signs": "me go shop",
+  "english": "I'm going to the shop.",
+  "face": "neutral"
+ },
+ {
+  "id": "019-5",
+  "lesson": 19,
+  "signs": "my child school",
+  "english": "My child is at school.",
+  "face": "neutral"
+ },
+ {
+  "id": "019-6",
+  "lesson": 19,
+  "signs": "my mother hospital",
+  "english": "My mum is in hospital.",
+  "face": "concerned"
+ },
+ {
+  "id": "019-7",
+  "lesson": 19,
+  "signs": "weekend we go city",
+  "english": "On the weekend we're going to the city.",
+  "face": "neutral"
+ },
+ {
+  "id": "020-1",
+  "lesson": 20,
+  "signs": "you go work how",
+  "english": "How do you get to work?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "020-2",
+  "lesson": 20,
+  "signs": "me drive car",
+  "english": "I drive.",
+  "face": "neutral"
+ },
+ {
+  "id": "020-3",
+  "lesson": 20,
+  "signs": "me go train",
+  "english": "I go by train.",
+  "face": "neutral"
+ },
+ {
+  "id": "020-4",
+  "lesson": 20,
+  "signs": "shop near",
+  "english": "The shop's close.",
+  "face": "lips tight, small movement"
+ },
+ {
+  "id": "020-5",
+  "lesson": 20,
+  "signs": "beach far",
+  "english": "The beach is far.",
+  "face": "squint, bigger movement"
+ },
+ {
+  "id": "020-6",
+  "lesson": 20,
+  "signs": "straight left toilet",
+  "english": "Go straight, then left: the toilet.",
+  "face": "point at the end"
+ },
+ {
+  "id": "020-7",
+  "lesson": 20,
+  "signs": "we walk",
+  "english": "Let's walk.",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "021-1",
+  "lesson": 21,
+  "signs": "today weather what",
+  "english": "What's the weather like today?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "021-2",
+  "lesson": 21,
+  "signs": "today hot very",
+  "english": "It's really hot today!",
+  "face": "puffing, fanning face"
+ },
+ {
+  "id": "021-3",
+  "lesson": 21,
+  "signs": "tomorrow rain",
+  "english": "It'll rain tomorrow.",
+  "face": "neutral"
+ },
+ {
+  "id": "021-4",
+  "lesson": 21,
+  "signs": "me like summer",
+  "english": "I like summer.",
+  "face": "smile"
+ },
+ {
+  "id": "021-5",
+  "lesson": 21,
+  "signs": "cold me like",
+  "english": "I don't like the cold.",
+  "face": "HEADSHAKE, shiver"
+ },
+ {
+  "id": "021-6",
+  "lesson": 21,
+  "signs": "saturday sun we go beach",
+  "english": "Saturday's sunny: let's go to the beach!",
+  "face": "excited"
+ },
+ {
+  "id": "022-1",
+  "lesson": 22,
+  "signs": "you like what",
+  "english": "What do you like doing?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "022-2",
+  "lesson": 22,
+  "signs": "me like swim read",
+  "english": "I like swimming and reading.",
+  "face": "smile"
+ },
+ {
+  "id": "022-3",
+  "lesson": 22,
+  "signs": "your favourite sport what",
+  "english": "What's your favourite sport?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "022-4",
+  "lesson": 22,
+  "signs": "me favourite football",
+  "english": "Football's my favourite!",
+  "face": "excited"
+ },
+ {
+  "id": "022-5",
+  "lesson": 22,
+  "signs": "movie read which prefer",
+  "english": "Do you prefer movies or reading?",
+  "face": "eyebrows DOWN on WHICH"
+ },
+ {
+  "id": "022-6",
+  "lesson": 22,
+  "signs": "weekend me cook",
+  "english": "On weekends I cook.",
+  "face": "neutral"
+ },
+ {
+  "id": "022-7",
+  "lesson": 22,
+  "signs": "me like travel very",
+  "english": "I love travelling!",
+  "face": "big smile"
+ },
+ {
+  "id": "023-1",
+  "lesson": 23,
+  "signs": "your work what",
+  "english": "What's your job?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "023-2",
+  "lesson": 23,
+  "signs": "me work office computer",
+  "english": "I work in an office, on computers.",
+  "face": "neutral"
+ },
+ {
+  "id": "023-3",
+  "lesson": 23,
+  "signs": "me student university",
+  "english": "I'm a university student.",
+  "face": "neutral"
+ },
+ {
+  "id": "023-4",
+  "lesson": 23,
+  "signs": "my mother teacher",
+  "english": "My mum is a teacher.",
+  "face": "neutral"
+ },
+ {
+  "id": "023-5",
+  "lesson": 23,
+  "signs": "you work where",
+  "english": "Where do you work?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "023-6",
+  "lesson": 23,
+  "signs": "my boss deaf",
+  "english": "My boss is Deaf.",
+  "face": "neutral"
+ },
+ {
+  "id": "023-7",
+  "lesson": 23,
+  "signs": "interpreter where",
+  "english": "Where's the interpreter?",
+  "face": "eyebrows DOWN, look around"
+ },
+ {
+  "id": "024-1",
+  "lesson": 24,
+  "signs": "me invite you beach saturday",
+  "english": "A: I'm inviting you to the beach on Saturday!",
+  "face": "excited"
+ },
+ {
+  "id": "024-2",
+  "lesson": 24,
+  "signs": "weather what",
+  "english": "B: What's the weather?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "024-3",
+  "lesson": 24,
+  "signs": "sun hot",
+  "english": "A: Sunny and hot!",
+  "face": "big smile"
+ },
+ {
+  "id": "024-4",
+  "lesson": 24,
+  "signs": "we go how",
+  "english": "B: How are we getting there?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "024-5",
+  "lesson": 24,
+  "signs": "we train together",
+  "english": "A: We'll get the train together.",
+  "face": "neutral"
+ },
+ {
+  "id": "024-6",
+  "lesson": 24,
+  "signs": "time what",
+  "english": "B: What time?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "024-7",
+  "lesson": 24,
+  "signs": "time nine early",
+  "english": "A: Nine, early!",
+  "face": "nod"
+ },
+ {
+  "id": "024-8",
+  "lesson": 24,
+  "signs": "me ready fun",
+  "english": "B: I'm ready. It'll be fun!",
+  "face": "big smile"
+ },
+ {
+  "id": "025-1",
+  "lesson": 25,
+  "signs": "me give you",
+  "english": "I'll give it to you.",
+  "face": "GIVE moves from you to them"
+ },
+ {
+  "id": "025-2",
+  "lesson": 25,
+  "signs": "you help me",
+  "english": "Can you help me?",
+  "face": "eyebrows UP; HELP moves towards you"
+ },
+ {
+  "id": "025-3",
+  "lesson": 25,
+  "signs": "me ask he-she",
+  "english": "I'll ask her.",
+  "face": "ASK moves to her spot"
+ },
+ {
+  "id": "025-4",
+  "lesson": 25,
+  "signs": "you tell me",
+  "english": "Tell me!",
+  "face": "eager; TELL moves towards you"
+ },
+ {
+  "id": "025-5",
+  "lesson": 25,
+  "signs": "me show you",
+  "english": "I'll show you.",
+  "face": "SHOW moves towards them"
+ },
+ {
+  "id": "025-6",
+  "lesson": 25,
+  "signs": "me pay",
+  "english": "I'll pay.",
+  "face": "PAY moves towards the cashier"
+ },
+ {
+  "id": "025-7",
+  "lesson": 25,
+  "signs": "me text-message you later",
+  "english": "I'll text you later.",
+  "face": "neutral"
+ },
+ {
+  "id": "026-1",
+  "lesson": 26,
+  "signs": "car vehicles-pass",
+  "english": "Cars drove past each other.",
+  "face": "watch the hands slide past"
+ },
+ {
+  "id": "026-2",
+  "lesson": 26,
+  "signs": "car crash",
+  "english": "Two cars crashed.",
+  "face": "shocked face at impact"
+ },
+ {
+  "id": "026-3",
+  "lesson": 26,
+  "signs": "friend pass",
+  "english": "My friend walked past me.",
+  "face": "eyes follow the hand"
+ },
+ {
+  "id": "026-4",
+  "lesson": 26,
+  "signs": "dog follow",
+  "english": "The dog followed me.",
+  "face": "smile"
+ },
+ {
+  "id": "026-5",
+  "lesson": 26,
+  "signs": "bike car crash",
+  "english": "A bike and a car crashed!",
+  "face": "wince"
+ },
+ {
+  "id": "027-1",
+  "lesson": 27,
+  "signs": "house big",
+  "english": "A big house.",
+  "face": "puffed cheeks"
+ },
+ {
+  "id": "027-2",
+  "lesson": 27,
+  "signs": "box small",
+  "english": "A small box.",
+  "face": "pursed lips"
+ },
+ {
+  "id": "027-3",
+  "lesson": 27,
+  "signs": "table square",
+  "english": "A square table.",
+  "face": "neutral, trace it"
+ },
+ {
+  "id": "027-4",
+  "lesson": 27,
+  "signs": "my room small",
+  "english": "My room is small.",
+  "face": "slight squint"
+ },
+ {
+  "id": "027-5",
+  "lesson": 27,
+  "signs": "long thin",
+  "english": "Long and thin.",
+  "face": "pursed lips"
+ },
+ {
+  "id": "027-6",
+  "lesson": 27,
+  "signs": "ball red",
+  "english": "A red ball.",
+  "face": "neutral"
+ },
+ {
+  "id": "028-1",
+  "lesson": 28,
+  "signs": "my mother look me",
+  "english": "My mum looked at me…",
+  "face": "shift: become Mum, look at your spot"
+ },
+ {
+  "id": "028-2",
+  "lesson": 28,
+  "signs": "you finish",
+  "english": "(as Mum) \"Are you done?\"",
+  "face": "Mum's face, eyebrows UP"
+ },
+ {
+  "id": "028-3",
+  "lesson": 28,
+  "signs": "me reply finish",
+  "english": "(as you) \"Yes, done!\"",
+  "face": "shift back, nod"
+ },
+ {
+  "id": "028-4",
+  "lesson": 28,
+  "signs": "he-she see surprised",
+  "english": "She saw it and was surprised!",
+  "face": "surprised face"
+ },
+ {
+  "id": "028-5",
+  "lesson": 28,
+  "signs": "he-she laugh",
+  "english": "He laughed.",
+  "face": "laughing face"
+ },
+ {
+  "id": "028-6",
+  "lesson": 28,
+  "signs": "me think",
+  "english": "I thought…",
+  "face": "thinking face, gaze up"
+ },
+ {
+  "id": "029-1",
+  "lesson": 29,
+  "signs": "me learn auslan deaf community",
+  "english": "I'm learning Auslan from the Deaf community.",
+  "face": "respectful"
+ },
+ {
+  "id": "029-2",
+  "lesson": 29,
+  "signs": "deaf-club where",
+  "english": "Where's the Deaf club?",
+  "face": "eyebrows DOWN"
+ },
+ {
+  "id": "029-3",
+  "lesson": 29,
+  "signs": "me like deaf culture",
+  "english": "I like Deaf culture.",
+  "face": "warm"
+ },
+ {
+  "id": "029-4",
+  "lesson": 29,
+  "signs": "auslan history",
+  "english": "The history of Auslan.",
+  "face": "neutral"
+ },
+ {
+  "id": "029-5",
+  "lesson": 29,
+  "signs": "interpreter you want",
+  "english": "Do you want an interpreter?",
+  "face": "eyebrows UP"
+ },
+ {
+  "id": "030-1",
+  "lesson": 30,
+  "signs": "last-week saturday",
+  "english": "Last Saturday…",
+  "face": "set the time"
+ },
+ {
+  "id": "030-2",
+  "lesson": 30,
+  "signs": "me friend go beach",
+  "english": "My friend and I went to the beach.",
+  "face": "neutral"
+ },
+ {
+  "id": "030-3",
+  "lesson": 30,
+  "signs": "first we swim",
+  "english": "First we swam.",
+  "face": "happy"
+ },
+ {
+  "id": "030-4",
+  "lesson": 30,
+  "signs": "then dog come",
+  "english": "Then a dog came.",
+  "face": "eyebrows up, curious"
+ },
+ {
+  "id": "030-5",
+  "lesson": 30,
+  "signs": "dog follow me",
+  "english": "The dog followed me!",
+  "face": "surprised"
+ },
+ {
+  "id": "030-6",
+  "lesson": 30,
+  "signs": "friend laugh",
+  "english": "My friend laughed.",
+  "face": "role shift: laughing"
+ },
+ {
+  "id": "030-7",
+  "lesson": 30,
+  "signs": "then rain",
+  "english": "Then it rained.",
+  "face": "grimace"
+ },
+ {
+  "id": "030-8",
+  "lesson": 30,
+  "signs": "finally we go home tired happy",
+  "english": "Finally we went home, tired but happy.",
+  "face": "content"
+ }
+]

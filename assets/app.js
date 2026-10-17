@@ -655,23 +655,30 @@
    * "fs:word" fingerspells a word using the letter clips. "fs:@name" spells the visitor's name,
    * and {name} in english/face is replaced with it.
    * ===================================================================== */
+  // Turn a phrase's tokens ("my name fs:@name") into sequence clips plus a display label per token.
+  // Each clip carries ti, the index of the token it belongs to.
+  function phraseClips(tokens, all) {
+    const clips = [];
+    const labels = tokens.map((t, ti) => {
+      if (t.startsWith("fs:")) {
+        const word = t === "fs:@name" ? nameLetters() : t.slice(3).toLowerCase();
+        [...word].forEach((c) => all[`letter-${c}`] && clips.push({ ...letterClip(all[`letter-${c}`]), ti }));
+        return word.toUpperCase().split("").join("-");
+      }
+      if (all[t]) clips.push({ video: all[t].video, trim: all[t].trim, ti });
+      else console.warn(`sign-phrase: "${t}" is not in data/signs.json`);
+      return all[t]?.label || t.toUpperCase();
+    });
+    return { clips, labels };
+  }
+
   class SignPhrase extends HTMLElement {
     async connectedCallback() {
       if (this._built) return;
       this._built = true;
       const all = await loadSigns().catch(() => ({}));
       const tokens = (this.getAttribute("signs") || "").split(/\s+/).filter(Boolean);
-      const clips = []; // { url, token index }
-      const labels = tokens.map((t, ti) => {
-        if (t.startsWith("fs:")) {
-          const word = t === "fs:@name" ? nameLetters() : t.slice(3).toLowerCase();
-          [...word].forEach((c) => all[`letter-${c}`] && clips.push({ ...letterClip(all[`letter-${c}`]), ti }));
-          return word.toUpperCase().split("").join("-");
-        }
-        if (all[t]) clips.push({ video: all[t].video, trim: all[t].trim, ti });
-        else console.warn(`sign-phrase: "${t}" is not in data/signs.json`);
-        return all[t]?.label || t.toUpperCase();
-      });
+      const { clips, labels } = phraseClips(tokens, all);
 
       const glossEl = h("div", { class: "gloss" });
       const spans = labels.map((l) => h("span", {}, l));
@@ -994,6 +1001,7 @@
     ROOT, h, store, shuffle, loadSigns, loadLessons, progress, saveProgress, Mirror,
     userName, setUserName, applyUserName, exportProgress, importProgress, isAuthor,
     STATES, DIALECT, userState, setUserState, regionLabel,
+    playSequence, phraseClips, nameLetters, FALLBACK_NAME,
   };
 
   renderHeader();

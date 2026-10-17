@@ -68,6 +68,11 @@ for key, s in signs.items():
 sys.path.insert(0, str(ROOT / "tools"))
 import stamp  # noqa: E402
 
+import phrases  # noqa: E402
+
+if phrases.render(phrases.collect()) != ((ROOT / "data/phrases.json").read_text() if (ROOT / "data/phrases.json").exists() else ""):
+    err("data/phrases.json is out of date. Run python3 tools/phrases.py")
+
 for page in stamp.stamp(check=True):
     err(f"{page}: stale assets/app.js or app.css ?v= stamp. Run python3 tools/stamp.py")
 
