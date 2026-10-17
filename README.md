@@ -36,7 +36,7 @@ In short: you're welcome to use, learn from, share and adapt this project for **
 (personal study, teaching, community groups, research), with credit. You may not sell it, put it behind a paywall,
 or use it to make money.
 
-Required Notice: Copyright (c) 2026 RomanSedition (https://github.com/RomanSedition/Auslan-Tutor)
+Required Notice: Copyright (c) 2026 Lucky Hawton (https://github.com/RomanSedition/Auslan-Tutor)
 
 The fingerspelling word bank (`data/spelling-words.json`) is derived from
 [google-10000-english](https://github.com/first20hours/google-10000-english).

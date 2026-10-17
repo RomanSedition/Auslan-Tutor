@@ -947,7 +947,7 @@
       h("p", {},
         "This site supplements, and doesn't replace, learning from Deaf people. Look for classes taught by Deaf teachers and get involved in your local Deaf community."),
       h("p", { class: "muted" },
-        "© 2026 Auslan Tutor. Free for non-commercial use: lesson content ",
+        "© 2026 Lucky Hawton. Auslan Tutor is free for non-commercial use: lesson content ",
         h("a", { href: "https://creativecommons.org/licenses/by-nc-sa/4.0/", target: "_blank", rel: "noopener" }, "CC BY-NC-SA 4.0"),
         ", code ",
         h("a", { href: "https://polyformproject.org/licenses/noncommercial/1.0.0/", target: "_blank", rel: "noopener" }, "PolyForm Noncommercial"),

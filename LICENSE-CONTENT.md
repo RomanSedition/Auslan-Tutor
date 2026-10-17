@@ -1,6 +1,6 @@
 # Lesson content licence: CC BY-NC-SA 4.0
 
-Copyright (c) 2026 RomanSedition (https://github.com/RomanSedition/Auslan-Tutor)
+Copyright (c) 2026 Lucky Hawton (https://github.com/RomanSedition/Auslan-Tutor)
 
 The **lesson content** of Auslan Tutor is licensed under the
 **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International** licence (CC BY-NC-SA 4.0).
@@ -21,7 +21,7 @@ Summary: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ## As long as you
 
-- **Attribution**: credit "Auslan Tutor by RomanSedition", link to this licence, and say if you changed anything
+- **Attribution**: credit "Auslan Tutor by Lucky Hawton", link to this licence, and say if you changed anything
 - **NonCommercial**: don't use it for commercial purposes (no selling it, no paywalls, no ads built on it)
 - **ShareAlike**: if you adapt it, share your version under the same licence
 
