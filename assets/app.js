@@ -961,23 +961,27 @@
     const id = Number(document.body.dataset.lesson);
     if (!id) return;
 
-    const actions = document.querySelector(".lesson-actions");
-    if (actions) {
-      const btn = h("button", { class: "btn" });
-      const sync = () => {
-        const done = !!progress.lessons[id];
-        btn.textContent = done ? "✓ Completed" : "Mark lesson complete";
-        btn.classList.toggle("on", done);
-      };
+    // "Mark complete" appears at the top (.lesson-actions) and again in the bottom nav, so you
+    // don't have to scroll back up after the recap. All copies stay in sync.
+    const completeBtns = [];
+    const syncComplete = () => completeBtns.forEach((btn) => {
+      const done = !!progress.lessons[id];
+      btn.textContent = done ? "✓ Completed" : "Mark lesson complete";
+      btn.classList.toggle("on", done);
+    });
+    const completeBtn = (cls = "btn") => {
+      const btn = h("button", { class: cls });
       btn.addEventListener("click", () => {
         if (progress.lessons[id]) delete progress.lessons[id];
         else progress.lessons[id] = new Date().toISOString();
         saveProgress();
-        sync();
+        syncComplete();
       });
-      sync();
-      actions.append(btn);
-    }
+      completeBtns.push(btn);
+      syncComplete();
+      return btn;
+    };
+    document.querySelector(".lesson-actions")?.append(completeBtn());
 
     const navs = document.querySelectorAll(".lesson-nav");
     if (!navs.length) return;
@@ -986,6 +990,7 @@
     const prev = lessons[i - 1], next = lessons[i + 1];
     navs.forEach((nav) => nav.replaceChildren(
       prev ? h("a", { class: "btn", href: `${ROOT}lessons/${prev.slug}.html` }, `← ${prev.id}. ${prev.title}`) : h("span"),
+      completeBtn("btn complete"),
       next ? h("a", { class: "btn primary", href: `${ROOT}lessons/${next.slug}.html` }, `${next.id}. ${next.title} →`)
         : h("a", { class: "btn", href: ROOT + "index.html" }, "All lessons")));
   }
