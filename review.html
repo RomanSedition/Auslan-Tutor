@@ -27,7 +27,8 @@
   .phrase-row { display: flex; flex-wrap: wrap; gap: 6px; min-height: 48px; padding: 8px 10px; margin: 0 10px;
     border: 2px dashed var(--border); border-radius: 12px; align-items: center; }
   .phrase-row.bank { border-style: solid; border-color: transparent; background: var(--surface-2); margin-top: 8px; }
-  .phrase-row .slot-hint { color: var(--muted); font-size: .85rem; }
+  .phrase-row .slot-hint { color: var(--muted); font-size: .85rem; margin-left: auto; padding-left: 6px; }
+  .pslot { width: 58px; height: 40px; border-radius: 10px; border: 2px dashed var(--border); }
   .ptile { font: 700 .95rem var(--font-display); letter-spacing: .03em; padding: 9px 12px; border-radius: 10px;
     border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; }
   .ptile:hover { border-color: var(--accent); }
@@ -506,10 +507,14 @@
     };
 
     function render() {
-      answerRow.replaceChildren(...(answer.length ? answer.map((t, i) => h("button", {
+      // One empty slot per sign still to place, and a counter of how many are left.
+      const left = Math.max(0, labels.length - answer.length);
+      answerRow.replaceChildren(...answer.map((t, i) => h("button", {
         class: "ptile" + (t.state ? " " + t.state : ""), disabled: done,
         onclick: () => { if (done) return; answer.splice(i, 1); answer.forEach((a) => (a.state = "")); render(); },
-      }, t.label)) : [h("span", { class: "slot-hint" }, `Tap the ${labels.length} signs in order…`)]));
+      }, t.label)), ...Array.from({ length: done ? 0 : left }, () => h("span", { class: "pslot" })),
+      done ? "" : h("span", { class: "slot-hint" }, !answer.length ? `Tap the ${labels.length} signs in order`
+        : left ? `${left} more` : "Ready, press ↵"));
       const used = new Set(answer.map((t) => t.id));
       bankRow.replaceChildren(...tiles.filter((t) => !used.has(t.id)).map((t) => h("button", {
         class: "ptile", disabled: done,
