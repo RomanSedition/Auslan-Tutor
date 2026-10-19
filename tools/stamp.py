@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ["app.js", "app.css"]
-SITE = "https://romansedition.github.io/Auslan-Tutor/"
+SITE = "https://auslan-tutor.com.au/"
 DESCRIPTIONS = {
     "index.html": "Free Auslan (Australian Sign Language) lessons for beginners, with Auslan Signbank videos, "
                   "a camera mirror to practise signing, and review games. Regional signs for your state.",

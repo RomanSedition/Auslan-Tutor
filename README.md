@@ -3,7 +3,7 @@
 A free, non-commercial site for learning **Auslan** (Australian Sign Language), with sign videos from
 [Auslan Signbank](https://auslan.org.au).
 
-**Live site:** https://romansedition.github.io/Auslan-Tutor/
+**Live site:** https://auslan-tutor.com.au/
 
 - A 30-lesson beginner course, from fingerspelling to telling a short story
 - Inline Signbank videos with slow motion, and regional versions matched to your state

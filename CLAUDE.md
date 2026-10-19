@@ -6,7 +6,7 @@ as HTML pages that embed Auslan Signbank videos. No build step and no dependenci
 Personal notes about the author (learning progress, preferences) go in `CLAUDE.local.md`. It's
 gitignored, so read it if it exists, and never copy its contents into committed files.
 
-**The site is public** (GitHub Pages: https://romansedition.github.io/Auslan-Tutor/), and other people use it.
+**The site is public** (https://auslan-tutor.com.au/, served by GitHub Pages with a custom domain; the old github.io URL redirects), and other people use it.
 Each visitor's progress, name and state live in their own browser's localStorage.
 - Never put personal details in pages or committed files. For the learner's name use
   `<span class="user-name"></span>` (or `data-format="spelled"` for the S-A-M style), and use `fs:@name`
@@ -68,7 +68,7 @@ not file://, because the camera and `fetch()` need it.
    ones, and updates meta descriptions + `sitemap.xml` from `data/lessons.json`), then `python3 tools/check.py --online`; it must print OK. Any edit to `assets/` also needs `stamp.py`,
    or browsers keep serving the old cached copy.
 9. **Publish.** Commit and push. Then reply with the lesson title, the live URL
-   (https://romansedition.github.io/Auslan-Tutor/lessons/NNN-slug.html) and a one-line summary.
+   (https://auslan-tutor.com.au/lessons/NNN-slug.html) and a one-line summary.
 
 ## Cloud sessions (Claude Code on the web / phone)
 Cloud sessions run on Linux with a fresh clone of GitHub, so:
