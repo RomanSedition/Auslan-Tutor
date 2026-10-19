@@ -953,7 +953,8 @@
         h("a", { href: "https://polyformproject.org/licenses/noncommercial/1.0.0/", target: "_blank", rel: "noopener" }, "PolyForm Noncommercial"),
         ". "),
       h("p", { class: "muted" },
-        "Your progress and camera stay in this browser. Nothing is uploaded. ",
+        "Your progress and camera stay in this browser. Nothing is uploaded except an anonymous page-view count (",
+        h("a", { href: "https://www.goatcounter.com/", rel: "noopener" }, "GoatCounter"), ": no cookies, no personal data). ",
         h("a", { href: ROOT + "index.html#progress" }, "Save or load your progress"), "."))));
   }
 
@@ -1017,6 +1018,11 @@
 
   renderHeader();
   renderFooter();
+
+  // Anonymous page-view counts (GoatCounter: no cookies, no personal data). Off on localhost.
+  if (!isAuthor) document.head.append(h("script", {
+    async: true, src: "https://gc.zgo.at/count.js", "data-goatcounter": "https://auslan-tutor.goatcounter.com/count",
+  }));
   applyUserName();
   // Things only the site's author needs (e.g. "ask Claude for a lesson") show only on localhost.
   if (isAuthor) document.querySelectorAll(".author-only").forEach((el) => (el.hidden = false));
